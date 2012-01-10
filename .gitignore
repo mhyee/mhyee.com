@@ -1,0 +1,4 @@
+*.swp
+output/*
+tmp/*
+output.diff

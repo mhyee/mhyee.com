@@ -1,0 +1,11 @@
+%nav#topnav
+  %ul
+    %li#home=   link_to_unless_current("Home", "/")
+    %li#about=  link_to_unless_current("About", "/about.html")
+    %li#resume= link_to_unless_current("Resume", "/resume.html")
+    %li#blog
+      - if @blog
+        = link_to("Blog", "/blog.html", :class => "active")
+      - else
+        = link_to_unless_current("Blog", "/blog.html")
+    %li#code=   link_to_unless_current("Code", "http://github.com/mhyee")

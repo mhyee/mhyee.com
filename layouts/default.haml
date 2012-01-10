@@ -1,0 +1,10 @@
+!!! 5
+%html{:lang => "en"}
+  = render 'head'
+  %body
+    %header
+      = render 'nav'
+    #wrapper
+      #name_title Ming-Ho Yee
+      #content= yield
+    = render 'footer'

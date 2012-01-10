@@ -1,0 +1,8 @@
+---
+title: Forbidden!
+---
+
+Forbidden
+=========
+
+Whoops, but you don't have permission to access that page. Let's [start over from the beginning](/index.html)

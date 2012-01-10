@@ -17,7 +17,7 @@ index_filenames: [ 'index.html' ]
 # Whether or not to generate a diff of the compiled content when compiling a
 # site. The diff will contain the differences between the compiled content
 # before and after the last site compilation.
-enable_output_diff: false
+enable_output_diff: true
 
 # The data sources where nanoc loads its data from. This is an array of
 # hashes; each array element represents a single data source. By default,
@@ -57,3 +57,16 @@ watcher:
   # When to send notifications (using Growl or notify-send).
   notify_on_compilation_success: true
   notify_on_compilation_failure: true
+
+# Other config settings
+base_url: "http://mhyee.com"
+
+# Deploy (rsync + ssh) configuration settings
+# `rake deploy:rsync` to deploy
+# Adapted from:
+# http://nanoc.stoneship.org/docs/6-guides/#deploying-sites
+# https://github.com/mgutz/nanoc3_blog/blob/master/config.yaml
+deploy:
+  default:
+    dst: "mhyee.com:~/public_html"
+    options: [ '-ave ssh', '--exclude=.DS_Store', '--exclude=*.swp', '--exclude=*~' ]

@@ -13,21 +13,50 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/stylesheet/' do
-  # don’t filter or layout
+preprocess do
+  copy_htaccess
+end
+
+# Special compilation for blog items (but not blog page itself)
+compile '/blog/*/' do
+  # Apply Markdown (with rdiscount), then syntax highlighting with pygmentize
+  filter :rdiscount, :extensions => %w( strict smart )
+  filter :colorize_syntax, :default_colorizer => :pygmentize
+
+  # Use the blog layout
+  layout 'blog'
 end
 
 compile '*' do
+  ext = item[:extension].nil? ? nil : item[:extension].split('.').last
+
   if item.binary?
     # don’t filter binary items
-  else
+  elsif ext == "css"
+    # Apply CSS compression and nothing else
+    filter :rainpress
+  elsif ext == "erb"
     filter :erb
-    layout 'default'
+
+    # Set the appropriate layout (default or none)
+    layout 'default' unless item[:layout] == "none"
+  else
+    # Apply Markdown (with rdiscount)
+    filter :rdiscount, :extensions => %w( strict smart )
+
+    # Set the appropriate layout (default or none)
+    layout 'default' unless item[:layout] == "none"
   end
 end
 
-route '/stylesheet/' do
-  '/style.css'
+
+# Put all styles in the /styles directory
+route '/styles/*' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
+route '/' do
+  '/index.html'
 end
 
 route '*' do
@@ -35,9 +64,10 @@ route '*' do
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   else
-    # Write item with identifier /foo/ to /foo/index.html
-    item.identifier + 'index.html'
+    # Write item with identifier /foo/ to /foo.html
+    item.identifier.chop + '.' + 'html'
   end
 end
 
-layout '*', :erb
+# UTF-8, HTML5, and don't pretty-print the HTML
+layout '*', :haml, :encoding => "UTF-8", :format => :html5, :ugly => true
