@@ -38,6 +38,7 @@ DEPENDENCIES
   mime-types (= 1.17.2)
   nanoc (= 3.2.4)
   pygmentize (= 0.0.3)
+  rack (= 1.4.0)
   rainpress (= 1.0)
   rdiscount (= 1.6.8)
   systemu (= 2.4.2)
