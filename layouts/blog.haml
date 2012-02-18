@@ -18,7 +18,7 @@
             var disqus_shortname = 'mhyee';
             var disqus_identifier = '#{@item.identifier}';
             var disqus_url = '#{url_for(@item)}';
-            var disqus_title = '#{@item[:title]}';
+            var disqus_title = "#{html_escape(@item[:title])}";
 
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
