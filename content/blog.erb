@@ -2,12 +2,11 @@
 title: Blog
 ---
 
-<h1>Blog</h1>
+<h1>Blog <a href="/feed.xml"><img src="/styles/feed-icon.png" /></a></h1>
 
 <% sorted_articles.each do |article| %>
-  <% url = url_for(article) %>
   <article>
-    <a href="<%= url %>">
+    <a href="<%= url_for(article) %>">
       <h2><%= article[:title] %></h2>
     </a>
     <div class="date">

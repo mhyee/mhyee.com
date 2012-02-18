@@ -15,7 +15,8 @@ My name is Ming-Ho, and I'm currently a [software engineering][] student at the 
 ## Latest Updates
 <div class="date">February 18, 2012</div>
 
-I've moved my site over to [nanoc][], a static site generator and integrated [DISQUS][]. Blog post coming eventually.
+I've moved my site over to [nanoc][], a static site generator and integrated [DISQUS][]. There is also an [Atom feed][] now. Blog post coming eventually.
 
 [nanoc]: http://nanoc.stoneship.org
 [DISQUS]: http://disqus.com
+[Atom feed]: http://mhyee.com/feed.xml

@@ -27,6 +27,11 @@ compile '/blog/*/' do
   layout 'blog'
 end
 
+# Special compilation for the Atom feed
+compile '/feed/' do
+  filter :erb
+end
+
 compile '*' do
   ext = item[:extension].nil? ? nil : item[:extension].split('.').last
 
@@ -57,6 +62,10 @@ end
 
 route '/' do
   '/index.html'
+end
+
+route '/feed/' do
+  '/feed.xml'
 end
 
 route '*' do
