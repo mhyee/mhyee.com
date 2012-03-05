@@ -23,15 +23,15 @@ namespace :create do
   task :page => [:item]
   task :item do
     # Run through nanoc ci to create item
-    if !(title = ENV['title'])
-      $stderr.puts "\t[error] Missing title argument.\n\tusage: rake create:article title='article title'"
+    if !(page = ENV['page'])
+      $stderr.puts "\t[error] Missing page argument.\n\tusage: rake create:article page='page slug'"
       exit 1
     end
-    sh "nanoc create_item #{title}"
+    sh "nanoc create_item #{page}"
 
     # Change to .markdown extension by moving .html file
-    FileUtils.mv("content/#{title}.html", "content/#{title}.markdown")
-    $stdout.puts "\tMoved content/#{title}.html to content/#{title}.markdown"
+    FileUtils.mv("content/#{page}.html", "content/#{page}.markdown")
+    $stdout.puts "\tMoved content/#{page}.html to content/#{page}.markdown"
   end
 
   # Adapted from https://github.com/mgutz/nanoc3_blog/blob/master/Rakefile
@@ -40,13 +40,13 @@ namespace :create do
   task :article do
     require 'active_support/core_ext'
     @ymd = Time.now.to_s.split(' ')[0]
-    if !ENV['title']
-      $stderr.puts "\t[error] Missing title argument.\n\tusage: rake create:article title='article title'"
+    if !ENV['slug']
+      $stderr.puts "\t[error] Missing slug argument.\n\tusage: rake create:article slug='slug'"
       exit 1
     end
 
-    title = ENV['title'].capitalize
-    path, filename, full_path = calc_path(title)
+    slug = ENV['slug'].capitalize
+    path, filename, full_path = calc_path(slug)
 
     if File.exists?(full_path)
       $stderr.puts "\t[error] Exists #{full_path}"
@@ -57,10 +57,11 @@ namespace :create do
 ---
 created_at: #{@ymd}
 foo: _bar
-excerpt:
+excerpt: "An article about #{slug}"
 kind: article
-tags: [misc]
-title: "#{title.titleize}"
+tags: [ misc ]
+title: "Title for #{slug}"
+publish: false
 ---
 
 TODO: Add content to `#{full_path}.`
