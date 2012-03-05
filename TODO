@@ -1,3 +1,8 @@
 TODO
+- Upgrade to latest version of nanoc
 - Set up tag pages (or filter blog list by tag)
 - Set up date archives (or filter blog list by date)
+- Make it easier to work with on development environment
+  - Set "disqus_developer" to 0
+  - Use relative paths for links
+  - Always show drafts

@@ -13,10 +13,9 @@ My name is Ming-Ho, and I'm currently a [software engineering][] student at the 
 [University of Waterloo]: http://www.uwaterloo.ca
 
 ## Latest Updates
-<div class="date">February 18, 2012</div>
+<div class="date">March 5, 2012</div>
 
-I've moved my site over to [nanoc][], a static site generator and integrated [DISQUS][]. There is also an [feed][] now. Blog post coming eventually.
+Back in January, I moved my site over to [nanoc][], a static site generator. And now I finally [blogged][] about it!
 
 [nanoc]: http://nanoc.stoneship.org
-[DISQUS]: http://disqus.com
-[feed]: http://feeds.feedburner.com/mhyee
+[blogged]: http://mhyee.com/blog/nanoc.html

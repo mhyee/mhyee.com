@@ -28,9 +28,10 @@ I decided that since I was changing hosts and had to restore a backup, I might a
 
 In late 2011, not too long after applying the new design, I finally got around to getting a domain name and a VPS.  I figured I might as well learn some new things, and I'd probably need the server for some personal projects.  Besides, it's about time I moved to somewhere a bit more permanent.
 
-In early 2012, I finally abandoned the hand-coded site I had been maintaining.  I'm now using [nanoc][], a static site generator, to create my site. All the pages and posts are written in Vim.
+In early 2012, I finally abandoned the hand-coded site I had been maintaining.  I'm now using [nanoc][], a static site generator, to create my site. If you're interested in reading about the migration, I [blogged][] about it.
 
 [Wordpress]: http://wordpress.org
 [Computer Science Club]: http://csclub.uwaterloo.ca
 [Ming-Cee]: http://siliren.webatu.com
 [nanoc]: http://nanoc.stoneship.org/
+[blogged]: http://mhyee.com/blog/nanoc.html
