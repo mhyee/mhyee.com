@@ -56,10 +56,3 @@ National Finals
 [g10]: http://www.tvo.org/TVO/WebObjects/TVO.woa?videoid?84727807001
 [g11]: http://www.tvo.org/TVO/WebObjects/TVO.woa?videoid?85084558001
 [finals]: http://www.tvo.org/TVO/WebObjects/TVO.woa?videoid%3F84734483001
-
-
-Update
-------
-<div class="date">November 21, 2011</div>
-
-It appears these videos are no longer posted. Sorry for the inconvenience.
