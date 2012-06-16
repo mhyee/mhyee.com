@@ -13,8 +13,8 @@ My name is Ming-Ho, and I'm currently a [software engineering][] student at the 
 [University of Waterloo]: http://www.uwaterloo.ca
 
 ## Latest Updates
-<div class="date">May 6, 2012</div>
+<div class="date">June 15, 2012</div>
 
-Overdue blog post, since I was hoping to blog more frequently. As something different, I blog in a stream-of-consciousness manner about a nontechnical topic, [cooking][]!
+It looks like the blogging schedule I had in mind is slipping even more. Well, maybe I should start on my next post... Anyway, here's another "blog post where I talk about stuff." The topic this time is [sleep][].
 
-[cooking]: http://mhyee.com/blog/cooking.html
+[sleep]: /blog/sleep.html
