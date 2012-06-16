@@ -9,6 +9,10 @@ body {
   background-repeat:repeat-x;
 }
 
+.clear {
+  clear: both;
+}
+
   #topnav {
     width: 800px;
     height: 40px;
@@ -112,6 +116,14 @@ body {
         background: #2d2a2d;
         color: #9fa0a2;
         padding: 5px;
+      }
+      #content .backtoblog {
+        float: left;
+      }
+      #content .subscribe {
+        float: right;
+        margin-top: -5px;
+        margin-bottom: 5px;
       }
 
   footer {

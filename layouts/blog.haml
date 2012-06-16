@@ -10,8 +10,17 @@
         %h1= @item[:title]
         .date= pretty_time(@item[:created_at])
         = yield
-        = link_to('Back to blog', '/blog.html')
-        %hr
+        .backtoblog
+          = link_to('Back to blog', '/blog.html')
+        .subscribe
+          %a{:href => "http://feeds.feedburner.com/mhyee"}
+            %img{:src => "/styles/feed-icon.png"}
+            Subscribe
+          %a{:href => "https://twitter.com/minghoyee", :class => "twitter-follow-button", :'data-show-count' => "false", :'data-show-screen-name' => "false", :'data-dnt' => "true"}
+            Follow @minghoyee
+          :javascript
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        %hr.clear
         #disqus_thread
           :javascript
             var disqus_developer = 0;
