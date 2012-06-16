@@ -4,7 +4,7 @@ foo: _bar
 excerpt: "There's a number of reasons why I like to prepare and cook my own meals. Unfortunately, I don't always cook, and there's also reasons for that."
 kind: article
 tags: [ cooking ]
-title: "Why I Cook (or Why I Should Cook More Often)"
+title: "Why I cook (or Why I should cook more often)"
 ---
 
 There's a number of reasons why I like to prepare and cook my own meals. Unfortunately, I don't cook as much as I'd like, and there's also reasons for that. In this (nontechnical!) post, I'll go through both sides of this. I'm not aiming to convince anybody, but just to share some of my thoughts. Hopefully at least one person will find this interesting.
