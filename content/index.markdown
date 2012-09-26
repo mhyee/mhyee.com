@@ -13,8 +13,6 @@ My name is Ming-Ho, and I'm currently a [software engineering][] student at the 
 [University of Waterloo]: http://www.uwaterloo.ca
 
 ## Latest Updates
-<div class="date">June 15, 2012</div>
+<div class="date">September 26, 2012</div>
 
-It looks like the blogging schedule I had in mind is slipping even more. Well, maybe I should start on my next post... Anyway, here's another "blog post where I talk about stuff." The topic this time is [sleep][].
-
-[sleep]: /blog/sleep.html
+My roommates and I have been without Internet for twenty-two days. I decided to write about [some of my experiences and observations](/blog/no_internet.html).

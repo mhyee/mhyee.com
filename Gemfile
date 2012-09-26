@@ -4,6 +4,7 @@ gem "nanoc", "3.2.4"
 
 gem "activesupport", "3.1.3"
 gem "adsf", "1.0.1"
+gem "builder", "3.1.3"
 gem "fssm", "0.2.8.1"
 gem "haml", "3.1.4"
 gem "i18n", "0.6.0"
