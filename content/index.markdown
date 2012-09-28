@@ -13,6 +13,6 @@ My name is Ming-Ho, and I'm currently a [software engineering][] student at the 
 [University of Waterloo]: http://www.uwaterloo.ca
 
 ## Latest Updates
-<div class="date">September 26, 2012</div>
+<div class="date">September 28, 2012</div>
 
-My roommates and I have been without Internet for twenty-two days. I decided to write about [some of my experiences and observations](/blog/no_internet.html).
+My roommates and I have been without Internet for <del>twenty-two</del> twenty-three days. I decided to write about [some of my experiences and observations](/blog/no_internet.html).

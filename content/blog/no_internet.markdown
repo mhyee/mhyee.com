@@ -132,3 +132,12 @@ certain time.
 
 If I can accomplish this, I think this "experiment" of living without Internet
 will have been worth it.
+
+
+Update
+------
+<div class="date">September 28, 2012</div>
+
+The technician arrived right after I finished writing this post, but there were
+other issues, so we didn't get Internet right away. We called our provider the
+next day, and later that night we finally got Internet.
