@@ -32,6 +32,6 @@ In early 2012, I finally abandoned the hand-coded site I had been maintaining.  
 
 [Wordpress]: http://wordpress.org
 [Computer Science Club]: http://csclub.uwaterloo.ca
-[Ming-Cee]: http://siliren.webatu.com
+[Ming-Cee]: http://skysketches.com/
 [nanoc]: http://nanoc.stoneship.org/
 [blogged]: http://mhyee.com/blog/nanoc.html
