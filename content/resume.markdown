@@ -9,10 +9,11 @@ At Waterloo, we apply for co-op jobs through a website called JobMine.  Without 
 
 My resume was once stored in XML, and I use some XSLT to transform it to XHTML, and style it with CSS.  I blogged about it a while back, and you can read it [here][xml].
 
-Currently, I store my resume in a YAML file, and I have a Ruby script and a few ERB templates to generate HTML and PDF (via LaTeX) versions.  The code for it is on [GitHub][github], with corresponding blog post [here][yaml].
+Currently, I store my resume in a YAML file, and I have a Ruby script and a few ERB templates to generate HTML, PDF (via LaTeX), and plain text versions.  The code for it is on [GitHub][github], with corresponding blog post [here][yaml].
 
-- [Resume (HTML)](/resume/YeeMing-Ho_resume_online.html)
 - [Resume (PDF)](/resume/YeeMing-Ho_resume_online.pdf)
+- [Resume (HTML)](/resume/YeeMing-Ho_resume_online.html)
+- [Resume (plain text)](/resume/YeeMing-Ho_resume_online.txt)
 - [Resume (TeX)](/resume/YeeMing-Ho_resume_online.tex)
 
 [xml]: /blog/xml_resume.html
