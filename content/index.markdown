@@ -12,7 +12,13 @@ My name is Ming-Ho, and I'm currently a [software engineering][] student at the 
 [software engineering]: http://www.softeng.uwaterloo.ca
 [University of Waterloo]: http://www.uwaterloo.ca
 
-## Latest Updates
-<div class="date">September 28, 2012</div>
+Latest Updates
+--------------
+<div class="date">October 10, 2013</div>
 
-My roommates and I have been without Internet for <del>twenty-two</del> twenty-three days. I decided to write about [some of my experiences and observations](/blog/no_internet.html).
+_"Our fourth-year design project is to optimize the guided improvement
+algorithm, which is used to solve exact, discrete, multi-objective optimization
+problems."_
+
+The [first post](/blog/fydp1.html) of my blog series is about multi-objective
+optimization: introduction, definition, and applications.

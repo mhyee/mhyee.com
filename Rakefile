@@ -56,7 +56,6 @@ namespace :create do
     template = <<TEMPLATE
 ---
 created_at: #{@ymd}
-foo: _bar
 excerpt: "An article about #{slug}"
 kind: article
 tags: [ misc ]
@@ -74,7 +73,7 @@ TEMPLATE
 
   def calc_path(title)
     path = "content/blog/"
-    filename = title.parameterize('_') + ".markdown"
+    filename = title.parameterize('_') + ".md"
     [path, filename, path + filename]
   end
 
