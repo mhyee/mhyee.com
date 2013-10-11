@@ -5,11 +5,11 @@ title: About
 About Me
 ========
 
-I was born in London UK, grew up in London ON, Canada, and now currently reside in West Hartford CT, USA.  However, I spend most of my time in Waterloo ON, since I'm a third-year student in the Software Engineering program at the University of Waterloo.  Despite my connections to the UK and USA, I hold only Canadian citizenship.
+I was born in London UK and grew up in London ON, Canada. However, I spend most of my time in Waterloo ON, since I'm a fourth-year student in the Software Engineering program at the University of Waterloo.  Despite being born in the United Kingdom, I hold only Canadian citizenship.
 
 I'm a native speaker of English and Chinese (Cantonese), but I prefer English.  I've taken lessons in French, Spanish, Japanese, and Mandarin, but it's been many years, and I'm lucky to remember a few words from each.
 
-Some of my hobbies include music, cooking, karate, trivia, and reading.  I took piano lessons for about ten years, and have been playing the violin for about four years now.  For trivia, I did [Reach for the Top][] in high school (we won nationals in 2009), and I'm now a member of (and webmaster for) the [UW Quiz Bowl Club][].  Regrettably, I no longer have the time for karate or the violin; every time I think about these, I wonder how things would have turned out had I made the time for them.
+Some of my hobbies include music, cooking, karate, trivia, and reading.  I took piano lessons for about ten years, and played the violin for about four years.  For trivia, I did [Reach for the Top][] in high school (we won nationals in 2009), and I'm now a member of (and webmaster for) the [UW Quiz Bowl Club][].  Regrettably, I no longer have the time for karate or the violin; every time I think about these, I wonder how things would have turned out had I made the time for them.
 
 [Reach for the Top]: http://www.reachforthetop.com
 [UW Quiz Bowl Club]: http://quizbowl.uwaterloo.ca
