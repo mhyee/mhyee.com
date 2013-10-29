@@ -24,7 +24,7 @@ I plan to write about the following topics:
 
 * Multi-objective optimization
   * [Introduction, definition, and applications][fydp1]
-  * A more formal definition
+  * [A more formal definition][fydp2]
 * Algorithms
   * Guided improvement algorithm
   * Overlapping guided improvement algorithm
@@ -54,6 +54,7 @@ three related algorithms for solving exact, discrete, multi-objective
 optimization problems.
 
 [fydp1]: /blog/fydp1.html
+[fydp2]: /blog/fydp2.html
 
 
 What is multi-objective optimization?
@@ -179,13 +180,15 @@ Finally, I provided three real world applications of multi-objective
 optimization: the Apollo program, the decadal survey, and software product
 lines.
 
-In the next part, I'll provide a more formal definition of multi-objective
-optimization, which should clarify some of the concepts introduced today. I’ll
-also step through a more concrete (though also more contrived) example, and that
-should conclude my explanation of multi-objective optimization.
+In the [next part][fydp2], I'll provide a more formal definition of
+multi-objective optimization, which should clarify some of the concepts
+introduced today. I’ll also step through a more concrete (though also more
+contrived) example, and that should conclude my explanation of multi-objective
+optimization.
 
 _I would like to thank Chris Kleynhans and Zameer Manji for proofreading this
 post._
+
 
 Notes
 -----
