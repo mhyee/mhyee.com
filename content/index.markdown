@@ -14,11 +14,11 @@ My name is Ming-Ho, and I'm currently a [software engineering][] student at the 
 
 Latest Updates
 --------------
-<div class="date">October 29, 2013</div>
+<div class="date">November 9, 2013</div>
 
 _"Our fourth-year design project is to optimize the guided improvement
 algorithm, which is used to solve exact, discrete, multi-objective optimization
 problems."_
 
-The [second post](/blog/fydp2.html) of my blog series is a more formal
-definition of multi-objective optimization.
+The [third post](/blog/fydp3.html) of my blog series is about how we can solve
+multi-objective optimization problems with the _guided improvement algorithm_.

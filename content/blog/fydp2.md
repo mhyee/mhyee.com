@@ -35,7 +35,7 @@ In the 8-queens puzzle, the goal is to place eight queens on an 8x8 chessboard,
 such that no two queens are "attacking" each other. In other words, no two
 queens may share the same row, column, or diagonal.
 
-With 3-rooks, we simply the problem in two ways: we have a 3x3 chessboard, and
+With 3-rooks, we simplify the problem in two ways: we have a 3x3 chessboard, and
 we place rooks instead of queens. No two rooks may be on the same row or column,
 but they are allowed to share diagonals.
 
@@ -109,17 +109,6 @@ metric point is `(16, 17)`.
 <br/>
 
 I've also listed out all the metric points in a table.
-
-<!--
-               | Score1  Score2
-    -----------+---------------
-    Solution 1 |     14      17
-    Solution 2 |     16      17
-    Solution 3 |     16      17
-    Solution 4 |     21      11
-    Solution 5 |     15      15
-    Solution 6 |      8      21
--->
 
 <table style="border-collapse:separate;border-spacing:5px;margin:0px auto;border:1px">
   <thead>
@@ -229,10 +218,12 @@ This post concludes my explanation of multi-objective optimization, including
 a discussion of its applications. At this point, a natural question would be how
 we actually solve a multi-objective optimization problem. There are a number of
 different algorithms, but our group is interested in the _guided improvement
-algorithm_, which will be the subject of my next post.
+algorithm_, which will be the subject of my [next post][fydp3].
 
 _I would like to thank Chris Kleynhans, Zameer Manji, and Arjun Sondhi for
 proofreading this post._
+
+[fydp3]: /blog/fydp3.html
 
 
 Notes

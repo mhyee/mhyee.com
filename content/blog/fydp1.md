@@ -26,7 +26,7 @@ I plan to write about the following topics:
   * [Introduction, definition, and applications][fydp1]
   * [A more formal definition][fydp2]
 * Algorithms
-  * Guided improvement algorithm
+  * [Guided improvement algorithm][fydp3]
   * Overlapping guided improvement algorithm
   * Partitioned guided improvement algorithm
 * Results
@@ -55,6 +55,7 @@ optimization problems.
 
 [fydp1]: /blog/fydp1.html
 [fydp2]: /blog/fydp2.html
+[fydp3]: /blog/fydp3.html
 
 
 What is multi-objective optimization?

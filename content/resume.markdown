@@ -5,7 +5,7 @@ title: Resume
 Resume
 ======
 
-At Waterloo, we apply for co-op jobs through a website called JobMine.  Without going into details, JobMine requires resumes to be submitted as HTML files.  Thus, I have found it easier to maintain my resume as HTML, instead of converting from a Word document.
+At Waterloo, we apply for co-op jobs through a website called JobMine.  Without going into details, JobMine required resumes to be submitted as HTML files. (Currently, PDFs are the only allowed format.) Thus, I have found it easier to maintain my resume as HTML, instead of converting from a Word document.
 
 My resume was once stored in XML, and I use some XSLT to transform it to XHTML, and style it with CSS.  I blogged about it a while back, and you can read it [here][xml].
 
