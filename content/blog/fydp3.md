@@ -14,8 +14,8 @@ previous post by posing a question: how do we actually solve multi-objective
 optimization problems?
 
 My next few posts will be answering that question. More specifically, this post
-will be about the _guided improvement algorithm_. The other posts will be about
-_improvements_ to GIA.
+will be about the _guided improvement algorithm_, while the other posts will be
+about _improvements_.
 
 There will be a lot of terminology in this post, so if you need a reminder,
 please take some time to review my [previous post][fydp2]. Also, the material in
@@ -78,23 +78,23 @@ understand:
     #!ruby
     exclusionConstraints = empty
     # Throw the dart. Get the first solution.
-    solution = Solve(constraints)
+    solution = Solve(problemConstraints)
     while solution exists
         # Climb up to the Pareto front.
         while solution exists
             prevSolution = solution
             # Find a better solution.
-            solution = Solve(constraints AND dominates prevSolution)
+            solution = Solve(problemConstraints AND dominates prevSolution)
         end
         # Nothing dominates prevSolution, so it's a Pareto point.
         # Magnifier; find all solutions at the Pareto point.
-        while s = Solve(constraints AND equals prevSolution)
+        while s = Solve(problemConstraints AND equals prevSolution)
             yield s
         end
         # Augment the constraints. Exclude solutions dominated by known Pareto points.
         exclusionConstraints = exclusionConstraints AND not dominated by prevSolution
         # Throw the dart. Find a new solution.
-        solution = Solve(constraints AND exclusionConstraints)
+        solution = Solve(problemConstraints AND exclusionConstraints)
     end
 
 [giatr]: http://dspace.mit.edu/handle/1721.1/46322
@@ -356,12 +356,14 @@ two promising approaches to improving the GIA: incremental solving and
 checkpointed solving.
 
 So far, these two approaches have been single-threaded, and cannot take
-advantage of multicore processors. We are also interested in parallelizing GIA.
-In the next part, I'll describe the _overlapping guided improvement algorithm_,
-which is one of our approaches for a parallel GIA.
+advantage of multi-core processors. We are also interested in parallelizing GIA.
+In the [next part][fydp4], I'll describe the _overlapping guided improvement
+algorithm_, which is one of our approaches for a parallel GIA.
 
 _I would like to thank Chris Kleynhans, Zameer Manji, and Arjun Sondhi for
 proofreading this post._
+
+[fydp4]: /blog/fydp4.html
 
 
 Notes
