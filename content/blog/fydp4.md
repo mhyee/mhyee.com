@@ -81,15 +81,15 @@ pseudocode.
         globalExclusionConstraints = empty
         solutionHashTable = empty
 
-        # Called when a thread has found a new solution
+        # Called when a thread has found a new solution.
         PushNewSolution(solution)
             if solutionHashTable.contains(solution)
                 # We have a duplicate solution
                 return false
             else
-                # Not a duplicate, so add the solution
+                # Not a duplicate, so add the solution.
                 solutionHashTable.add(solution)
-                # Update global exclusion constraints
+                # Update global exclusion constraints.
                 globalExclusionConstraints = globalExclusionConstraints AND
                                              not dominated by solution
                 return true
@@ -102,20 +102,20 @@ a solution finder task for the OGIA threads.
     #!ruby
     SolutionFinder(solution):
         while solution exists
-            # Climb up to the Pareto front
+            # Climb up to the Pareto front.
             while solution exists
                 prevSolution = solution
-                # Find a better solution
+                # Find a better solution.
                 solution = Solve(problemConstraints AND dominates prevSolution)
             end
-            # Nothing dominates prevSolution; it's a Pareto point
-            # Report to the solution deduplicator
+            # Nothing dominates prevSolution; it's a Pareto point.
+            # Report to the solution deduplicator.
             isUniqueSolution = PushNewSolution(prevSolution)
-            # Queue magnifier task if solution was unique
+            # Queue magnifier task if solution was unique.
             if isUniqueSolution
                 tasks.queue(Magnifier(solution))
             end
-            # Throw the dart. Find a new solution
+            # Throw the dart. Find a new solution.
             solution = Solve(problemConstraints AND globalExclusionConstraints)
         end
 
@@ -143,17 +143,17 @@ finding the starting solutions and starting the other worker threads.
         intialPointConstraint = problemConstraints
 
         for 1..numberOfThreadsToUse
-            # Get a unique starting point
+            # Get a unique starting point.
             solution = Solve(initialPointConstraint)
             if solution exists
                 initialPointConstraint = initialPointConstraint AND
                                          not dominated by solution
-                # Queue a solution finder task
+                # Queue a solution finder task.
                 tasks.queue(SolutionFinder(solution))
             end
         end
 
-        # Wait until all threads have finished
+        # Wait until all threads have finished.
         tasks.wait
 
 For the full implementation details, you can find our code on [GitHub][ogia].

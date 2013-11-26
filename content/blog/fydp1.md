@@ -22,15 +22,13 @@ detailed but much longer.
 That second option is what I'd like to do here, in a series of blog posts.
 I plan to write about the following topics:
 
-* Multi-objective optimization
-  * [Introduction, definition, and applications][fydp1]
-  * [A more formal definition][fydp2]
-* Algorithms
-  * [Guided improvement algorithm][fydp3]
-  * [Overlapping guided improvement algorithm][fydp4]
-  * Partitioned guided improvement algorithm
+* [Introduction, Definition, and Applications][fydp1]
+* [A More Formal Definition][fydp2]
+* [Guided Improvement Algorithm][fydp3]
+* [The Overlapping Guided Improvement Algorithm][fydp4]
+* Attempting the Partitioned Guided Improvement Algorithm
+* ...
 * Results
-  * To be determined
 <br/>
 
 I don't anticipate the list changing too much, even though I'm still in the
