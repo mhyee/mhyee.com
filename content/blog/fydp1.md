@@ -24,7 +24,7 @@ I plan to write about the following topics:
 
 * [Introduction, Definition, and Applications][fydp1]
 * [A More Formal Definition][fydp2]
-* [Guided Improvement Algorithm][fydp3]
+* [The Guided Improvement Algorithm][fydp3]
 * [The Overlapping Guided Improvement Algorithm][fydp4]
 * Attempting the Partitioned Guided Improvement Algorithm
 * ...
@@ -147,7 +147,8 @@ The final problem, from software engineering, is actually a collection of
 (software) product line problems. The general idea is that when choosing
 features for a particular product, there are also different objectives and
 constraints to include in the decisions. For example, one of our problems
-involves designing a search and rescue system. Decisions include the type of
+involves designing a search and rescue system
+<sup><a href="#n7" id="t7">7</a></sup>. Decisions include the type of
 connectivity and location finding, whether maps should be preloaded or
 downloaded on demand, and the format for data exchange. Objectives include
 minimizing cost, development time, battery usage and maximizing reliability.
@@ -213,7 +214,7 @@ Notes
  4. <a style="text-decoration: none;" id="n4" href="#t4">^</a> This will become
     clearer in the next post, with a more formal definition of "optimal."
 
- 5. <a style="text-decoration: none;" id="n5" href="#t5">^</a>  If you’re
+ 5. <a style="text-decoration: none;" id="n5" href="#t5">^</a> If you’re
     interested, [chapter 4 of this PhD thesis][apollo] discusses the Apollo
     problem in greater detail.
 
@@ -221,7 +222,11 @@ Notes
     survey runs once every ten years. The [first one][first_decadal] completed
     in 2007.
 
+ 7. <a style="text-decoration: none;" id="n7" href="#t7">^</a> The search and
+    rescue problem is adapated from [this technical report][searchandrescue].
+
 [se]: https://uwaterloo.ca/software-engineering/
 [waterloo]: https://uwaterloo.ca/
 [apollo]: http://dspace.mit.edu/handle/1721.1/42912
 [first_decadal]: http://www.nap.edu/catalog.php?record_id=11820
+[searchandrescue]: http://mason.gmu.edu/~nesfaha2/Publications/GMU-CS-TR-2011-3.pdf
