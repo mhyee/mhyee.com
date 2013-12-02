@@ -26,9 +26,10 @@ I plan to write about the following topics:
 * [A More Formal Definition][fydp2]
 * [The Guided Improvement Algorithm][fydp3]
 * [The Overlapping Guided Improvement Algorithm][fydp4]
-* Attempting the Partitioned Guided Improvement Algorithm
+* [Attempting the Partitioned Guided Improvement Algorithm][fydp5]
+* Fixing the Partitioned Guided Improvement Algorithm
 * ...
-* Results
+* TBD: Results?
 <br/>
 
 I don't anticipate the list changing too much, even though I'm still in the
@@ -55,6 +56,7 @@ optimization problems.
 [fydp2]: /blog/fydp2.html
 [fydp3]: /blog/fydp3.html
 [fydp4]: /blog/fydp4.html
+[fydp5]: /blog/fydp5.html
 
 
 What is multi-objective optimization?

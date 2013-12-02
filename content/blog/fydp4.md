@@ -273,14 +273,15 @@ In this post, I described the _overlapping guided improvement algorithm_,
 highlighted some of its implementation details, and discussed some of the open
 issues our group will be addressing in the future.
 
-In the next part, I will be discussing our other multi-threaded approach, the
-_partitioned guided improvement algorithm_. It lets us eliminate all the
-duplicate work we had with OGIA, but the price is a far more complicated
+In the [next part][fydp5], I will be discussing our other multi-threaded
+approach, the _partitioned guided improvement algorithm_. It lets us eliminate
+all the duplicate work we had with OGIA, but the price is a far more complicated
 algorithm.
 
 _I would like to thank Chris Kleynhans, Zameer Manji, and Arjun Sondhi for
 proofreading this post._
 
+[fydp5]: /blog/fydp5.html
 
 Notes
 -----

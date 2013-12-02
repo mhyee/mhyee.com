@@ -81,9 +81,6 @@ body {
         text-decoration:none;
         border-bottom: 1px dotted #2f519e;
       }
-        #content a img {
-          border-bottom: none;
-        }
       #content a:hover {
         text-decoration:none;
         border-bottom: none;

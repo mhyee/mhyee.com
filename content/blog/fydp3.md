@@ -111,7 +111,7 @@ is unknown to the algorithm, and an X to represent a solution that was found by
 the algorithm.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-1.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-1.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-1.svg" width="400"
     height="260" />
   </a>
@@ -124,7 +124,7 @@ a solution that dominates the previous one, so it ignores the shaded area<sup><a
 href="#n4" id="t4">4</a></sup>.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-2.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-2.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-2.svg" width="400"
     height="260" />
   </a>
@@ -134,7 +134,7 @@ The algorithm continues its climb up to the Pareto front, searching for a better
 solution each time.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-3.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-3.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-3.svg" width="400"
     height="260" />
   </a>
@@ -146,7 +146,7 @@ the Pareto point. To keep the example and diagrams simple, we'll say there are
 no other solutions at the Pareto point.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-4.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-4.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-4.svg" width="400"
     height="260" />
   </a>
@@ -158,7 +158,7 @@ known Pareto points<sup><a href="#n5" id="t5">5</a></sup>. In the diagram below,
 the new solution must exist outside this shaded area.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-5.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-5.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-5.svg" width="400"
     height="260" />
   </a>
@@ -169,7 +169,7 @@ Pareto front, and running magnifier on the Pareto point. The second dart throw
 is shown below.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-6.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-6.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-6.svg" width="400"
     height="260" />
   </a>
@@ -179,7 +179,7 @@ The algorithm has found a better solution. It tries to find an even better one,
 but cannot, so the algorithm has found another Pareto point.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-7.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-7.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-7.svg" width="400"
     height="260" />
   </a>
@@ -189,7 +189,7 @@ The algorithm must throw a dart and start the climb again. The new solution must
 not be dominated by the known Pareto points.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-8.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-8.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-8.svg" width="400"
     height="260" />
   </a>
@@ -198,7 +198,7 @@ not be dominated by the known Pareto points.
 Here, the dart throw just happened to land on another Pareto point.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-9.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-9.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-9.svg" width="400"
     height="260" />
   </a>
@@ -209,7 +209,7 @@ optimal or dominated by the optimal solutions. Therefore, the algorithm can now
 terminate.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-10.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig3-10.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig3-10.svg" width="400"
     height="260" />
   </a>

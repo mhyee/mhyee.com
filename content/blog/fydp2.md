@@ -70,7 +70,7 @@ row or column. A solution is an arrangement of rooks on the chessboard. There
 are six solutions<sup><a href="#n3" id="t3">3</a></sup> for the 3-rooks problem.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-1.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig2-1.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig2-1.svg" alt="All solutions to
 the 3-rooks problem" width="600" height="390" />
   </a>
@@ -87,7 +87,7 @@ the bottom right of each square of the chessboard; `Score1` is the first number
 and `Score2` is the second number.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-2.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig2-2.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig2-2.svg" alt="Scores inserted
 into the 3x3 chessboard" width="230" height="230" />
   </a>
@@ -101,7 +101,7 @@ of `6 + 7 + 3 = 16` and `Score2` has a total of `5 + 8 + 4 = 17`. Thus, the
 metric point is `(16, 17)`.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-3.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig2-3.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig2-3.svg" alt="Solution
 2 superimposed onto the scores" width="230" height="230" />
   </a>
@@ -157,7 +157,7 @@ These points can be plotted<sup><a href="#n4" id="t4">4</a></sup> on a graph,
 with an axis for each objective.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-4.svg">
+  <a href="http://files.mhyee.com/fydp/images/fig2-4.svg" style="border:none">
     <img src="http://files.mhyee.com/fydp/images/fig2-4.svg" alt="Graph of the
 metric points" width="400" height="333" />
   </a>
