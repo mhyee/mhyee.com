@@ -316,8 +316,8 @@ Notes
      finished its task, it will check the queue for a new task. As a result,
      magnifier tasks are deferred until all Pareto points have been found.
 
-  7. <a style="text-decoration: none;" id="n7" href="#t7">^</a> GIA had very
-     little improvement over GIA for the 9-queens problem, so we never attempted
+  7. <a style="text-decoration: none;" id="n7" href="#t7">^</a> IGIA had very
+     little improvement over GIA for the 9-queens problems, so we never attempted
      this case.
 
   8. <a style="text-decoration: none;" id="n8" href="#t8">^</a> Recall the

@@ -72,7 +72,7 @@ other solution.
   </a>
 </div>
 
-A locally optimal solution that is not globally optimal is a problematic for
+A locally optimal solution that is not globally optimal is problematic for
 a few reasons. First, we wasted some work, finding a solution that we must
 discard. Also, the regions are no longer independent. Finally, we no longer have
 the property that the algorithm yields solutions as they are found. We have
@@ -210,29 +210,29 @@ this particular problem, we found one locally optimal solution in each region.
 As expected, the metric points obey the constraints. They are also locally
 optimal, though I have not shown the (locally) dominated metric points. However,
 note that the metric point `(7, 13, 8)` is dominated by `(11, 14, 8)`, which is
-from a different region. In fact, for any given point in region C, it is
+from a different region. In fact, for any given point in Region C, it is
 possible a better one exists in Region G --- we simply take the same metric
 values, but set the first one to be greater than or equal to `10`. Of course, that
 point is only a valid solution if it meets the problem constraints, so it may
 not actually exist. The _possibility_ of its existence is the problem, since we
-cannot guarantee the point in region C is globally optimal.
+cannot guarantee the point in Region C is globally optimal.
 
-Unfortunately, we cannot simply ignore region C, just because we might be able
-to find a better solution in region G. For example, suppose the locally optimal
-metric point in region G is `(11, 14, 8)`, and the locally optimal metric point
-in region C is `(7, 15, 8)`. Neither solution dominates the other.
+Unfortunately, we cannot simply ignore Region C, just because we might be able
+to find a better solution in Region G. For example, suppose the locally optimal
+metric point in Region G is `(11, 14, 8)`, and the locally optimal metric point
+in Region C is `(7, 15, 8)`. Neither solution dominates the other.
 
 This is our dilemma: _some_ locally optimal solutions are globally optimal, but
 not _all_ locally optimal solutions are globally optimal.
 
 Before we conclude this post, it's interesting --- and constructive --- to
 examine why the algorithm worked with two objectives. Consider the diagram
-below, where we have a locally optimal solution in region B. I've marked the
+below, where we have a locally optimal solution in Region B. I've marked the
 area where we have to search to find a better solution, and it overlaps regions
 B and D. Thus, the only way to find a better solution in a different region is
-to find one in region D. However, this is impossible, because region D is empty.
-Therefore, any locally optimal solution in region B is globally optimal. (A
-similar argument applies to region C.)
+to find one in Region D. However, this is impossible, because Region D is empty.
+Therefore, any locally optimal solution in Region B is globally optimal. (A
+similar argument applies to Region C.)
 
 <div style="text-align:center">
   <a href="http://files.mhyee.com/fydp/images/fig5-4.svg" style="border:none">
@@ -251,12 +251,14 @@ parallel. We discussed some of the previous attempts, as well as the inspiration
 behind PGIA. Unfortunately, as presented, PGIA only works for bi-objective
 problems.
 
-In the next part, we'll continue our discussion of the partitioned guided
+In the [next part][fydp6], we'll continue our discussion of the partitioned guided
 improvement algorithm. We'll see how the algorithm can be fixed so it works with
 any number of objectives.
 
 _I would like to thank Talha Khalid and Chris Kleynhans for proofreading this
 post._
+
+[fydp6]: /blog/fydp6.html
 
 
 Notes
