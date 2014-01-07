@@ -5,17 +5,15 @@ title: Fourth-Year Design Project
 Fourth-Year Design Project
 ==========================
 
-_The views expressed on this page and on my blog are my own; I do not speak on
-behalf of my group._
-
 The fourth-year design project (FYDP) is a mandatory three-course sequence in
 the [software engineering][softeng] program at the [University of Waterloo][uw].
 It spans twenty months, and is to be completed in groups of four undergraduate
 students.
 
-My group is working under the supervision of Professor [Derek Rayside][rayside]
-to optimize the [guided improvement algorithm][gia], which is used to solve exact,
-discrete, multi-objective optimization problems.
+My group (Joseph Hong, Chris Kleynhans, Atulan Zaman, and myself) is working
+under the supervision of Professor [Derek Rayside][rayside] to optimize the
+[guided improvement algorithm][gia], which is used to solve exact, discrete,
+multi-objective optimization problems.
 
 I have a series of blog posts explaining the background for our project, as well
 as describing the work we have been doing.
