@@ -5,15 +5,18 @@ title: About
 About Me
 ========
 
-I am currently a fourth-year <a href="http://www.softeng.uwaterloo.ca">software
-engineering</a> student at the <a href="http://www.uwaterloo.ca">University of
-Waterloo</a>. I have had a wide variety of internships, from a small web
+I am currently a <a href="http://cs.uwaterloo.ca/">computer science</a> graduate
+student at the <a href="http://www.uwaterloo.ca">University of Waterloo</a>.
+I completed my undergraduate studies in
+<a href="http://uwaterloo.ca/software-engineering/">software engineering</a>,
+also at Waterloo. I have had a wide variety of internships, from a small web
 development startup to a large software corporation, from telecommunications to
 research.
 
 My technical interests are in compilers and programming languages, algorithms,
-and computer architecture. I am most comfortable writing code in C/C++, Java,
-and Ruby, and I have some experience with C# and Perl.
+and computer architecture. I am most comfortable writing code in C, C++, Java,
+and Ruby, I have some experience with C# and Perl, and I've played around with
+Scheme/Racket, OCaml, and Haskell.
 
 Some of my hobbies include listening to music, cooking, reading, and trivia.
 I was a member of my high school's <a href="http://www.reachforthetop.com">Reach
