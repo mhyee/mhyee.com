@@ -1,12 +1,16 @@
 /* Main styles */
 body {
   background: #ddd;
-  font-family:"Sans", "Arial",sans-serif;
+  font-family:"Open Sans",sans-serif;
   font-size: 15px;
   color: #323233;
   line-height: 1.1;
   background-image:url('bg.png');
   background-repeat:repeat-x;
+}
+
+code {
+  font-family:"Inconsolata",monospace;
 }
 
 .clear {
