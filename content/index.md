@@ -14,9 +14,6 @@ You can find my resume [here][PDF resume], as well as versions in [HTML][HTML
 resume], [text][TXT resume], and [LaTeX][TEX resume]. I use a [script][resume
 code] to generate my resume.
 
-This website is also the home of my [blog](/blog.html) and a section for my
-undergraduate [capstone project](/fydp.html).
-
 I am also on [GitHub][], [Twitter][], and [LinkedIn][]. My email address is
 `mh[AT][this domain]`.
 
@@ -34,3 +31,34 @@ I am also on [GitHub][], [Twitter][], and [LinkedIn][]. My email address is
 [GitHub]: https://github.com/mhyee
 [Twitter]: https://twitter.com/mhyee
 [LinkedIn]: https://www.linkedin.com/in/mhyee
+
+
+More About Me
+-------------
+
+I attended the University of Waterloo as an undergraduate student, studying
+[software engineering][]. During my undergraduate program, I held a variety of
+internships, from a small web development startup to a large software
+corporation, from telecommunications to research.
+
+My hobbies include listening to classical music, cooking, and reading. I also
+like trivia: I played [Reach for the Top][] for my high school, and I now play
+[quizbowl][] for the University of Waterloo. In the past, I played the piano and
+violin, and practiced karate.
+
+[software engineering]: http://uwaterloo.ca/software-engineering/
+[Reach for the Top]: http://www.reachforthetop.com
+[quizbowl]: http://quizbowl.uwaterloo.ca
+
+
+About This Site
+---------------
+
+Previous incarnations of this site existed as a WordPress blog and
+hand-maintained static HTML pages.
+
+Since 2012, I have been using [nanoc][], a static site generator. The design was
+created by my sister, [Ming-Cee Yee][].
+
+[nanoc]: http://nanoc.ws
+[Ming-Cee Yee]: http://skysketches.com
