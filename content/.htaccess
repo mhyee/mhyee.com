@@ -5,8 +5,12 @@ RewriteRule ^(.*)$ http://mhyee.com/$1 [R=301,L]
 
 # Redirect out of directories to proper pages
 Redirect /blog/index.html /blog.html
-Redirect /resume/index.html /resume.html
+Redirect /resume/index.html /
 Redirect /styles/index.html /
+
+# Redirect old pages to index
+Redirect /about.html /
+Redirect /resume.html /
 
 # Redirect for old WordPress links
 Redirect 301 /blog/archives/7 /blog/triboot.html
