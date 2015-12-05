@@ -32,10 +32,10 @@ violin, and practiced karate.
 [olhotak]: http://plg.uwaterloo.ca/~olhotak/
 [plg]: http://plg.uwaterloo.ca/
 
-[PDF resume]: /resume/YeeMing-Ho_resume_online.pdf
-[HTML resume]: /resume/YeeMing-Ho_resume_online.html
-[TXT resume]: /resume/YeeMing-Ho_resume_online.txt
-[TEX resume]: /resume/YeeMing-Ho_resume_online.tex
+[PDF resume]: /resume/resume.pdf
+[HTML resume]: /resume/resume.html
+[TXT resume]: /resume/resume.txt
+[TEX resume]: /resume/resume.tex
 [resume code]: https://github.com/mhyee/resume
 
 [GitHub]: https://github.com/mhyee

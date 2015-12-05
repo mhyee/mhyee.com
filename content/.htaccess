@@ -11,6 +11,10 @@ Redirect /styles/index.html /
 # Redirect old pages to index
 Redirect /about.html /
 Redirect /resume.html /
+Redirect /resume/YeeMing-Ho_resume_online.pdf /resume/resume.pdf
+Redirect /resume/YeeMing-Ho_resume_online.html /resume/resume.html
+Redirect /resume/YeeMing-Ho_resume_online.txt /resume/resume.txt
+Redirect /resume/YeeMing-Ho_resume_online.tex /resume/resume.tex
 
 # Redirect for old WordPress links
 Redirect 301 /blog/archives/7 /blog/triboot.html
