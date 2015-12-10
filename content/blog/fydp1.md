@@ -29,7 +29,6 @@ I plan to write about the following topics:
 * [Attempting the Partitioned Guided Improvement Algorithm][fydp5]
 * [Fixing the Partitioned Guided Improvement Algorithm][fydp6]
 * ...
-* TBD: Results?
 <br/>
 
 I don't anticipate the list changing too much, even though I'm still in the

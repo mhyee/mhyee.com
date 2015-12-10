@@ -1,19 +1,26 @@
 ---
-title: Fourth-Year Design Project
+title: Capstone Design Project
 ---
 
-Fourth-Year Design Project
-==========================
+Capstone Design Project
+=======================
 
-The fourth-year design project (FYDP) is a mandatory three-course sequence in
-the [software engineering][softeng] program at the [University of Waterloo][uw].
-It spans twenty months, and is to be completed in groups of four undergraduate
-students.
+The Capstone Design Project, also known as the fourth-year design project
+(FYDP), is a mandatory three-course sequence in the [software
+engineering][softeng] program at the [University of Waterloo][uw]. It spans
+twenty months, and is to be completed in groups of four undergraduate students.
 
-My group (Joseph Hong, Chris Kleynhans, Atulan Zaman, and myself) is working
-under the supervision of Professor [Derek Rayside][rayside] to optimize the
+My group, "Team Amalgam" (Joseph Hong, Chris Kleynhans, Atulan Zaman, and
+myself) worked under the supervision of Professor [Derek Rayside][rayside], from
+approximately September 2012 to April 2014. Our project was to optimize the
 [guided improvement algorithm][gia], which is used to solve exact, discrete,
 multi-objective optimization problems.
+
+On March 21 2014, a public symposium was held for all the projects done by the
+software engineering class of 2014. Each group had a booth with a poster and
+a demo, and gave a twenty-minute presentation about their project.
+
+The sponsor selected our group, Team Amalgam, for first place.
 
 I have a series of blog posts explaining the background for our project, as well
 as describing the work we have been doing.
@@ -25,7 +32,6 @@ as describing the work we have been doing.
 * [Attempting the Partitioned Guided Improvement Algorithm][fydp5]
 * [Fixing the Partitioned Guided Improvement Algorithm][fydp6]
 * ...
-* TBD: Results?
 
 [softeng]: http://www.softeng.uwaterloo.ca
 [uw]: http://www.uwaterloo.ca
@@ -38,6 +44,62 @@ as describing the work we have been doing.
 [fydp4]: /blog/fydp4.html
 [fydp5]: /blog/fydp5.html
 [fydp6]: /blog/fydp6.html
+
+
+Documents
+---------
+
+As the fourth-year design project is a three-course sequence, we have had to
+prepare documents and presentations. I have consolidated the download links for
+all of our documents and slides.
+
+### SE 390
+
+* [Research plan][se390research]
+* [Requirements specification][se390spec]
+* [Test plan][se390test]
+* [Presentation][se390demo] ([Google Docs][se390demogdoc])
+
+### SE 490
+
+* [Initial presentation][se490demo1] ([Google Docs][se490demo1gdoc])
+* [In-class presentation][se490demo2] ([Google Docs][se490demo2gdoc])
+* [Final presentation][se490demo3] ([Google Docs][se490demo3gdoc])
+
+### SE 491
+
+* [Symposium poster][se491poster]
+* [Symposium slides][se491slides]
+* [Symposium presentation (recording)][se491presentation]
+
+## Publications
+
+* E. Zulkoski, C. Kleynhans, M.-H. Yee, D. Rayside, K. Czarnecki, [Optimizing
+  Alloy for Multi-objective Software Product Line Configuration][abz14], ABZ
+  2014, June 2014. (Link at [Springer][abz14springer])
+* M. Safa, M.-H. Yee, D. Rayside, C. T. Haas, Optimizing Contractor Selection
+  for Construction Packages in Capital Projects, ASCE J. of Comput. Civ. Eng.,
+  to appear.
+
+[se390research]: https://github.com/TeamAmalgam/documents/raw/master/SE390/researchplan/main.pdf
+[se390spec]: https://github.com/TeamAmalgam/documents/raw/master/SE390/specification/main.pdf
+[se390test]: https://github.com/TeamAmalgam/documents/raw/master/SE390/testplan/main.pdf
+[se390demo]: https://github.com/TeamAmalgam/documents/raw/master/SE390/presentation.pdf
+[se390demogdoc]: https://docs.google.com/presentation/d/1zGx1J5eHd4aAshjmRSfFBRAD9i_n32bpyGt5Xqr1JOk/edit?usp=sharing
+
+[se490demo1]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo1.pdf
+[se490demo1gdoc]: https://docs.google.com/presentation/d/16wXxuOZ4Jini0sNlmOmRGqngEkKTX4QYpKaMHFR3CoQ/edit?usp=sharing
+[se490demo2]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo2.pdf
+[se490demo2gdoc]: https://drive.google.com/file/d/0Bw3yzRqsO67VNXYwVzA4ZUxQVjA/edit?usp=sharing
+[se490demo3]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo3.pdf
+[se490demo3gdoc]: https://docs.google.com/presentation/d/19AytM9VRAyXCwEt-K3wo2y_gZA9h0dX5RGBPBC7cg_s/edit?usp=sharing
+
+[se491poster]: https://github.com/TeamAmalgam/documents/raw/master/SE491/poster.pdf
+[se491slides]: https://github.com/TeamAmalgam/documents/raw/master/SE491/slides.pdf
+[se491presentation]: http://livestream.com/itmsstudio/events/2850051/videos/51492316
+
+[abz14]: http://gsd.uwaterloo.ca/node/569
+[abz14springer]: http://link.springer.com/chapter/10.1007%2F978-3-662-43652-3_34
 
 
 Test Infrastructure
@@ -69,7 +131,6 @@ and initiates a number of short-running tests, as part of our continuous
 integration. The dashboard also sends messages to HipChat, so we get
 notifications of events.
 
-
 [travis]: https://travis-ci.org/TeamAmalgam/kodkod
 [dashboard]: http://amalgam.herokuapp.com/
 
@@ -78,44 +139,6 @@ notifications of events.
 [s3]: http://aws.amazon.com/s3/
 [sqs]: http://aws.amazon.com/sqs/
 [hipchat]: https://www.hipchat.com/
-
-
-Documents
----------
-
-As the fourth-year design project is a three-course sequence, we have had to
-prepare documents and presentations. I have consolidated the download links for
-all of our documents and slides.
-
-### SE 390
-
-* [Research plan][se390research]
-* [Requirements specification][se390spec]
-* [Test plan][se390test]
-* [Presentation][se390demo] ([Google Docs][se390demogdoc])
-
-### SE 490
-
-* [Initial presentation][se490demo1] ([Google Docs][se490demo1gdoc])
-* [In-class presentation][se490demo2] ([Google Docs][se490demo2gdoc])
-* [Final presentation][se490demo3] ([Google Docs][se490demo3gdoc])
-
-### SE 491
-
-* TBD
-
-[se390research]: https://github.com/TeamAmalgam/documents/raw/master/SE390/researchplan/main.pdf
-[se390spec]: https://github.com/TeamAmalgam/documents/raw/master/SE390/specification/main.pdf
-[se390test]: https://github.com/TeamAmalgam/documents/raw/master/SE390/testplan/main.pdf
-[se390demo]: https://github.com/TeamAmalgam/documents/raw/master/SE390/presentation.pdf
-[se390demogdoc]: https://docs.google.com/presentation/d/1zGx1J5eHd4aAshjmRSfFBRAD9i_n32bpyGt5Xqr1JOk/edit?usp=sharing
-
-[se490demo1]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo1.pdf
-[se490demo1gdoc]: https://docs.google.com/presentation/d/16wXxuOZ4Jini0sNlmOmRGqngEkKTX4QYpKaMHFR3CoQ/edit?usp=sharing
-[se490demo2]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo2.pdf
-[se490demo2gdoc]: https://drive.google.com/file/d/0Bw3yzRqsO67VNXYwVzA4ZUxQVjA/edit?usp=sharing
-[se490demo3]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo3.pdf
-[se490demo3gdoc]: https://docs.google.com/presentation/d/19AytM9VRAyXCwEt-K3wo2y_gZA9h0dX5RGBPBC7cg_s/edit?usp=sharing
 
 
 Code Repositories
@@ -140,6 +163,13 @@ form our test infrastructure.
 
 The [documents][] repository is self-explanatory.
 
+The [results][] repository contains the raw experimental data we collected for
+the ABZ publication.
+
+The [demo][] repository holds the software for running our symposium day demo.
+Essentially, different versions of the algorithm race against each other, and
+results are plotted in real-time.
+
 [github]: https://github.com/TeamAmalgam
 [moolloy]: https://github.com/TeamAmalgam/moolloy
 [kodkod]: https://github.com/TeamAmalgam/kodkod
@@ -147,6 +177,8 @@ The [documents][] repository is self-explanatory.
 [worker]: https://github.com/TeamAmalgam/worker
 [test-models]: https://github.com/TeamAmalgam/test-models
 [documents]: https://github.com/TeamAmalgam/documents
+[results]: https://github.com/TeamAmalgam/results
+[demo]: https://github.com/TeamAmalgam/demo
 
 [alloymit]: http://alloy.mit.edu/alloy/
 [kodkodmit]: http://alloy.mit.edu/kodkod/
