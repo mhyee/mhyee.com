@@ -1,5 +1,5 @@
 ---
-created_at: 2016-10-31
+created_at: 2016-11-01
 excerpt: "Last week, Jamie Wong wrote about the tradeoffs between dynamically 
 and statically typed languages. As a topic I'm very interested in, there was
 a lot I wanted to say."
