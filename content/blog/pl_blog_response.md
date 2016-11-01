@@ -12,11 +12,6 @@ Last week, Jamie Wong wrote about the [tradeoffs between dynamically  and
 statically typed languages][pl-curve]. As a topic I'm very interested in, there
 was a lot I wanted to say.
 
-I originally posted this as a Facebook comment, but because other people might
-find it interesting, I'm turning it into a blog post. I've lightly edited my
-response so it works better as a blog post, and also added a few clarifications
-in response to a follow-up discussion I had with Jamie.
-
 If you have comments or if you find errors, please let me know!
 
 ---
@@ -39,17 +34,15 @@ to an extent, C) has "operation types" rather than static types or dynamic
 types. Assembly sort of has types, but they're not really static or dynamic
 types.
 
-We could also take a step back and consider dynamic *languages* rather than
-dynamically *typed* languages. There's a lot of overlap between the two, and
+We could also take a step back and consider dynamic _languages_ rather than
+dynamically _typed_ languages. There's a lot of overlap between the two, and
 I don't have a good example of a dynamic language that is not dynamically typed.
 But a dynamic language allows you to modify objects at run time. Of course, this
 gives you more expressive power, faster iteration speed, better debugging
 support, etc., but then it can be harder to reason about your program (both for
 the programmer and other tools, as Jamie has [written about][grep-test]). And
 dynamic languages are also inherently slow. Every time you look up an object
-member, you basically have to look it up in a map. It's not always that bad,
-since there are common optimizations, but you'll generally have more indirection
-and overhead when compared to a static language.
+member, you basically have to look it up in a map.
 
 Moving onto more specific comments...
 
@@ -66,7 +59,7 @@ if my prototype is on the right track.
 
 > [Iteration Speed](http://jamie-wong.com/bending-the-pl-curve/#iteration-speed-1)
 >
-> This is arguable the biggest downside of statically typed languages. Type
+> This is arguably the biggest downside of statically typed languages. Type
 > checking, as it turns out, is frequently slow.
 
 I'd say that this is more of a "AOT compilation" vs "interpreted or JITted"
@@ -80,9 +73,9 @@ a dumb copy-and-paste. I've also found that heavy use of templates (because they
 need to be expanded) is slow, and when I was building Chromium, linking was the
 bottleneck, not code generation.
 
-The Scala compiler (`nsc`) is also known to be very slow. There's something like
-twenty phases, and each phase basically traverses over the entire syntax tree.
-The new/next/prototype Scala compiler, Dotty, tries to fuse phases together into
+The Scala compiler is also known to be very slow. There's something like twenty
+phases, and each phase basically traverses over the entire syntax tree. The
+new/next/prototype Scala compiler, Dotty, tries to fuse phases together into
 a single traversal, which significantly improves performance. (I'm actually not
 that familiar with the details.)
 
@@ -96,11 +89,12 @@ your stack overflows first). But these are all incredibly unusual circumstances.
 >
 > In C++, the compiler will quite happily let you do this:
 >
-> `User* a = nullptr; a->setName("Gretrude");`
+> `User* a = nullptr;
+> a->setName("Gretrude");`
 >
 > Haskell and Scala do their best to dodge this problem by not letting you have
 > `null`, instead representing optional fields explicitly with an
-> `Option<User>`/`Maybe<User>`.
+> `Maybe User`/`Option[User]`.
 >
 > [...]
 >
@@ -129,7 +123,7 @@ lambdas).
 
 > [Type Inference](http://jamie-wong.com/bending-the-pl-curve/#type-inference)
 >
-> It’s also now made its way into C++ via the C++11 auto keyword, and is
+> It’s also now made its way into C++ via the C++11 `auto` keyword, and is
 > a feature of most modern statically typed languages like Scala, Swift, Rust,
 > and Go.
 
@@ -137,11 +131,12 @@ Type inference is very much from the "static types" camp, but was more
 associated with functional programming languages. Some people will also make the
 distinction between type inference à la Hindley-Milner type inference, as
 opposed to `auto` which is "take the right-hand side expression's type and make
-it the type of the left-hand side variable." Type inference in Scala is the
+it the type of the left-hand side variable." Type inference in Haskell is the
 former, while type inference in Go is the latter.
 
-Actually, that's a little unfair to `auto`, since it's similar to (but not
-exactly the same as) template argument deduction. In C++14, you can even write:
+Actually, that's a little unfair to `auto`, since it's [similar to (but not
+exactly the same as) function template argument deduction][cpp-auto]. In C++14,
+you can even write:
 
     #!c++
     auto plus1 = [](auto x) { return x + 1; };
@@ -173,15 +168,15 @@ wrong type for me.
 
 This is where I disagree, but I'm probably coming at it from a different angle.
 If you're compiling TypeScript to JavaScript, then I guess it makes sense, but
-I'm thinking about implementing something more like a JavaScript JIT. For
-example, let's say you're evaluating `x + x.` You don't know what `x` is, so you
-have to check its type and then dispatch to the correct `+` method. An
-optimizing JIT might eventually figure out that `x + x` is always integer
-arithmetic, so it'll generate machine code for that. However, the generated code
-needs to include a guard, because there's a possibility that in some future
-call, `x` is not an integer, and so the JIT will need to de-optimize. But if the
-language had types and `x` was an integer, then the JIT can eliminate the guard.
-I believe [StrongScript][strongscript] does this (and more).
+I'm thinking about implementing a JavaScript JIT. For example, let's say you're
+evaluating `x + x.` You don't know what `x` is, so you have to check its type
+and then dispatch to the correct `+` method. An optimizing JIT might eventually
+figure out that `x + x` is always integer arithmetic, so it'll generate machine
+code for that. However, the generated code needs to include a guard, because
+there's a possibility that in some future call, `x` is not an integer, and so
+the JIT will need to de-optimize. But if the language had types and `x` was an
+integer, then the JIT can eliminate the guard. I believe
+[StrongScript][strongscript] does this (and more).
 
 JITs for static languages (like Java) will do something similar for method
 dispatches. If `x.foo()` is a polymorphic call, but always dispatches to
@@ -205,6 +200,9 @@ frustration when switching between dynamically typed and statically typed
 languages. But I'm also optimistic about the future. (It also means job
 opportunities for when I graduate!)
 
+_I would like to thank Jamie Wong for his feedback and discussion, which has
+improved this post._
+
 [pl-curve]: http://jamie-wong.com/bending-the-pl-curve/
 [twitter]: https://twitter.com/jlfwong/status/580390984271421440
 [gradual]: http://homes.soic.indiana.edu/jsiek/what-is-gradual-typing/
@@ -218,5 +216,6 @@ opportunities for when I graduate!)
 [haskell-turing]: http://www.lochan.org/keith/publications/undec.html
 [std-optional]: http://en.cppreference.com/w/cpp/utility/optional
 [concepts]: https://isocpp.org/blog/2013/02/concepts-lite-constraining-templates-with-predicates-andrew-sutton-bjarne-s
+[cpp-auto]: http://thbecker.net/articles/auto_and_decltype/section_01.html
 [strongscript]: http://plg.uwaterloo.ca/~dynjs/strongscript/
 [dotty-errors]: http://scala-lang.org/blog/2016/10/14/dotty-errors.html
