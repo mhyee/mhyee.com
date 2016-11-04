@@ -7,6 +7,17 @@ tags: [ reach, trivia ]
 title: "Reach for the Top 2009"
 ---
 
+**EDIT on November 3, 2016:** The videos are no longer on TVO's
+website (and have not been for some number of years). I do not have copies
+of the videos, and am not aware of any other online version. If you are able to
+locate these videos, feel free to contact me.
+
+I apologize for the inconvenience.
+
+The original post below is left as-is for posterity.
+
+---
+
 Reach for the Top was one of the activities I was very involved with, in high school.  For those who haven't heard of [Reach][reach], it's a Canadian high school trivia contest that's similar to <del>almost, but not quite, entirely unlike?</del> *Jeopardy!* and quizbowl.  Reach emphasizes fast buzzing, quick recall, and a breadth of knowledge, which makes it quite dramatic and appropriate for TV.  In fact, Reach was originally a TV show in the 1960's, with Alex Trebek (yes, Alex Trebek of *Jeopardy!*) hosting for a few years.  Reach has had periods of being on and off TV; as of 2010, Reach is no longer on TV.
 
 My high school, [London Central Secondary School][central], is relatively new to Reach, but has enjoyed much success: in 2006 we finished 4th at provincials, in 2007 we won both provincials and nationals, in 2008 we came 5th at provincials, and in 2009 we won provincials and nationals again.  In fact, as of writing, only six other schools in Reach history can claim to have won two national championships.
