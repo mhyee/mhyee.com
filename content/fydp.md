@@ -31,7 +31,6 @@ as describing the work we have been doing.
 * [The Overlapping Guided Improvement Algorithm][fydp4]
 * [Attempting the Partitioned Guided Improvement Algorithm][fydp5]
 * [Fixing the Partitioned Guided Improvement Algorithm][fydp6]
-* ...
 
 [softeng]: http://www.softeng.uwaterloo.ca
 [uw]: http://www.uwaterloo.ca
@@ -77,9 +76,9 @@ all of our documents and slides.
 * E. Zulkoski, C. Kleynhans, M.-H. Yee, D. Rayside, K. Czarnecki, [Optimizing
   Alloy for Multi-objective Software Product Line Configuration][abz14], ABZ
   2014, June 2014. (Link at [Springer][abz14springer])
-* M. Safa, M.-H. Yee, D. Rayside, C. T. Haas, Optimizing Contractor Selection
-  for Construction Packages in Capital Projects, ASCE J. of Comput. Civ. Eng.,
-  to appear.
+* M. Safa, M.-H. Yee, D. Rayside, C. T. Haas, [Optimizing Contractor Selection
+  for Construction Packages in Capital Projects][jcce16], ASCE Journal of
+  Computing in Civil Engineering, January 2016.
 
 [se390research]: https://github.com/TeamAmalgam/documents/raw/master/SE390/researchplan/main.pdf
 [se390spec]: https://github.com/TeamAmalgam/documents/raw/master/SE390/specification/main.pdf
@@ -98,8 +97,9 @@ all of our documents and slides.
 [se491slides]: https://github.com/TeamAmalgam/documents/raw/master/SE491/slides.pdf
 [se491presentation]: http://livestream.com/itmsstudio/events/2850051/videos/51492316
 
-[abz14]: http://gsd.uwaterloo.ca/node/569
-[abz14springer]: http://link.springer.com/chapter/10.1007%2F978-3-662-43652-3_34
+[abz14]: https://gsd.uwaterloo.ca/publications/view/569.html
+[abz14springer]: https://doi.org/10.1007/978-3-662-43652-3_34
+[jcce16]: http://dx.doi.org/10.1061/(ASCE)CP.1943-5487.0000555
 
 
 Test Infrastructure
@@ -111,8 +111,9 @@ However, many of our tests take a long time to run, and besides correctness, we
 are interested in seeing how long it takes for our tests to run. We also want to
 track our progress in making the algorithms run faster.
 
-This is why we designed and built custom infrastructure: the [dashboard][]. It
-is built with [Sinatra][] and runs on [Heroku][].
+This is why we designed and built custom infrastructure: the dashboard
+([archived mirror here][dashboard]). It is built with [Sinatra][] and runs on
+[Heroku][].
 
 From the dashboard, we can upload test models to [Amazon S3][s3], request test
 runs via [Amazon SQS][sqs], view our test results, and view the status of our
@@ -132,7 +133,7 @@ integration. The dashboard also sends messages to HipChat, so we get
 notifications of events.
 
 [travis]: https://travis-ci.org/TeamAmalgam/kodkod
-[dashboard]: http://amalgam.herokuapp.com/
+[dashboard]: http://old-fydp-dashboard.mhyee.com/
 
 [sinatra]: http://www.sinatrarb.com/
 [heroku]: https://www.heroku.com/
