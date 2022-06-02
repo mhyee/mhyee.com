@@ -13,8 +13,8 @@ desc "Default task, compiles site"
 task :compile do
   sh 'nanoc compile'
 
-  # Open the diff file in MacVim, if it exists
-  sh 'mvim output.diff' if File.exists?('output.diff')
+  # Open the diff file in vim, if it exists
+  sh 'vimdiff output.diff' if File.exists?('output.diff')
 end
 
 namespace :create do

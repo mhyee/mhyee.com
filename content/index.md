@@ -7,8 +7,8 @@ Hello World!
 
 My name is Ming-Ho Yee. I'm currently a Ph.D. student in [computer
 science][ccis] at [Northeastern University][neu] in Boston, Massachusetts.
-I work on [programming language][prl] design and implementation with [Jan
-Vitek][].
+I work on [programming language][prl] design and implementation and software
+engineering with [Arjun Guha][].
 
 You can find my resume [here][PDF resume], as well as versions in [HTML][HTML
 resume], [text][TXT resume], and [LaTeX][TEX resume]. I use a [script][resume
@@ -33,7 +33,7 @@ quizbowl. In the past, I played the piano and violin, and practiced karate.
 [ccis]: http://www.ccis.northeastern.edu/
 [neu]: http://www.northeastern.edu/
 [prl]: http://prl.ccs.neu.edu/
-[Jan Vitek]: http://janvitek.org/
+[Arjun Guha]: https://www.khoury.northeastern.edu/~arjunguha/main/home/
 
 [PDF resume]: /resume/resume.pdf
 [HTML resume]: /resume/resume.html
