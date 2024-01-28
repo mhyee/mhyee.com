@@ -18,7 +18,3 @@ end
 def pretty_time(time)
   Time.parse(time.to_s).strftime("%B %-d, %Y") if !time.nil?
 end
-
-def copy_htaccess
-  FileUtils.cp_r 'content/.htaccess', 'output/'
-end
