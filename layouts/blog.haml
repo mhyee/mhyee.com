@@ -5,7 +5,9 @@
     %header
       = render 'nav', :blog => true
     #wrapper
-      #name_title Ming-Ho's Blog
+      #name_title
+        %a{:href => "/", :class => "link"}
+          Ming-Ho's Blog
       #content
         %h1= @item[:title]
         .date= pretty_time(@item[:created_at])

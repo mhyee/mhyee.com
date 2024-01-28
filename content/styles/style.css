@@ -53,7 +53,15 @@ code {
       margin: 0 auto;
       text-indent: -9000px;
       height: 65px;
+      position: relative;
     }
+      #name_title .link {
+          position: absolute;
+          width: 250px;
+          height: 100%;
+          top: -10px;
+          left: 0;
+      }
 
     #content {
       background: #eee;

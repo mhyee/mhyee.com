@@ -5,6 +5,8 @@
     %header
       = render 'nav'
     #wrapper
-      #name_title Ming-Ho Yee
+      #name_title
+        %a{:href => "/", :class => "link"}
+          Ming-Ho
       #content= yield
     = render 'footer'
