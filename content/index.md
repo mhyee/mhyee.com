@@ -6,7 +6,7 @@ Hello World!
 ============
 
 My name is Ming-Ho Yee. I'm currently a Ph.D. student in [computer
-science][ccis] at [Northeastern University][neu] in Boston, Massachusetts.
+science][khoury] at [Northeastern University][neu] in Boston, Massachusetts.
 I work on [programming language][prl] design and implementation and software
 engineering with [Arjun Guha][].
 
@@ -30,9 +30,9 @@ My hobbies include listening to classical music, cooking, and reading. I also
 like trivia: I played [Reach for the Top][] for my high school, and I now play
 quizbowl. In the past, I played the piano and violin, and practiced karate.
 
-[ccis]: http://www.ccis.northeastern.edu/
-[neu]: http://www.northeastern.edu/
-[prl]: http://prl.ccs.neu.edu/
+[khoury]: https://www.khoury.northeastern.edu/
+[neu]: https://www.northeastern.edu/
+[prl]: https://prl.khoury.northeastern.edu/
 [Arjun Guha]: https://www.khoury.northeastern.edu/~arjunguha/main/home/
 
 [PDF resume]: /resume/resume.pdf
@@ -45,13 +45,13 @@ quizbowl. In the past, I played the piano and violin, and practiced karate.
 [Twitter]: https://twitter.com/mhyee
 [LinkedIn]: https://www.linkedin.com/in/mhyee
 
-[uwcs]: http://cs.uwaterloo.ca/
-[University of Waterloo]: http://www.uwaterloo.ca/
-[olhotak]: http://plg.uwaterloo.ca/~olhotak/
-[plg]: http://plg.uwaterloo.ca/
+[uwcs]: https://cs.uwaterloo.ca/
+[University of Waterloo]: https://uwaterloo.ca/
+[olhotak]: https://plg.uwaterloo.ca/~olhotak/
+[plg]: https://plg.uwaterloo.ca/
 
-[software engineering]: http://uwaterloo.ca/software-engineering/
-[Reach for the Top]: http://www.reachforthetop.com
+[software engineering]: https://uwaterloo.ca/software-engineering/
+[Reach for the Top]: https://www.reachforthetop.com
 
 
 About this site
@@ -63,5 +63,5 @@ hand-maintained static HTML pages.
 Since 2012, I have been using [nanoc][], a static site generator. The design was
 created by my sister, [Ming-Cee Yee][].
 
-[nanoc]: http://nanoc.ws
-[Ming-Cee Yee]: http://skysketches.com
+[nanoc]: https://nanoc.app/
+[Ming-Cee Yee]: https://skysketches.com/

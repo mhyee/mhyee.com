@@ -32,10 +32,10 @@ as describing the work we have been doing.
 * [Attempting the Partitioned Guided Improvement Algorithm][fydp5]
 * [Fixing the Partitioned Guided Improvement Algorithm][fydp6]
 
-[softeng]: http://www.softeng.uwaterloo.ca
-[uw]: http://www.uwaterloo.ca
+[softeng]: https://uwaterloo.ca/software-engineering/
+[uw]: https://uwaterloo.ca
 [rayside]: https://ece.uwaterloo.ca/~drayside/
-[gia]: http://dspace.mit.edu/handle/1721.1/46322
+[gia]: https://dspace.mit.edu/handle/1721.1/46322
 
 [fydp1]: /blog/fydp1.html
 [fydp2]: /blog/fydp2.html
@@ -69,7 +69,6 @@ all of our documents and slides.
 
 * [Symposium poster][se491poster]
 * [Symposium slides][se491slides]
-* [Symposium presentation (recording)][se491presentation]
 
 ## Publications
 
@@ -80,40 +79,38 @@ all of our documents and slides.
   for Construction Packages in Capital Projects][jcce16], ASCE Journal of
   Computing in Civil Engineering, January 2016.
 
-[se390research]: https://github.com/TeamAmalgam/documents/raw/master/SE390/researchplan/main.pdf
-[se390spec]: https://github.com/TeamAmalgam/documents/raw/master/SE390/specification/main.pdf
-[se390test]: https://github.com/TeamAmalgam/documents/raw/master/SE390/testplan/main.pdf
-[se390demo]: https://github.com/TeamAmalgam/documents/raw/master/SE390/presentation.pdf
+[se390research]: https://github.com/TeamAmalgam/documents/blob/master/SE390/researchplan/main.pdf
+[se390spec]: https://github.com/TeamAmalgam/documents/blob/master/SE390/specification/main.pdf
+[se390test]: https://github.com/TeamAmalgam/documents/blob/master/SE390/testplan/main.pdf
+[se390demo]: https://github.com/TeamAmalgam/documents/blob/master/SE390/presentation.pdf
 [se390demogdoc]: https://docs.google.com/presentation/d/1zGx1J5eHd4aAshjmRSfFBRAD9i_n32bpyGt5Xqr1JOk/edit?usp=sharing
 
-[se490demo1]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo1.pdf
+[se490demo1]: https://github.com/TeamAmalgam/documents/blob/master/SE490/demo1.pdf
 [se490demo1gdoc]: https://docs.google.com/presentation/d/16wXxuOZ4Jini0sNlmOmRGqngEkKTX4QYpKaMHFR3CoQ/edit?usp=sharing
-[se490demo2]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo2.pdf
-[se490demo2gdoc]: https://drive.google.com/file/d/0Bw3yzRqsO67VNXYwVzA4ZUxQVjA/edit?usp=sharing
-[se490demo3]: https://github.com/TeamAmalgam/documents/raw/master/SE490/demo3.pdf
+[se490demo2]: https://github.com/TeamAmalgam/documents/blob/master/SE490/demo2.pdf
+[se490demo2gdoc]: https://drive.google.com/file/d/0Bw3yzRqsO67VNXYwVzA4ZUxQVjA/view?usp=sharing&resourcekey=0-qtsGIuTAMjvr8kRgFxBSLQ
+[se490demo3]: https://github.com/TeamAmalgam/documents/blob/master/SE490/demo3.pdf
 [se490demo3gdoc]: https://docs.google.com/presentation/d/19AytM9VRAyXCwEt-K3wo2y_gZA9h0dX5RGBPBC7cg_s/edit?usp=sharing
 
-[se491poster]: https://github.com/TeamAmalgam/documents/raw/master/SE491/poster.pdf
-[se491slides]: https://github.com/TeamAmalgam/documents/raw/master/SE491/slides.pdf
-[se491presentation]: http://livestream.com/itmsstudio/events/2850051/videos/51492316
+[se491poster]: https://github.com/TeamAmalgam/documents/blob/master/SE491/poster.pdf
+[se491slides]: https://github.com/TeamAmalgam/documents/blob/master/SE491/slides.pdf
 
 [abz14]: https://gsd.uwaterloo.ca/publications/view/569.html
 [abz14springer]: https://doi.org/10.1007/978-3-662-43652-3_34
-[jcce16]: http://dx.doi.org/10.1061/(ASCE)CP.1943-5487.0000555
+[jcce16]: https://doi.org/10.1061/(ASCE)CP.1943-5487.0000555
 
 
 Test Infrastructure
 -------------------
 
-We have unit tests running on [Travis CI][travis].
+We have unit tests running on Travis CI.
 
 However, many of our tests take a long time to run, and besides correctness, we
 are interested in seeing how long it takes for our tests to run. We also want to
 track our progress in making the algorithms run faster.
 
-This is why we designed and built custom infrastructure: the dashboard
-([archived mirror here][dashboard]). It is built with [Sinatra][] and runs on
-[Heroku][].
+This is why we designed and built custom infrastructure: the [dashboard][]. It
+is built with [Sinatra][] and runs on [Heroku][].
 
 From the dashboard, we can upload test models to [Amazon S3][s3], request test
 runs via [Amazon SQS][sqs], view our test results, and view the status of our
@@ -132,14 +129,11 @@ and initiates a number of short-running tests, as part of our continuous
 integration. The dashboard also sends messages to HipChat, so we get
 notifications of events.
 
-[travis]: https://travis-ci.org/TeamAmalgam/kodkod
-[dashboard]: http://old-fydp-dashboard.mhyee.com/
-
-[sinatra]: http://www.sinatrarb.com/
+[sinatra]: http://sinatrarb.com/
 [heroku]: https://www.heroku.com/
 [s3]: http://aws.amazon.com/s3/
 [sqs]: http://aws.amazon.com/sqs/
-[hipchat]: https://www.hipchat.com/
+[hipchat]: https://en.wikipedia.org/wiki/HipChat
 
 
 Code Repositories
@@ -181,6 +175,6 @@ results are plotted in real-time.
 [results]: https://github.com/TeamAmalgam/results
 [demo]: https://github.com/TeamAmalgam/demo
 
-[alloymit]: http://alloy.mit.edu/alloy/
-[kodkodmit]: http://alloy.mit.edu/kodkod/
-[minisat]: http://minisat.se/
+[alloymit]: https://www.csail.mit.edu/research/alloy
+[kodkodmit]: https://emina.github.io/kodkod/
+[minisat]: https://github.com/niklasso/minisat
