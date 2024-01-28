@@ -35,7 +35,7 @@ end
 compile '*' do
   ext = item[:extension].nil? ? nil : item[:extension].split('.').last
 
-  if item.binary?
+  if item.binary? or ext == "html"
     # don’t filter binary items
   elsif ext == "css"
     # Apply CSS compression and nothing else
@@ -69,12 +69,20 @@ route '/' do
   '/index.html'
 end
 
+route '/errors/' do
+  '/errors/index.html'
+end
+
 route '/feed/' do
   '/feed.xml'
 end
 
 route '/fydp/' do
   '/fydp/index.html'
+end
+
+route '/fydp/images/' do
+  '/fydp/images/index.html'
 end
 
 route '*' do
