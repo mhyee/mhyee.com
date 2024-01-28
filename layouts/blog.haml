@@ -15,32 +15,8 @@
         .backtoblog
           = link_to('Back to blog', '/blog.html')
         .subscribe
-          %a{:href => "http://mhyee.com/feed.xml"}
+          %a{:href => "https://mhyee.com/feed.xml"}
             %img{:src => "/styles/feed-icon.png"}
             Subscribe
-          %a{:href => "https://twitter.com/mhyee", :class => "twitter-follow-button", :'data-show-count' => "false", :'data-show-screen-name' => "false", :'data-dnt' => "true"}
-            Follow @mhyee
-          :javascript
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
         %hr.clear
-        #disqus_thread
-          :javascript
-            var disqus_developer = 0;
-            var disqus_shortname = 'mhyee';
-            var disqus_identifier = '#{@item.identifier}';
-            var disqus_url = '#{url_for(@item)}';
-            var disqus_title = "#{html_escape(@item[:title])}";
-
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-          %noscript
-            Please enable JavaScript to view the
-            %a{:href => "http://disqus.com/?ref_noscript"}
-              comments powered by Disqus.
-          %a{:href => "http://disqus.com", :class => "dsq-brlink"}
-            blog comments powered by
-            %span.logo-disqus Disqus
     = render 'footer'
