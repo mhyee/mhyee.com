@@ -1,20 +1,18 @@
 ---
-created_at: 2013-10-10
-excerpt: "Our fourth-year design project is to optimize the guided improvement
-algorithm, which is used to solve exact, discrete, multi-objective optimization
-problems."
-kind: article
-tags: [ fydp research waterloo university multi-objective optimization ]
-title: "Fourth-Year Design Project, Part 1: Introduction, Definition,
-Applications"
+title: "Fourth-Year Design Project, Part 1: Introduction, Definition, Applications"
 ---
+
+Fourth-Year Design Project, Part 1: Introduction, Definition, Applications
+==========================================================================
+
+<div class='date'>October 10, 2013</div>
 
 _"Our fourth-year design project is to optimize the guided improvement
 algorithm, which is used to solve exact, discrete, multi-objective optimization
 problems."_
 
 When friends ask about our group's fourth-year design project
-(FYDP)<sup><a href="#n1" id="t1">1</a></sup>, that's the most specific and
+(FYDP),<sup><a href="#n1" id="t1">1</a></sup> that's the most specific and
 succinct answer I can give. If I want to provide a more helpful answer, I can
 either make it shorter but more vague ("We're optimizing an algorithm"), or more
 detailed but much longer.
@@ -51,12 +49,12 @@ I'll give a more formal definition, walk through some examples, and describe
 three related algorithms for solving exact, discrete, multi-objective
 optimization problems.
 
-[fydp1]: /blog/fydp1.html
-[fydp2]: /blog/fydp2.html
-[fydp3]: /blog/fydp3.html
-[fydp4]: /blog/fydp4.html
-[fydp5]: /blog/fydp5.html
-[fydp6]: /blog/fydp6.html
+[fydp1]: fydp1.html
+[fydp2]: fydp2.html
+[fydp3]: fydp3.html
+[fydp4]: fydp4.html
+[fydp5]: fydp5.html
+[fydp6]: fydp6.html
 
 
 What is multi-objective optimization?
@@ -78,7 +76,7 @@ Since our only objective is the bicycle's cost, this is a single-objective
 optimization problem. In the real world, we would need to consider other
 criteria, such as maximizing performance. Now we have a _multi-objective_ (or
 _many-objective_) optimization problem with two
-criteria<sup><a href="#n3" id="t3">3</a></sup>.
+criteria.<sup><a href="#n3" id="t3">3</a></sup>
 
 With multiple objectives, defining the "best" solution becomes more complicated
 when objectives conflict with each other. It will be often impossible to
@@ -110,7 +108,7 @@ percentages.
 "Exact" refers to _exact_ solutions, as opposed to approximate ones. A popular
 approach for solving multi-objective optimization problems is to use genetic
 algorithms. However, genetic algorithms find approximate solutions and cannot
-guarantee that they are exact<sup><a href="#n4" id="t4">4</a></sup>.
+guarantee that they are exact.<sup><a href="#n4" id="t4">4</a></sup>
 
 Much of the related work within this field seems to be concerned with continuous
 variables, or finding approximate solutions to discrete multi-objective
@@ -132,14 +130,14 @@ problems, but it’s more important to see how our improvements can help solve
 real problems.
 
 The first problem, from aerospace engineering, is based on the decisions made
-while planning the Apollo program<sup><a href="#n5" id="t5">5</a></sup>. Some of
+while planning the Apollo program.<sup><a href="#n5" id="t5">5</a></sup> Some of
 these decisions included the number of crew members, the type of Earth and lunar
 orbits, and the fuel type. In this model, the objectives are to minimize weight
 and risk.
 
 The second problem, also from aerospace engineering, is a ten-year satellite
 launch schedule formulated by NASA, called the
-[decadal survey][decadal]<sup><a href="#n6" id="t6">6</a></sup>. The decisions
+[decadal survey][decadal].<sup><a href="#n6" id="t6">6</a></sup> The decisions
 in this problem include choosing which satellites to launch and in which order,
 while the constraints include deadlines for specific satellites and restrictions
 on the launch order. The objectives are to maximize value for each of the six
@@ -149,11 +147,11 @@ The final problem, from software engineering, is actually a collection of
 (software) product line problems. The general idea is that when choosing
 features for a particular product, there are also different objectives and
 constraints to include in the decisions. For example, one of our problems
-involves designing a search and rescue system
-<sup><a href="#n7" id="t7">7</a></sup>. Decisions include the type of
-connectivity and location finding, whether maps should be preloaded or
-downloaded on demand, and the format for data exchange. Objectives include
-minimizing cost, development time, battery usage and maximizing reliability.
+involves designing a search and rescue system.<sup><a href="#n7"
+id="t7">7</a></sup> Decisions include the type of connectivity and location
+finding, whether maps should be preloaded or downloaded on demand, and the
+format for data exchange. Objectives include minimizing cost, development time,
+battery usage and maximizing reliability.
 
 Our group has a few other case studies, most of which are software product line
 problems. We have also looked at a few civil engineering problems, but we
@@ -162,7 +160,7 @@ currently do not have models for our evaluations.
 Hopefully, this section has provided some motivation for why multi-objective
 optimization is significant and how it can be used in the real world.
 
-[decadal]: http://web.archive.org/web/20130217173638/http://science.nasa.gov/earth-science/decadal-surveys/
+[decadal]: https://web.archive.org/web/20130217173638/http://science.nasa.gov/earth-science/decadal-surveys/
 
 
 Conclusion
@@ -229,6 +227,6 @@ Notes
 
 [se]: https://uwaterloo.ca/software-engineering/
 [waterloo]: https://uwaterloo.ca/
-[apollo]: http://dspace.mit.edu/handle/1721.1/42912
-[first_decadal]: http://www.nap.edu/catalog.php?record_id=11820
-[searchandrescue]: http://mason.gmu.edu/~nesfaha2/Publications/GMU-CS-TR-2011-3.pdf
+[apollo]: https://dspace.mit.edu/handle/1721.1/42912
+[first_decadal]: https://nap.nationalacademies.org/catalog/11820/earth-science-and-applications-from-space-national-imperatives-for-the
+[searchandrescue]: https://mason.gmu.edu/~nesfaha2/Publications/GMU-CS-TR-2011-3.pdf

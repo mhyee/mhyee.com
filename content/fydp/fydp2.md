@@ -1,11 +1,11 @@
 ---
-created_at: 2013-10-29
-excerpt: "In my previous post, I introduced our group's fourth-year design
-project. However, parts of my explanation required a more formal definition."
-kind: article
-tags: [ fydp research waterloo university multi-objective optimization ]
 title: "Fourth-Year Design Project, Part 2: A More Formal Definition"
 ---
+
+Fourth-Year Design Project, Part 2: A More Formal Definition
+============================================================
+
+<div class='date'>October 29, 2013</div>
 
 In my [previous post][fydp1], I introduced our group's fourth-year
 design project and outlined what I wanted to write about in a series of blog
@@ -18,10 +18,10 @@ solution would often involve making trade-offs, and I was fairly vague on what
 "exact solutions" meant.
 
 I hope to clarify those concepts in this post, by more formally defining
-a number of terms<sup><a href="#n1" id="t1">1</a></sup>. I will also be walking
+a number of terms.<sup><a href="#n1" id="t1">1</a></sup> I will also be walking
 through some examples to illustrate these terms.
 
-[fydp1]: /blog/fydp1.html
+[fydp1]: fydp1.html
 
 
 The multi-objective 3-rooks problem
@@ -50,7 +50,7 @@ I will be using multi-objective 3-rooks as an example for each of the
 definitions below. Some of these definitions will be review from last time,
 though described more succinctly and formally. The rest will be new.
 
-[queens]: http://en.wikipedia.org/wiki/Eight_queens_puzzle
+[queens]: https://en.wikipedia.org/wiki/Eight_queens_puzzle
 
 
 Definitions
@@ -70,8 +70,8 @@ row or column. A solution is an arrangement of rooks on the chessboard. There
 are six solutions<sup><a href="#n3" id="t3">3</a></sup> for the 3-rooks problem.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-1.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig2-1.svg" alt="All solutions to
+  <a href="images/fig2-1.svg" style="border:none">
+    <img src="images/fig2-1.svg" alt="All solutions to
 the 3-rooks problem" width="600" height="390" />
   </a>
 </div>
@@ -87,8 +87,8 @@ the bottom right of each square of the chessboard; `Score1` is the first number
 and `Score2` is the second number.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-2.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig2-2.svg" alt="Scores inserted
+  <a href="images/fig2-2.svg" style="border:none">
+    <img src="images/fig2-2.svg" alt="Scores inserted
 into the 3x3 chessboard" width="230" height="230" />
   </a>
 </div>
@@ -101,8 +101,8 @@ of `6 + 7 + 3 = 16` and `Score2` has a total of `5 + 8 + 4 = 17`. Thus, the
 metric point is `(16, 17)`.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-3.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig2-3.svg" alt="Solution
+  <a href="images/fig2-3.svg" style="border:none">
+    <img src="images/fig2-3.svg" alt="Solution
 2 superimposed onto the scores" width="230" height="230" />
   </a>
 </div>
@@ -157,8 +157,8 @@ These points can be plotted<sup><a href="#n4" id="t4">4</a></sup> on a graph,
 with an axis for each objective.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig2-4.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig2-4.svg" alt="Graph of the
+  <a href="images/fig2-4.svg" style="border:none">
+    <img src="images/fig2-4.svg" alt="Graph of the
 metric points" width="400" height="333" />
   </a>
 </div>
@@ -181,7 +181,7 @@ solution 3 has a greater `Score1`.
 **Definition**: A solution is _Pareto optimal_ if and only if it is not
 dominated by some other solution. In other words, for a Pareto optimal solution,
 there is no way to improve a metric value without making at least one other
-metric value worse<sup><a href="#n6" id="t6">6</a></sup>.
+metric value worse.<sup><a href="#n6" id="t6">6</a></sup>
 
 From this point on, I will refer to "Pareto optimal" simply as "optimal."
 
@@ -223,7 +223,7 @@ algorithm_, which will be the subject of my [next post][fydp3].
 _I would like to thank Chris Kleynhans, Zameer Manji, and Arjun Sondhi for
 proofreading this post._
 
-[fydp3]: /blog/fydp3.html
+[fydp3]: fydp3.html
 
 
 Notes

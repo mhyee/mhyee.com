@@ -1,13 +1,11 @@
 ---
-created_at: 2013-12-16
-excerpt: "In this post, we'll conclude our discussion on PGIA. We'll extend the
-algorithm for any number of objectives, cover an example problem with three
-objectives, and finally, discuss preliminary results and future work."
-kind: article
-tags: [ fydp research waterloo university multi-objective optimization ]
-title: "Fourth-Year Design Project, Part 6: Fixing the Partitioned Guided
-Improvement Algorithm"
+title: "Fourth-Year Design Project, Part 6: Fixing the Partitioned Guided Improvement Algorithm"
 ---
+
+Fourth-Year Design Project, Part 6: Fixing the Partitioned Guided Improvement Algorithm
+=======================================================================================
+
+<div class='date'>December 16, 2013</div>
 
 In the [previous post][fydp5], we started our discussion on the _partitioned
 guided improvement algorithm_ (PGIA). We covered some background information, an
@@ -23,9 +21,9 @@ optimization][fydp2], the [guided improvement algorithm][fydp3], and the
 [previous post][fydp5] on PGIA. This post is likely the most difficult one in my
 blog series, so please feel free to ask questions in the comments.
 
-[fydp2]: /blog/fydp2.html
-[fydp3]: /blog/fydp3.html
-[fydp5]: /blog/fydp5.html
+[fydp2]: fydp2.html
+[fydp3]: fydp3.html
+[fydp5]: fydp5.html
 
 
 Fixing the algorithm
@@ -43,8 +41,8 @@ no better solution in Region B. Additionally, there is no better solution in
 Region D because nothing dominates the originally discovered Pareto point.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig5-4.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig5-4.svg" width="400"
+  <a href="images/fig5-4.svg" style="border:none">
+    <img src="images/fig5-4.svg" width="400"
     height="260" style="border:none" />
   </a>
 </div>
@@ -82,11 +80,11 @@ constraints <tt>(&lt;p<sub>1</sub>, &#8805;p<sub>2</sub>, ...,
 <tt>&#8805;p<sub>i</sub></tt>.
 
 For any given solution within this region, a dominating solution exists if we
-improve at least one of the metrics (and satisfy the problem constraints)<sup><a
-href="#n1" id="t1">1</a></sup>. If we increase only the objectives
-<tt>m<sub>2</sub>, m<sub>3</sub>, ... m<sub>N</sub></tt>, we will remain in this
-region. In contrast, if we increase <tt>m<sub>1</sub></tt>, we will eventually
-reach a different region, the one described by constraints
+improve at least one of the metrics (and satisfy the problem
+constraints).<sup><a href="#n1" id="t1">1</a></sup> If we increase only the
+objectives <tt>m<sub>2</sub>, m<sub>3</sub>, ... m<sub>N</sub></tt>, we will
+remain in this region. In contrast, if we increase <tt>m<sub>1</sub></tt>, we
+will eventually reach a different region, the one described by constraints
 <tt>(&#8805;p<sub>1</sub>, &#8805;p<sub>2</sub>, ...,
 &#8805;p<sub>N</sub>)</tt>.
 
@@ -131,8 +129,8 @@ are globally optimal.
 We can apply the same argument to all regions with exactly two "worse than"
 constraints and search them in parallel. Once these regions are done, we can
 search all regions with exactly three "worse than" constraints, then four, and
-so on until we finish with `N - 1` "worse than" constraints<sup><a href="#n3"
-id="t3">3</a></sup>. At every step of this process, we can guarantee locally
+so on until we finish with `N - 1` "worse than" constraints.<sup><a href="#n3"
+id="t3">3</a></sup> At every step of this process, we can guarantee locally
 optimal solutions are globally optimal by using exclusion constraints based on
 all previously found optimal solutions.
 
@@ -276,8 +274,8 @@ additionally included the vertices for `111` and `000`, even though we skip them
 in the algorithm.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig6-1.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig6-1.svg" width="400"
+  <a href="images/fig6-1.svg" style="border:none">
+    <img src="images/fig6-1.svg" width="400"
     height="260" style="border:none" />
   </a>
 </div>
@@ -320,8 +318,8 @@ lighter region is excluded because there are no solutions that dominate
 <tt><strong>P</strong></tt>.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig6-2.png" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig6-2.png" width="400"
+  <a href="images/fig6-2.png" style="border:none">
+    <img src="images/fig6-2.png" width="400"
     height="260" style="border:none" />
   </a>
 </div>
@@ -350,23 +348,23 @@ below, and I have also included the code for plotting the solutions.
            PointStyle=FilledCircles)
     )
 
-[fydp5]: /blog/fydp5.html
+[fydp5]: fydp5.html
 
 
 Preliminary results
 -------------------
 
 Our group has implemented both the algorithm and the optimization described
-above. I will not be discussing the implementation this time<sup><a href="#n5"
-id="t5">5</a></sup>, but you can find the code on [GitHub][pgia].
+above. I will not be discussing the implementation this time,<sup><a href="#n5"
+id="t5">5</a></sup> but you can find the code on [GitHub][pgia].
 
 With our implementation, we have been able to run our preliminary tests. Below,
 we have a graph and a table comparing incremental solving (IGIA), checkpointed
 solving (CGIA), the overlapping guided improvement algorithm (OGIA), and PGIA.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig6-3.png" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig6-3.png" width="647"
+  <a href="images/fig6-3.png" style="border:none">
+    <img src="images/fig6-3.png" width="647"
     height="415" style="border:none" />
   </a>
 </div>
@@ -442,7 +440,7 @@ worse. Again, we also see that CGIA, a single-threaded approach, beats PGIA,
 a multi-threaded approach, in some of the tests.
 
 However, when we tried some of our extremely large tests, CGIA and OGIA fell
-behind<sup><a href="#n7" id="t7">7</a></sup>.
+behind.<sup><a href="#n7" id="t7">7</a></sup>
 
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
@@ -524,11 +522,9 @@ from rigorous performance evaluations.
 
 Thank you for reading this blog series. I hope the posts have been informative
 and interesting, and that it was worth your time. If you still want to learn
-more, you can look at our [documents and repositories][docrepo], or
-[contact][contact] me.
+more, you can look at our [documents and repositories][docrepo].
 
-[docrepo]: /fydp.html
-[contact]: /about.html
+[docrepo]: /fydp
 
 _I would like to thank Talha Khalid, Chris Kleynhans, Zameer Manji, and Arjun
 Sondhi for proofreading this post._

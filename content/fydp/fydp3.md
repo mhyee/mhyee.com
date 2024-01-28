@@ -1,12 +1,11 @@
 ---
-created_at: 2013-11-09
-excerpt: "I concluded my previous post by posing a question: how do we actually
-solve multi-objective optimization problems? This post will answer that question
-by discussing the guided improvement algorithm."
-kind: article
-tags: [ fydp research waterloo university multi-objective optimization ]
 title: "Fourth-Year Design Project, Part 3: The Guided Improvement Algorithm"
 ---
+
+Fourth-Year Design Project, Part 3: The Guided Improvement Algorithm
+====================================================================
+
+<div class='date'>November 9, 2013</div>
 
 In the [first][fydp1] [two][fydp2] posts of this blog series, we discussed
 multi-objective optimization: what it is and why it's important. I concluded the
@@ -18,19 +17,17 @@ will be about the _guided improvement algorithm_, while the other posts will be
 about _improvements_.
 
 There will be a lot of terminology in this post, so if you need a reminder,
-please take some time to review my [previous post][fydp2]. Also, the material in
-this post will be more difficult than my previous ones --- if anything is
-unclear, I am more than happy to clarify in the comments.
+please take some time to review my [previous post][fydp2].
 
-[fydp1]: /blog/fydp1.html
-[fydp2]: /blog/fydp2.html
+[fydp1]: fydp1.html
+[fydp2]: fydp2.html
 
 
 The guided improvement algorithm
 --------------------------------
 
 The guided improvement algorithm (GIA) was first [introduced][giatr] by
-Rayside<sup><a href="#n1" id="t1">1</a></sup>, Estler, and Jackson. The main
+Rayside,<sup><a href="#n1" id="t1">1</a></sup> Estler, and Jackson. The main
 idea is to formulate the optimization problem as a set of constraints, and then
 use a SAT solver<sup><a href="#n2" id="t2">2</a></sup> to find solutions that
 satisfy those constraints. Furthermore, GIA also augments the constraints so we
@@ -97,7 +94,7 @@ understand:
         solution = Solve(problemConstraints AND exclusionConstraints)
     end
 
-[giatr]: http://dspace.mit.edu/handle/1721.1/46322
+[giatr]: https://dspace.mit.edu/handle/1721.1/46322
 [gia]: https://github.com/TeamAmalgam/kodkod/blob/master/src/kodkod/multiobjective/algorithms/GuidedImprovementAlgorithm.java
 
 
@@ -111,21 +108,21 @@ is unknown to the algorithm, and an X to represent a solution that was found by
 the algorithm.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-1.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-1.svg" width="400"
+  <a href="images/fig3-1.svg" style="border:none">
+    <img src="images/fig3-1.svg" width="400"
     height="260" />
   </a>
 </div>
 
-The algorithm throws a dart and finds its first solution<sup><a href="#n3"
-id="t3">3</a></sup>, which I've marked with an X. Next, it begins the climb up
-to the Pareto front, searching for a better solution. The algorithm wants
-a solution that dominates the previous one, so it ignores the shaded area<sup><a
-href="#n4" id="t4">4</a></sup>.
+The algorithm throws a dart and finds its first solution,<sup><a href="#n3"
+id="t3">3</a></sup> which I've marked with an X. Next, it begins the climb up to
+the Pareto front, searching for a better solution. The algorithm wants
+a solution that dominates the previous one, so it ignores the shaded
+area.<sup><a href="#n4" id="t4">4</a></sup>
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-2.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-2.svg" width="400"
+  <a href="images/fig3-2.svg" style="border:none">
+    <img src="images/fig3-2.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -134,8 +131,8 @@ The algorithm continues its climb up to the Pareto front, searching for a better
 solution each time.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-3.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-3.svg" width="400"
+  <a href="images/fig3-3.svg" style="border:none">
+    <img src="images/fig3-3.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -146,20 +143,20 @@ the Pareto point. To keep the example and diagrams simple, we'll say there are
 no other solutions at the Pareto point.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-4.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-4.svg" width="400"
+  <a href="images/fig3-4.svg" style="border:none">
+    <img src="images/fig3-4.svg" width="400"
     height="260" />
   </a>
 </div>
 
 Now GIA needs to start its climb again. To ensure that the climb reaches a new
 Pareto point, we need a starting solution that is not dominated by any of the
-known Pareto points<sup><a href="#n5" id="t5">5</a></sup>. In the diagram below,
+known Pareto points.<sup><a href="#n5" id="t5">5</a></sup> In the diagram below,
 the new solution must exist outside this shaded area.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-5.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-5.svg" width="400"
+  <a href="images/fig3-5.svg" style="border:none">
+    <img src="images/fig3-5.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -169,8 +166,8 @@ Pareto front, and running magnifier on the Pareto point. The second dart throw
 is shown below.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-6.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-6.svg" width="400"
+  <a href="images/fig3-6.svg" style="border:none">
+    <img src="images/fig3-6.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -179,8 +176,8 @@ The algorithm has found a better solution. It tries to find an even better one,
 but cannot, so the algorithm has found another Pareto point.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-7.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-7.svg" width="400"
+  <a href="images/fig3-7.svg" style="border:none">
+    <img src="images/fig3-7.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -189,8 +186,8 @@ The algorithm must throw a dart and start the climb again. The new solution must
 not be dominated by the known Pareto points.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-8.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-8.svg" width="400"
+  <a href="images/fig3-8.svg" style="border:none">
+    <img src="images/fig3-8.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -198,8 +195,8 @@ not be dominated by the known Pareto points.
 Here, the dart throw just happened to land on another Pareto point.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-9.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-9.svg" width="400"
+  <a href="images/fig3-9.svg" style="border:none">
+    <img src="images/fig3-9.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -209,8 +206,8 @@ optimal or dominated by the optimal solutions. Therefore, the algorithm can now
 terminate.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig3-10.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig3-10.svg" width="400"
+  <a href="images/fig3-10.svg" style="border:none">
+    <img src="images/fig3-10.svg" width="400"
     height="260" />
   </a>
 </div>
@@ -220,10 +217,10 @@ The problem with the guided improvement algorithm
 -------------------------------------------------
 
 The algorithm is very slow. Every call to the SAT solver is an extremely
-expensive operation<sup><a href="#n6" id="t6">6</a></sup>. Furthermore, as a SAT
+expensive operation.<sup><a href="#n6" id="t6">6</a></sup> Furthermore, as a SAT
 solver only understands Boolean algebra, we need to translate everything,
-including arithmetic (which is used when adding up metric values)<sup><a
-href="#n7" id="t7">7</a></sup>.
+including arithmetic (which is used when adding up metric values).<sup><a
+href="#n7" id="t7">7</a></sup>
 
 The solving time for small problems is typically manageable. However, for larger
 problems, GIA will not complete in any reasonable time. Worse, the difference
@@ -250,7 +247,7 @@ exploring: incremental and checkpointed solving.
 
 We're also working on other approaches, but incremental and checkpointed solving
 apply to the way GIA interacts with the SAT solver, rather than the algorithm
-itself<sup><a href="#n8" id="t8">8</a></sup>. The advantage here is that our
+itself.<sup><a href="#n8" id="t8">8</a></sup> The advantage here is that our
 other approaches can build on top of incremental and checkpointed solving.
 
 The issue we're trying to address is that every time the algorithm asks the SAT
@@ -287,7 +284,7 @@ incremental solving.
 I've listed how long it takes to solve the 9-queens and search and rescue
 problems with our algorithms: (base) GIA, incremental GIA (IGIA), and
 checkpointed GIA (CGIA). We ran these informal tests on the shared undergraduate
-computer science servers<sup><a href="#n9" id="t9">9</a></sup>.
+computer science servers.<sup><a href="#n9" id="t9">9</a></sup>
 
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
@@ -363,7 +360,7 @@ algorithm_, which is one of our approaches for a parallel GIA.
 _I would like to thank Chris Kleynhans, Zameer Manji, and Arjun Sondhi for
 proofreading this post._
 
-[fydp4]: /blog/fydp4.html
+[fydp4]: fydp4.html
 
 
 Notes
@@ -428,4 +425,4 @@ Notes
      had very little improvement for the other 9-queens problems, we decided it
      was not worth testing it with 9-queens, seven metrics.
 
-[pnp]: http://www.claymath.org/millennium/P_vs_NP/
+[pnp]: https://www.claymath.org/millennium/p-vs-np/

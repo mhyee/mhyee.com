@@ -37,12 +37,12 @@ as describing the work we have been doing.
 [rayside]: https://ece.uwaterloo.ca/~drayside/
 [gia]: https://dspace.mit.edu/handle/1721.1/46322
 
-[fydp1]: /blog/fydp1.html
-[fydp2]: /blog/fydp2.html
-[fydp3]: /blog/fydp3.html
-[fydp4]: /blog/fydp4.html
-[fydp5]: /blog/fydp5.html
-[fydp6]: /blog/fydp6.html
+[fydp1]: fydp1.html
+[fydp2]: fydp2.html
+[fydp3]: fydp3.html
+[fydp4]: fydp4.html
+[fydp5]: fydp5.html
+[fydp6]: fydp6.html
 
 
 Documents

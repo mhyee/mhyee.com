@@ -49,6 +49,11 @@ compile '*' do
     # Apply Markdown (with rdiscount)
     filter :rdiscount, :extensions => %w( strict smart )
 
+    # FYDP posts need syntax colouring
+    if item.identifier.include? "fydp"
+      filter :colorize_syntax, :default_colorizer => :pygmentize
+    end
+
     # Set the appropriate layout (default or none)
     layout 'default' unless item[:layout] == "none"
   end
@@ -66,6 +71,10 @@ end
 
 route '/feed/' do
   '/feed.xml'
+end
+
+route '/fydp/' do
+  '/fydp/index.html'
 end
 
 route '*' do

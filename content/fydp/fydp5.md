@@ -1,14 +1,11 @@
 ---
-created_at: 2013-12-02
-excerpt: "The subject of our next few posts is the partitioned guided
-improvement algorithm ... In this post specifically, we will cover a little
-background, the inspiration behind this algorithm, and finally, a mistake we
-made."
-kind: article
-tags: [ fydp research waterloo university multi-objective optimization ]
-title: "Fourth-Year Design Project, Part 5: Attempting the Partitioned Guided
-Improvement Algorithm"
+title: "Fourth-Year Design Project, Part 5: Attempting the Partitioned Guided Improvement Algorithm"
 ---
+
+Fourth-Year Design Project, Part 5: Attempting the Partitioned Guided Improvement Algorithm
+===========================================================================================
+
+<div class='date'>December 2, 2013</div>
 
 In the [previous post][fydp4], I covered the _overlapping guided improvement
 algorithm_ (OGIA), which is the first of our group's two multi-threaded approaches. We
@@ -24,9 +21,9 @@ algorithm, and finally, a mistake we made.
 Again, before continuing, you may want to refresh your memory on [multi-objective
 optimization][fydp2] and the [guided improvement algorithm][fydp3] (GIA).
 
-[fydp2]: /blog/fydp2.html
-[fydp3]: /blog/fydp3.html
-[fydp4]: /blog/fydp4.html
+[fydp2]: fydp2.html
+[fydp3]: fydp3.html
+[fydp4]: fydp4.html
 
 
 Background
@@ -42,9 +39,9 @@ idea.
 
 Recall how we can plot solutions on a graph. This graph represents a _search
 space_ of solutions, with a dimension (or axis on the graph) for each objective
-in the problem<sup><a href="#n1" id="t1">1</a></sup>. The basic concept of PGIA,
+in the problem.<sup><a href="#n1" id="t1">1</a></sup> The basic concept of PGIA,
 then, is to divide the search space into regions that can be searched in
-parallel<sup><a href="#n2" id="t2">2</a></sup>.
+parallel.<sup><a href="#n2" id="t2">2</a></sup>
 
 The interesting question is _how_ we can divide the search space. Ideally, we
 want to divide the search space so that a _locally optimal_ solution in a region
@@ -66,8 +63,8 @@ optimal. The region it dominates is shaded, so we can see how it dominates the
 other solution.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig5-1.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig5-1.svg" width="600"
+  <a href="images/fig5-1.svg" style="border:none">
+    <img src="images/fig5-1.svg" width="600"
     height="390" style="border:none" />
   </a>
 </div>
@@ -97,8 +94,8 @@ solutions in that region, since we failed to find one while climbing up to the
 Pareto front.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig5-2.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig5-2.svg" width="400"
+  <a href="images/fig5-2.svg" style="border:none">
+    <img src="images/fig5-2.svg" width="400"
     height="260" style="border:none" />
   </a>
 </div>
@@ -113,8 +110,8 @@ We could also recursively apply this algorithm to each of the regions, as shown
 below.
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig5-3.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig5-3.svg" width="400"
+  <a href="images/fig5-3.svg" style="border:none">
+    <img src="images/fig5-3.svg" width="400"
     height="260" style="border:none" />
   </a>
 </div>
@@ -122,13 +119,13 @@ below.
 However, this raises a few issues. If we keep recursively splitting, the number
 of regions increases exponentially. We may require a lot of overhead in our
 implementation to manage these regions. We may produce many small regions and
-spend a lot of effort, only to find no solutions<sup><a href="#n3"
-id="t3">3</a></sup>. Even if we split the search space only once, the number of
+spend a lot of effort, only to find no solutions.<sup><a href="#n3"
+id="t3">3</a></sup> Even if we split the search space only once, the number of
 regions grows exponentially as we increase the number of objectives; for
 `N` objectives, we will get <tt>2<sup>N</sup> - 2</tt> regions.
 
 We started thinking about how we could handle these issues, but abandoned them
-when we discovered a serious problem<sup><a href="#n4" id="t4">4</a></sup>.
+when we discovered a serious problem.<sup><a href="#n4" id="t4">4</a></sup>
 
 
 Discovering a flaw in the algorithm
@@ -235,8 +232,8 @@ Therefore, any locally optimal solution in Region B is globally optimal. (A
 similar argument applies to Region C.)
 
 <div style="text-align:center">
-  <a href="http://files.mhyee.com/fydp/images/fig5-4.svg" style="border:none">
-    <img src="http://files.mhyee.com/fydp/images/fig5-4.svg" width="400"
+  <a href="images/fig5-4.svg" style="border:none">
+    <img src="images/fig5-4.svg" width="400"
     height="260" style="border:none" />
   </a>
 </div>
@@ -258,7 +255,7 @@ any number of objectives.
 _I would like to thank Talha Khalid and Chris Kleynhans for proofreading this
 post._
 
-[fydp6]: /blog/fydp6.html
+[fydp6]: fydp6.html
 
 
 Notes

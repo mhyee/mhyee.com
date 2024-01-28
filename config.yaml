@@ -64,7 +64,7 @@ base_url: "https://mhyee.com"
 # Settings for the Atom feed
 title: "Ming-Ho's Blog"
 author_name: "Ming-Ho Yee"
-author_uri: "http://mhyee.com"
+author_uri: "https://mhyee.com"
 
 # Deploy (rsync + ssh) configuration settings
 # `rake deploy:rsync` to deploy

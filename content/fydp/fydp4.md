@@ -1,14 +1,11 @@
 ---
-created_at: 2013-11-14
-excerpt: "In the previous post, I finished discussing all the relevant
-background material for our group's design project. In this post, I will be
-discussing the overlapping guided improvement algorithm, which is the first of
-our two [multi-threaded] ideas."
-kind: article
-tags: [ fydp research waterloo university multi-objective optimization ]
-title: "Fourth-Year Design Project, Part 4: The Overlapping Guided Improvement
-Algorithm"
+title: "Fourth-Year Design Project, Part 4: The Overlapping Guided Improvement Algorithm"
 ---
+
+Fourth-Year Design Project, Part 4: The Overlapping Guided Improvement Algorithm
+================================================================================
+
+<div class='date'>November 14, 2013</div>
 
 In the [previous post][fydp3], I finished discussing all the relevant background
 material for our group's design project. I also described two approaches we were
@@ -23,10 +20,10 @@ and fixed, and what new ideas we have.
 
 If you need to refresh your memory on [terminology][fydp2] and the [guided
 improvement algorithm][fydp3], please take some time to review the two previous
-posts. Again, I am also happy to answer any questions in the comments.
+posts.
 
-[fydp2]: /blog/fydp2.html
-[fydp3]: /blog/fydp3.html
+[fydp2]: fydp2.html
+[fydp3]: fydp3.html
 
 
 The overlapping guided improvement algorithm
@@ -59,11 +56,11 @@ duplicate solutions, then there is no point having multiple threads run the
 magnifier task on the same Pareto point. To do this, we have a _solution
 deduplicator_<sup><a href="#n4" id="t4">4</a></sup> that keeps track of all the
 Pareto points found, and also maintains the _global exclusion
-constraints_<sup><a href="#n5" id="t5">5</a></sup>.
+constraints_.<sup><a href="#n5" id="t5">5</a></sup>
 
 When a thread finds a Pareto point, it reports it to the solution deduplicator.
 If the Pareto point is a new solution, the thread adds a magnifier task for that
-Pareto point to the task queue<sup><a href="#n6" id="t6">6</a></sup>. Next,
+Pareto point to the task queue.<sup><a href="#n6" id="t6">6</a></sup> Next,
 whether we have a duplicate or not, the thread asks the solution deduplicator
 for the updated global exclusion constraints to find a new starting solution.
 
@@ -281,7 +278,7 @@ algorithm.
 _I would like to thank Chris Kleynhans, Zameer Manji, and Arjun Sondhi for
 proofreading this post._
 
-[fydp5]: /blog/fydp5.html
+[fydp5]: fydp5.html
 
 Notes
 -----
