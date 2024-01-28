@@ -59,7 +59,7 @@ watcher:
   notify_on_compilation_failure: true
 
 # Other config settings
-base_url: "http://mhyee.com"
+base_url: "https://mhyee.com"
 
 # Settings for the Atom feed
 title: "Ming-Ho's Blog"
@@ -74,4 +74,4 @@ author_uri: "http://mhyee.com"
 deploy:
   default:
     dst: "mhyee.com:~/public_html"
-    options: [ '-ave ssh', '--exclude=.DS_Store', '--exclude=*.swp', '--exclude=*~' ]
+    options: [ '-azv', '--exclude=.DS_Store', '--exclude=*.swp', '--exclude=*~' ]
