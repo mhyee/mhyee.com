@@ -1,14 +1,11 @@
 require 'fileutils'
 require 'time'
 
-include Nanoc3::Helpers::Blogging
 include Nanoc3::Helpers::LinkTo
 include Nanoc3::Helpers::Rendering
 
 def title
-  if @item[:title] && @item[:kind] == "article"
-    "#{@item[:title]} » Blog | Ming-Ho Yee"
-  elsif @item[:title]
+  if @item[:title]
     "#{@item[:title]} | Ming-Ho Yee"
   else
     "Ming-Ho Yee"

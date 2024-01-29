@@ -2,9 +2,4 @@
   %ul
     %li#home=   link_to_unless_current("Home", "/")
     %li#resume= link_to("Resume", "/resume/resume.pdf")
-    %li#blog
-      - if @blog
-        = link_to("Blog", "/blog.html", :class => "active")
-      - else
-        = link_to_unless_current("Blog", "/blog.html")
     %li#fydp=   link_to_unless_current("FYDP", "/fydp/")

@@ -29,52 +29,9 @@ namespace :create do
     end
     sh "nanoc create_item #{page}"
 
-    # Change to .markdown extension by moving .html file
-    FileUtils.mv("content/#{page}.html", "content/#{page}.markdown")
+    # Change to .md extension by moving .html file
+    FileUtils.mv("content/#{page}.html", "content/#{page}.md")
     $stdout.puts "\tMoved content/#{page}.html to content/#{page}.markdown"
-  end
-
-  # Adapted from https://github.com/mgutz/nanoc3_blog/blob/master/Rakefile
-  desc "Creates a new article (blog post)"
-  task :post => [:article]
-  task :article do
-    require 'active_support/core_ext'
-    @ymd = Time.now.to_s.split(' ')[0]
-    if !ENV['slug']
-      $stderr.puts "\t[error] Missing slug argument.\n\tusage: rake create:article slug='slug'"
-      exit 1
-    end
-
-    slug = ENV['slug'].capitalize
-    path, filename, full_path = calc_path(slug)
-
-    if File.exists?(full_path)
-      $stderr.puts "\t[error] Exists #{full_path}"
-      exit 1
-    end
-
-    template = <<TEMPLATE
----
-created_at: #{@ymd}
-excerpt: "An article about #{slug}"
-kind: article
-tags: [ misc ]
-title: "Title for #{slug}"
-publish: false
----
-
-TODO: Add content to `#{full_path}.`
-TEMPLATE
-
-    FileUtils.mkdir_p(path) if !File.exists?(path)
-    File.open(full_path, 'w') { |f| f.write(template) }
-    $stdout.puts "\t[ok] Edit #{full_path}"
-  end
-
-  def calc_path(title)
-    path = "content/blog/"
-    filename = title.parameterize('_') + ".md"
-    [path, filename, path + filename]
   end
 
 end
