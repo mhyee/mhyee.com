@@ -70,19 +70,19 @@ code {
       padding: 0 15px 15px;
     }
       #content h1 {
-        font-size: 26px;
+        font-size: 32px;
         font-weight:bold;
-        padding: 0.7em 0;
+        padding: 0.5em 0;
       }
       #content h2 {
-        font-size: 22px;
+        font-size: 24px;
         font-weight:bold;
-        padding: 0.7em 0;
+        padding: 0 0 0.7em;
       }
       #content h3 {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
-        padding: 0.7em 0;
+        padding: 0 0 0.7em;
         margin-bottom: 5px;
       }
       #content p {
