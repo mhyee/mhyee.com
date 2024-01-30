@@ -19,6 +19,24 @@
       }
 }
 
+/* Mobile style */
+@media only screen and (max-width: 800px) {
+  #topnav {
+    width: 100% !important;
+  }
+    #topnav ul {
+      margin-right: 2px !important;
+    }
+  #name_title {
+    width: calc(100% - 10px) !important;
+    margin-left: 10px !important;
+  }
+  #content {
+    width: calc(100% - 20px) !important;
+    padding: 0 10px 15px !important;
+  }
+}
+
 /* Main styles */
 body {
   background: #ddd;
