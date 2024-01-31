@@ -6,7 +6,7 @@ include Nanoc3::Helpers::Rendering
 
 def title
   if @item[:title]
-    "#{@item[:title]} | Ming-Ho Yee"
+    "Ming-Ho Yee | #{@item[:title]}"
   else
     "Ming-Ho Yee"
   end
