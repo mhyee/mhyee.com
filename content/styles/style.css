@@ -173,6 +173,7 @@ code {
       #content .tt, #content pre {
         font-family: "Lucida Console", "Andale Mono", "Courier New";
         font-size: inherit;
+        overflow-x: scroll;
       }
       #content pre {
         background: #2d2a2d;

@@ -2,66 +2,55 @@
 title:
 ---
 
-Hello World!
-============
+# Hello World!
 
-My name is Ming-Ho Yee. I'm currently a Ph.D. student in [computer
-science][khoury] at [Northeastern University][neu] in Boston, Massachusetts.
-I work on [programming language][prl] design and implementation and software
-engineering with [Arjun Guha][].
+I'm a final-year Ph.D. student in [computer science][khoury] at [Northeastern
+University][], advised by [Arjun Guha][aguha] in the [Programming Research
+Laboratory][]. I expect to graduate in spring 2024 and **I am on the industrial
+job market**.
 
-You can find my resume [here][PDF resume], as well as versions in [HTML][HTML
-resume], [text][TXT resume], and [LaTeX][TEX resume]. I use a [script][resume
-code] to generate my resume.
+My research interests include programming language design and implementation,
+program analysis, and the intersection of machine learning and programming
+languages.
 
-I'm also on [GitHub][], [Twitter][], and [LinkedIn][]. My email address is
-`mh[AT][this domain]`.
+I received my master's in [computer science][scs] at the [University of
+Waterloo][], advised by [Ondřej Lhoták][olhotak] in the [Programming Languages Group];
+and my bachelor's in [software engineering][se], also at the [University of
+Waterloo][], where I worked with [Derek Rayside][drayside].
 
-Before my Ph.D., I was a master's student in the [School of Computer
-Science][uwcs] at the [University of Waterloo][] in Canada, supervised by
-[Ond&#345;ej Lhot&aacute;k][olhotak]. I also studied [programming languages][plg]
-at Waterloo.
-
-My undergraduate degree was in [software engineering][], also at Waterloo.
-During that time, I held a variety of internships, from a small web development
-startup to a large software corporation, from telecommunications to research.
-
-My hobbies include listening to classical music, cooking, and reading. I also
-like trivia: I played [Reach for the Top][] for my high school, and I now play
-quizbowl. In the past, I played the piano and violin, and practiced karate.
+My hobbies and interests include listening to classical music and going to the
+symphony; watching and discussing basketball, movies, and TV; tinkering with my
+keyboards, dotfiles, and server; and enjoying tea.
 
 [khoury]: https://www.khoury.northeastern.edu/
-[neu]: https://www.northeastern.edu/
-[prl]: https://prl.khoury.northeastern.edu/
-[Arjun Guha]: https://www.khoury.northeastern.edu/~arjunguha/main/home/
+[Northeastern University]: https://www.northeastern.edu/
+[Programming Research Laboratory]: https://prl.khoury.northeastern.edu/
+[aguha]: https://www.khoury.northeastern.edu/~arjunguha/main/home/
 
-[PDF resume]: /resume/resume.pdf
-[HTML resume]: /resume/resume.html
-[TXT resume]: /resume/resume.txt
-[TEX resume]: /resume/resume.tex
-[resume code]: https://github.com/mhyee/resume
-
-[GitHub]: https://github.com/mhyee
-[Twitter]: https://twitter.com/mhyee
-[LinkedIn]: https://www.linkedin.com/in/mhyee
-
-[uwcs]: https://cs.uwaterloo.ca/
+[scs]: https://cs.uwaterloo.ca/
 [University of Waterloo]: https://uwaterloo.ca/
 [olhotak]: https://plg.uwaterloo.ca/~olhotak/
-[plg]: https://plg.uwaterloo.ca/
+[Programming Languages Group]: https://plg.uwaterloo.ca/
 
-[software engineering]: https://uwaterloo.ca/software-engineering/
-[Reach for the Top]: https://www.reachforthetop.com
+[se]: https://uwaterloo.ca/software-engineering/
+[drayside]: https://ece.uwaterloo.ca/~drayside/
 
+## Resume
 
-About this site
----------------
+My [resume script][] generates multiple formats from a set of templates and
+a common YAML file:
 
-Previous incarnations of this site existed as a WordPress blog and
-hand-maintained static HTML pages.
+  - [PDF][pdf resume]
+  - [HTML][html resume]
+  - [Plain text][txt resume] (UTF-8)
+  - [TeX][tex resume]
 
-Since 2012, I have been using [nanoc][], a static site generator. The design was
-created by my sister, [Ming-Cee Yee][].
+[resume script]: https://github.com/mhyee/resume
+[pdf resume]: /resume/resume.pdf
+[html resume]: /resume/resume.html
+[txt resume]: /resume/resume.txt
+[tex resume]: /resume/resume.tex
 
-[nanoc]: https://nanoc.app/
-[Ming-Cee Yee]: https://skysketches.com/
+## Contact
+
+You can reach me by emailing `mh@[this domain]`.
