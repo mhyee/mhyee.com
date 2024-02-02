@@ -43,13 +43,13 @@ body {
   font-family:"Open Sans",sans-serif;
   font-size: 15px;
   color: #323233;
-  line-height: 1.1;
+  line-height: 1.2;
   background-image:url('bg.png');
   background-repeat:repeat-x;
 }
 
 code {
-  font-family:"Inconsolata",monospace;
+  font-family:"Roboto Mono",monospace;
 }
 
 .clear {
@@ -95,11 +95,11 @@ code {
       position: relative;
     }
       #name_title .link {
-          position: absolute;
-          width: 250px;
-          height: 100%;
-          top: -10px;
-          left: 0;
+        position: absolute;
+        width: 250px;
+        height: 100%;
+        top: -10px;
+        left: 0;
       }
 
     #content {
@@ -110,19 +110,22 @@ code {
     }
       #content h1 {
         font-size: 32px;
-        font-weight:bold;
+        font-weight:600;
         padding: 0.5em 0;
       }
       #content h2 {
         font-size: 24px;
-        font-weight:bold;
-        padding: 0 0 0.7em;
+        font-weight:600;
+        padding: 0 0 0.3em;
       }
       #content h3 {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 0 0 0.7em;
-        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 0 0 0.3em;
+      }
+      #content h4 {
+        font-size: 16px;
+        font-weight: 600;
       }
       #content p {
         margin-bottom: 1em;
@@ -171,13 +174,13 @@ code {
         font-style: italic;
       }
       #content .tt, #content pre {
-        font-family: "Lucida Console", "Andale Mono", "Courier New";
+        font-family: "Roboto Mono", monospace;
         font-size: inherit;
-        overflow-x: scroll;
+        overflow-x: auto;
       }
       #content pre {
-        background: #2d2a2d;
-        color: #9fa0a2;
+        background: #272822;
+        color: #f8f8f2;
         padding: 5px;
       }
       #content blockquote {
