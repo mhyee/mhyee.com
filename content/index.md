@@ -51,6 +51,18 @@ a common YAML file:
 [txt resume]: /resume/resume.txt
 [tex resume]: /resume/resume.tex
 
+## Online profiles
+
+  - [GitHub][]
+  - [LinkedIn][]
+  - [Google Scholar][]
+  - [DBLP][]
+
+[GitHub]: https://github.com/mhyee
+[LinkedIn]: https://www.linkedin.com/in/mhyee
+[Google Scholar]: https://scholar.google.com/citations?user=rijGpmoAAAAJ
+[DBLP]: https://dblp.uni-trier.de/pid/146/0143.html
+
 ## Contact
 
 You can reach me by emailing `mh@[this domain]`.

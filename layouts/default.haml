@@ -4,6 +4,7 @@
   %body
     %header
       = render 'nav'
-    #wrapper
-      #name_title= link_to("Ming-Ho", "/", :class => "link")
-      #content= yield
+    %main
+      #wrapper
+        #name_title= link_to("Ming-Ho", "/", :class => "link")
+        #content= yield
