@@ -64,8 +64,9 @@ other solution.
 
 <div style="text-align:center">
   <a href="images/fig5-1.svg" style="border:none">
-    <img src="images/fig5-1.svg" width="600"
-    height="390" style="border:none" />
+    <img src="images/fig5-1.svg"
+     alt="Examples where a locally optimal solution is not globally optimal"
+     width="600" height="390" style="border:none" />
   </a>
 </div>
 
@@ -89,14 +90,15 @@ The key observation
 The inspiration came when we drew the graph slightly differently. Normally, when
 a Pareto point is found, we would shade the region dominated by that Pareto
 point and exclude it from the search. However, we can shade and exclude another
-region --- the "empty" area that dominates the Pareto point. There can be no
+region--the "empty" area that dominates the Pareto point. There can be no
 solutions in that region, since we failed to find one while climbing up to the
 Pareto front.
 
 <div style="text-align:center">
   <a href="images/fig5-2.svg" style="border:none">
-    <img src="images/fig5-2.svg" width="400"
-    height="260" style="border:none" />
+    <img src="images/fig5-2.svg"
+     alt="A pareto point that partitions the search space"
+     width="400" height="260" style="border:none" />
   </a>
 </div>
 
@@ -111,8 +113,8 @@ below.
 
 <div style="text-align:center">
   <a href="images/fig5-3.svg" style="border:none">
-    <img src="images/fig5-3.svg" width="400"
-    height="260" style="border:none" />
+    <img src="images/fig5-3.svg" alt="Recursively partitioning the search space"
+     width="400" height="260" style="border:none" />
   </a>
 </div>
 
@@ -154,9 +156,9 @@ this particular problem, we found one locally optimal solution in each region.
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
     <tr>
-      <th>Region</th>
-      <th>Constraint</th>
-      <th>Metric points of locally optimal solutions</th>
+      <th><strong>Region</strong></th>
+      <th><strong>Constraint</strong></th>
+      <th><strong>Metric points of locally optimal solutions</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -208,7 +210,7 @@ As expected, the metric points obey the constraints. They are also locally
 optimal, though I have not shown the (locally) dominated metric points. However,
 note that the metric point `(7, 13, 8)` is dominated by `(11, 14, 8)`, which is
 from a different region. In fact, for any given point in Region C, it is
-possible a better one exists in Region G --- we simply take the same metric
+possible a better one exists in Region G--we simply take the same metric
 values, but set the first one to be greater than or equal to `10`. Of course, that
 point is only a valid solution if it meets the problem constraints, so it may
 not actually exist. The _possibility_ of its existence is the problem, since we
@@ -222,7 +224,7 @@ in Region C is `(7, 15, 8)`. Neither solution dominates the other.
 This is our dilemma: _some_ locally optimal solutions are globally optimal, but
 not _all_ locally optimal solutions are globally optimal.
 
-Before we conclude this post, it's interesting --- and constructive --- to
+Before we conclude this post, it's interesting--and constructive--to
 examine why the algorithm worked with two objectives. Consider the diagram
 below, where we have a locally optimal solution in Region B. I've marked the
 area where we have to search to find a better solution, and it overlaps regions
@@ -233,8 +235,9 @@ similar argument applies to Region C.)
 
 <div style="text-align:center">
   <a href="images/fig5-4.svg" style="border:none">
-    <img src="images/fig5-4.svg" width="400"
-    height="260" style="border:none" />
+    <img src="images/fig5-4.svg"
+     alt="A locally optimal solution that is also globally optimal"
+     width="400" height="260" style="border:none" />
   </a>
 </div>
 

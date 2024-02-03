@@ -109,8 +109,8 @@ the algorithm.
 
 <div style="text-align:center">
   <a href="images/fig3-1.svg" style="border:none">
-    <img src="images/fig3-1.svg" width="400"
-    height="260" />
+    <img src="images/fig3-1.svg" alt="No solutions are known to the algorithm"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -122,8 +122,8 @@ area.<sup><a href="#n4" id="t4">4</a></sup>
 
 <div style="text-align:center">
   <a href="images/fig3-2.svg" style="border:none">
-    <img src="images/fig3-2.svg" width="400"
-    height="260" />
+    <img src="images/fig3-2.svg" alt="The algorithm has found its first solution."
+     width="400" height="260" />
   </a>
 </div>
 
@@ -132,8 +132,8 @@ solution each time.
 
 <div style="text-align:center">
   <a href="images/fig3-3.svg" style="border:none">
-    <img src="images/fig3-3.svg" width="400"
-    height="260" />
+    <img src="images/fig3-3.svg" alt="The algorithm finds a new solution that dominates the previous one"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -144,8 +144,8 @@ no other solutions at the Pareto point.
 
 <div style="text-align:center">
   <a href="images/fig3-4.svg" style="border:none">
-    <img src="images/fig3-4.svg" width="400"
-    height="260" />
+    <img src="images/fig3-4.svg" alt="No better solution is found, so this solution is a Pareto point"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -156,8 +156,8 @@ the new solution must exist outside this shaded area.
 
 <div style="text-align:center">
   <a href="images/fig3-5.svg" style="border:none">
-    <img src="images/fig3-5.svg" width="400"
-    height="260" />
+    <img src="images/fig3-5.svg" alt="The previous solution excludes part of the search space"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -167,8 +167,8 @@ is shown below.
 
 <div style="text-align:center">
   <a href="images/fig3-6.svg" style="border:none">
-    <img src="images/fig3-6.svg" width="400"
-    height="260" />
+    <img src="images/fig3-6.svg" alt="The algorithm finds a new solution"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -177,8 +177,9 @@ but cannot, so the algorithm has found another Pareto point.
 
 <div style="text-align:center">
   <a href="images/fig3-7.svg" style="border:none">
-    <img src="images/fig3-7.svg" width="400"
-    height="260" />
+    <img src="images/fig3-7.svg"
+     alt="The algorithm finds a better solution, which happens to be a Pareto point"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -187,8 +188,9 @@ not be dominated by the known Pareto points.
 
 <div style="text-align:center">
   <a href="images/fig3-8.svg" style="border:none">
-    <img src="images/fig3-8.svg" width="400"
-    height="260" />
+    <img src="images/fig3-8.svg"
+     alt="The algorithm starts again, and the known Pareto points exclude part of the search space"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -196,8 +198,8 @@ Here, the dart throw just happened to land on another Pareto point.
 
 <div style="text-align:center">
   <a href="images/fig3-9.svg" style="border:none">
-    <img src="images/fig3-9.svg" width="400"
-    height="260" />
+    <img src="images/fig3-9.svg" alt="The algorithm finds a Pareto point"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -207,8 +209,8 @@ terminate.
 
 <div style="text-align:center">
   <a href="images/fig3-10.svg" style="border:none">
-    <img src="images/fig3-10.svg" width="400"
-    height="260" />
+    <img src="images/fig3-10.svg" alt="The algorithm cannot find a new solution, so it terminates"
+     width="400" height="260" />
   </a>
 </div>
 
@@ -268,7 +270,7 @@ When we ran our informal benchmarks, we saw tests run about twice as fast.
 However, there is still room for improvement. Incremental solving allows us to
 add new constraints without losing state, but the state is cleared when we
 remove constraints. Unfortunately, this happens once the algorithm has found
-a Pareto point --- it needs to step down from the Pareto front and find a new
+a Pareto point--it needs to step down from the Pareto front and find a new
 starting solution.
 
 _Checkpointed solving_ allows us to "roll back" to a previous state. Now, we can
@@ -289,10 +291,10 @@ computer science servers.<sup><a href="#n9" id="t9">9</a></sup>
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
     <tr>
-      <th><!-- empty --></th>
-      <th>GIA</th> <!-- e2ae93c -->
-      <th>IGIA</th> <!-- 1da4839 -->
-      <th>CGIA</th> <!-- 13ab50f -->
+      <th><strong>Problem</strong></th>
+      <th><strong>GIA</strong></th> <!-- e2ae93c -->
+      <th><strong>IGIA</strong></th> <!-- 1da4839 -->
+      <th><strong>CGIA</strong></th> <!-- 13ab50f -->
     </tr>
   </thead>
   <tbody>
@@ -337,7 +339,7 @@ computer science servers.<sup><a href="#n9" id="t9">9</a></sup>
 <br />
 
 As you can see, CGIA is very impressive. However, we still have some ideas to
-refine it --- in particular, our implementation is not very memory efficient.
+refine it--in particular, our implementation is not very memory efficient.
 
 [igia]: https://github.com/TeamAmalgam/kodkod/pull/16
 [cgia]: https://github.com/TeamAmalgam/kodkod/pull/39

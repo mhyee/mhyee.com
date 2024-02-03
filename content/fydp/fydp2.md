@@ -71,8 +71,8 @@ are six solutions<sup><a href="#n3" id="t3">3</a></sup> for the 3-rooks problem.
 
 <div style="text-align:center">
   <a href="images/fig2-1.svg" style="border:none">
-    <img src="images/fig2-1.svg" alt="All solutions to
-the 3-rooks problem" width="600" height="390" />
+    <img src="images/fig2-1.svg" alt="All solutions to the 3-rooks problem"
+     width="600" height="390" />
   </a>
 </div>
 
@@ -88,8 +88,8 @@ and `Score2` is the second number.
 
 <div style="text-align:center">
   <a href="images/fig2-2.svg" style="border:none">
-    <img src="images/fig2-2.svg" alt="Scores inserted
-into the 3x3 chessboard" width="230" height="230" />
+    <img src="images/fig2-2.svg" alt="Scores inserted into the 3x3 chessboard"
+     width="230" height="230" />
   </a>
 </div>
 <br/>
@@ -102,8 +102,8 @@ metric point is `(16, 17)`.
 
 <div style="text-align:center">
   <a href="images/fig2-3.svg" style="border:none">
-    <img src="images/fig2-3.svg" alt="Solution
-2 superimposed onto the scores" width="230" height="230" />
+    <img src="images/fig2-3.svg" alt="Solution 2 superimposed onto the scores"
+    width="230" height="230" />
   </a>
 </div>
 <br/>
@@ -113,39 +113,39 @@ I've also listed out all the metric points in a table.
 <table style="border-collapse:separate;border-spacing:5px;margin:0px auto;border:1px">
   <thead>
     <tr>
-      <th><!-- empty --></th>
-      <th>Score1</th>
-      <th>Score2</th>
+      <th><strong>Solution</strong></th>
+      <th><strong>Score1</strong></th>
+      <th><strong>Score2</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Solution 1</td>
+      <td style="text-align:center">1</td>
       <td style="text-align:right">14</td>
       <td style="text-align:right">17</td>
     </tr>
     <tr>
-      <td>Solution 2</td>
+      <td style="text-align:center">2</td>
       <td style="text-align:right">16</td>
       <td style="text-align:right">17</td>
     </tr>
     <tr>
-      <td>Solution 3</td>
+      <td style="text-align:center">3</td>
       <td style="text-align:right">16</td>
       <td style="text-align:right">17</td>
     </tr>
     <tr>
-      <td>Solution 4</td>
+      <td style="text-align:center">4</td>
       <td style="text-align:right">21</td>
       <td style="text-align:right">11</td>
     </tr>
     <tr>
-      <td>Solution 5</td>
+      <td style="text-align:center">5</td>
       <td style="text-align:right">15</td>
       <td style="text-align:right">15</td>
     </tr>
     <tr>
-      <td>Solution 6</td>
+      <td style="text-align:center">6</td>
       <td style="text-align:right">8</td>
       <td style="text-align:right">21</td>
     </tr>
@@ -158,8 +158,8 @@ with an axis for each objective.
 
 <div style="text-align:center">
   <a href="images/fig2-4.svg" style="border:none">
-    <img src="images/fig2-4.svg" alt="Graph of the
-metric points" width="400" height="333" />
+    <img src="images/fig2-4.svg" alt="Graph of the metric points"
+     width="400" height="333" />
   </a>
 </div>
 

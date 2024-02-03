@@ -51,7 +51,7 @@ there are many implementation details to consider.
 
 For example, we need a way to identify duplicate solutions so that we never
 yield the same solution twice. We also want to be smart about our _magnifier
-task_<sup><a href="#n3" id="t3">3</a></sup> --- if we can easily identify
+task_<sup><a href="#n3" id="t3">3</a></sup>--if we can easily identify
 duplicate solutions, then there is no point having multiple threads run the
 magnifier task on the same Pareto point. To do this, we have a _solution
 deduplicator_<sup><a href="#n4" id="t4">4</a></sup> that keeps track of all the
@@ -122,8 +122,8 @@ find the same better solutions. Apart from the magnifier tasks, only one thread
 was doing useful work. There was almost no improvement over the single-threaded
 GIA.
 
-While the idea to fix this problem was straightforward --- have each thread find
-a different starting solution --- the actual implementation was less so.
+While the idea to fix this problem was straightforward--have each thread find
+a different starting solution--the actual implementation was less so.
 Originally, we had hoped that the non-determinism in our SAT solver would find
 different starting solutions, but this was not the case. We were also
 unsuccessful in forcing this behaviour with different random seeds. In the end,
@@ -169,10 +169,10 @@ informal test results, run on the undergraduate computer science servers.
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
     <tr>
-      <th><!-- empty --></th>
-      <th>IGIA</th> <!-- 1da4839 -->
-      <th>CGIA</th> <!-- 13ab50f -->
-      <th>OGIA</th> <!-- 8eaa3d6 -->
+      <th><strong>Problem</strong></th>
+      <th><strong>IGIA</strong></th> <!-- 1da4839 -->
+      <th><strong>CGIA</strong></th> <!-- 13ab50f -->
+      <th><strong>OGIA</strong></th> <!-- 8eaa3d6 -->
     </tr>
   </thead>
   <tbody>

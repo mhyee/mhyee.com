@@ -42,8 +42,9 @@ Region D because nothing dominates the originally discovered Pareto point.
 
 <div style="text-align:center">
   <a href="images/fig5-4.svg" style="border:none">
-    <img src="images/fig5-4.svg" width="400"
-    height="260" style="border:none" />
+    <img src="images/fig5-4.svg"
+     alt="A locally optimal solution that happens to be globally optimal"
+     width="400" height="260" style="border:none" />
   </a>
 </div>
 
@@ -219,9 +220,9 @@ This time, the regions are labelled with binary strings instead of letters.
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
     <tr>
-      <th>Region</th>
-      <th>Constraint</th>
-      <th>Metric points of solutions</th>
+      <th><strong>Region</strong></th>
+      <th><strong>Constraint</strong></th>
+      <th><strong>Metric points of solutions</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -275,8 +276,9 @@ in the algorithm.
 
 <div style="text-align:center">
   <a href="images/fig6-1.svg" style="border:none">
-    <img src="images/fig6-1.svg" width="400"
-    height="260" style="border:none" />
+    <img src="images/fig6-1.svg"
+     alt="A dependency graph showing the search order of regions"
+     width="400" height="260" style="border:none" />
   </a>
 </div>
 <br />
@@ -319,8 +321,9 @@ lighter region is excluded because there are no solutions that dominate
 
 <div style="text-align:center">
   <a href="images/fig6-2.png" style="border:none">
-    <img src="images/fig6-2.png" width="400"
-    height="260" style="border:none" />
+    <img src="images/fig6-2.png"
+     alt="A three-dimensional plot of the regions and solutions"
+     width="400" height="260" style="border:none" />
   </a>
 </div>
 <br />
@@ -364,8 +367,9 @@ solving (CGIA), the overlapping guided improvement algorithm (OGIA), and PGIA.
 
 <div style="text-align:center">
   <a href="images/fig6-3.png" style="border:none">
-    <img src="images/fig6-3.png" width="647"
-    height="415" style="border:none" />
+    <img src="images/fig6-3.png"
+     alt="Graphing the results of IGIA, CGIA, OGIA, and PGIA"
+     width="647" height="415" style="border:none" />
   </a>
 </div>
 <br />
@@ -381,11 +385,11 @@ undergraduate computer science servers.
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
     <tr>
-      <th><!-- empty --></th>
-      <th>Incremental Guided Improvement Algorithm</th> <!-- 1da4839 -->
-      <th>Checkpointed Guided Improvement Algorithm</th> <!-- 13ab50f -->
-      <th>Overlapping Guided Improvement Algorithm</th> <!-- 8eaa3d6 -->
-      <th>Partitioned Guided Improvement Algorithm</th> <!-- 8f8626f -->
+      <th><strong>Problem</strong></th>
+      <th><strong>IGIA</strong></th> <!-- 1da4839 -->
+      <th><strong>CGIA</strong></th> <!-- 13ab50f -->
+      <th><strong>OGIA</strong></th> <!-- 8eaa3d6 -->
+      <th><strong>OGIA</strong></th> <!-- 8f8626f -->
     </tr>
   </thead>
   <tbody>
@@ -445,10 +449,10 @@ behind.<sup><a href="#n7" id="t7">7</a></sup>
 <table style="border-collapse:separate;border-spacing:10px;margin:0px auto;border:1px">
   <thead>
     <tr>
-      <th><!-- empty --></th>
-      <th>Checkpointed Guided Improvement Algorithm</th> <!-- 13ab50f -->
-      <th>Overlapping Guided Improvement Algorithm</th> <!-- 8eaa3d6 -->
-      <th>Partitioned Guided Improvement Algorithm</th> <!-- 8f8626f -->
+      <th><strong>Problem</strong></th>
+      <th><strong>CGIA</strong></th> <!-- 13ab50f -->
+      <th><strong>OGIA</strong></th> <!-- 8eaa3d6 -->
+      <th><strong>PGIA</strong></th> <!-- 8f8626f -->
     </tr>
   </thead>
   <tbody>
