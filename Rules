@@ -26,7 +26,7 @@ compile '*' do
     # Apply CSS compression and nothing else
     filter :rainpress
   elsif ext == "erb"
-    filter :erb
+    filter :erb, :trim_mode => "-"
 
     # Set the appropriate layout (default or none)
     layout 'default' unless item[:layout] == "none"
@@ -60,6 +60,10 @@ end
 
 route '/fydp/' do
   '/fydp/index.html'
+end
+
+route '/publications/' do
+  '/publications/index.html'
 end
 
 route '/fydp/images/' do

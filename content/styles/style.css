@@ -206,6 +206,37 @@ code {
         margin-top: -5px;
         margin-bottom: 5px;
       }
+      #content .publication h2 {
+        font-size: 16px;
+        padding: 0;
+      }
+      #content .publication .authors {
+        font-size: 14px;
+      }
+        #content .publication .authors strong {
+            font-weight: 600;
+        }
+      #content .publication .in {
+        font-style: italic;
+      }
+      #content .publication .links li {
+        float: left;
+        list-style: none;
+        margin-left: 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+        #content .publication .links li::before {
+            content: "[ ";
+        }
+        #content .publication .links li::after {
+            content: " ]";
+        }
+      #content .publication .abstract {
+        clear: both;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
 
   footer {
     width: 100%;

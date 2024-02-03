@@ -1,0 +1,408 @@
+---
+title: Publications
+publications:
+  - title: "Do Machine Learning Models Produce TypeScript Types That Type
+      Check?"
+    authors: [Ming-Ho Yee, Arjun Guha]
+    in: ECOOP 2023
+    links:
+      - {name: DOI, url: "https://doi.org/10.4230/LIPIcs.ECOOP.2023.37"}
+      - {name: arXiv, url: "https://arxiv.org/abs/2302.12163"}
+      #- {name: Slides, url: "TODO"}
+      - {name: Artifact, url: "https://doi.org/10.4230/DARTS.9.2.5"}
+      - {name: GitHub, url: "https://github.com/nuprl/TypeWeaver"}
+    abstract: |2
+          <p>
+            Type migration is the process of adding types to untyped code to
+            gain assurance at compile time. TypeScript and other gradual type
+            systems facilitate type migration by allowing programmers to start
+            with imprecise types and gradually strengthen them. However, adding
+            types is a manual effort and several migrations on large, industry
+            codebases have been reported to have taken several years. In the
+            research community, there has been significant interest in using
+            machine learning to automate TypeScript type migration. Existing
+            machine learning models report a high degree of accuracy in
+            predicting individual TypeScript type annotations. However, in this
+            paper we argue that accuracy can be misleading, and we should
+            address a different question: can an automatic type migration tool
+            produce code that passes the TypeScript type checker?
+          </p>
+          <p>
+            We present TypeWeaver, a TypeScript type migration tool that can be
+            used with an arbitrary type prediction model. We evaluate
+            TypeWeaver with three models from the literature: DeepTyper, a
+            recurrent neural network; LambdaNet, a graph neural network; and
+            InCoder, a general-purpose, multi-language transformer that
+            supports fill-in-the-middle tasks. Our tool automates several steps
+            that are necessary for using a type prediction model, including (1)
+            importing types for a project’s dependencies; (2) migrating
+            JavaScript modules to TypeScript notation; (3) inserting predicted
+            type annotations into the program to produce TypeScript when
+            needed; and (4) rejecting non-type predictions when needed.
+          </p>
+          <p>
+            We evaluate TypeWeaver on a dataset of 513 JavaScript packages,
+            including packages that have never been typed before. With the best
+            type prediction model, we find that only 21% of packages type check,
+            but more encouragingly, 69% of files type check successfully.
+          </p>
+  - title: "StarCoder: may the source be with you!"
+    authors: [Raymond Li, Loubna Ben Allal, Yangtian Zi, Niklas Muennighoff,
+      Denis Kocetkov, Chenghao Mou, Marc Marone, Christopher Akiki, Jia Li, Jenny
+      Chim, Qian Liu, Evgenii Zheltonozhskii, Terry Yue Zhuo, Thomas Wang,
+      Olivier Dehaene, Mishig Davaadorj, Joel Lamy-Poirier, João Monteiro, Oleh
+      Shliazhko, Nicolas Gontier, Nicholas Meade, Armel Zebaze, Ming-Ho Yee,
+      Logesh Kumar Umapathi, Jian Zhu, Benjamin Lipkin, Muhtasham Oblokulov,
+      Zhiruo Wang, Rudra Murthy, Jason Stillerman, Siva Sankalp Patel, Dmitry
+      Abulkhanov, Marco Zocca, Manan Dey, Zhihan Zhang, Nour Fahmy, Urvashi
+      Bhattacharyya, Wenhao Yu, Swayam Singh, Sasha Luccioni, Paulo Villegas,
+      Maxim Kunakov, Fedor Zhdanov, Manuel Romero, Tony Lee, Nadav Timor,
+      Jennifer Ding, Claire Schlesinger, Hailey Schoelkopf, Jan Ebert, Tri Dao,
+      Mayank Mishra, Alex Gu, Jennifer Robinson, Carolyn Jane Anderson, Brendan
+      Dolan-Gavitt, Danish Contractor, Siva Reddy, Daniel Fried, Dzmitry
+      Bahdanau, Yacine Jernite, Carlos Muñoz Ferrandis, Sean Hughes, Thomas Wolf,
+      Arjun Guha, Leandro von Werra, Harm de Vries]
+    in: TMLR 2023
+    links:
+      - {name: OpenReview, url: "https://openreview.net/pdf?id=KoFOg41haE"}
+      - {name: arXiv, url: "https://arxiv.org/abs/2305.06161"}
+      - {name: Hugging Face, url: "https://huggingface.co/bigcode/starcoder"}
+    abstract: |2
+          <p>
+            The BigCode community, an open-scientific collaboration working on
+            the responsible development of Large Language Models for Code (Code
+            LLMs), introduces StarCoder and StarCoderBase: 15.5B parameter
+            models with 8K context length, infilling capabilities and fast
+            large-batch inference enabled by multi-query attention.
+            StarCoderBase is trained on 1 trillion tokens sourced from The
+            Stack, a large collection of permissively licensed GitHub
+            repositories with inspection tools and an opt-out process. We
+            fine-tuned StarCoderBase on 35B Python tokens, resulting in the
+            creation of StarCoder. We perform the most comprehensive evaluation
+            of Code LLMs to date and show that StarCoderBase outperforms every
+            open Code LLM that supports multiple programming languages and
+            matches or outperforms the OpenAI code-cushman-001 model.
+            Furthermore, StarCoder outperforms every model that is fine-tuned
+            on Python, can be prompted to achieve 40% pass@1 on HumanEval, and
+            still retains its performance on other programming languages. We
+            take several important steps towards a safe open-access model
+            release, including an improved PII redaction pipeline and a novel
+            attribution tracing tool, and make the StarCoder models publicly
+            available under a more commercially viable version of the Open
+            Responsible AI Model license.
+          </p>
+  - title: "Type Prediction With Program Decomposition and Fill-in-the-Type
+      Training"
+    authors: [Federico Cassano, Ming-Ho Yee, Noah Shinn, Arjun Guha, Steven
+      Holtzen]
+    in: In submission, 2023
+    links:
+      - {name: arXiv, url: "https://arxiv.org/abs/2305.17145"}
+      - {name: GitHub, url: "https://github.com/GammaTauAI/opentau"}
+    abstract: |2
+            <p>
+              TypeScript and Python are two programming languages that support
+              optional type annotations, which are useful but tedious to
+              introduce and maintain. This has motivated automated type
+              prediction: given an untyped program, produce a well-typed output
+              program. Large language models (LLMs) are promising for type
+              prediction, but there are challenges: fill-in-the-middle performs
+              poorly, programs may not fit into the context window, generated
+              types may not type check, and it is difficult to measure how
+              well-typed the output program is. We address these challenges by
+              building OpenTau, a search-based approach for type prediction
+              that leverages large language models. We propose a new metric for
+              type prediction quality, give a tree-based program decomposition
+              that searches a space of generated types, and present
+              fill-in-the-type fine-tuning for LLMs. We evaluate our work with
+              a new dataset for TypeScript type prediction, and show that 47.4%
+              of files type check (14.5% absolute improvement) with an overall
+              rate of 3.3 type errors per file. All code, data, and models are
+              available on
+              <a href="https://github.com/GammaTauAI/opentau">GitHub</a>.
+            </p>
+  - title: "MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural
+      Code Generation"
+    authors: [Federico Cassano, John Gouwar, Daniel Nguyen, Sydney Nguyen, Luna
+      Phipps-Costin, Donald Pinckney, Ming-Ho Yee, Yangtian Zi, Carolyn Jane
+      Anderson, Molly Q Feldman, Arjun Guha, Michael Greenberg, Abhinav Jangda]
+    in: TSE 2023
+    links:
+      - {name: DOI, url: "https://doi.org/10.1109/TSE.2023.3267446"}
+      - {name: arXiv, url: "https://arxiv.org/abs/2208.08227"}
+      - {name: GitHub, url: "https://github.com/nuprl/MultiPL-E"}
+    abstract: |2
+            <p>
+              Large language models have demonstrated the ability to generate
+              both natural language and programming language text. Although
+              contemporary code generation models are trained on corpora with
+              several programming languages, they are tested using benchmarks
+              that are typically monolingual. The most widely used code
+              generation benchmarks only target Python, so there is little
+              quantitative evidence of how code generation models perform on
+              other programming languages. We propose MultiPL-E, a system for
+              translating unit test-driven code generation benchmarks to new
+              languages. We create the first massively multilingual code
+              generation benchmark by using MultiPL-E to translate two popular
+              Python code generation benchmarks to 18 additional programming
+              languages. We use MultiPL-E to extend the HumanEval benchmark
+              (Chen et al., 2021) and MBPP benchmark (Austin et al., 2021) to
+              18 languages that encompass a range of programming paradigms and
+              popularity. Using these new parallel benchmarks, we evaluate the
+              multi-language performance of three state-of-the-art code
+              generation models: Codex (Chen et al., 2021), CodeGen (Nijkamp et
+              al., 2022) and InCoder (Fried et al., 2022). We find that Codex
+              matches or even exceeds its performance on Python for several
+              other languages. The range of programming languages represented
+              in MultiPL-E allow us to explore the impact of language frequency
+              and language features on model performance. Finally, the
+              MultiPL-E approach of compiling code generation benchmarks to new
+              programming languages is both scalable and extensible, making it
+              straightforward to evaluate new models, benchmarks, and
+              languages.
+            </p>
+  - title: "Contextual Dispatch for Function Specialization"
+    authors: [Olivier Flückiger, Guido Chari, Ming-Ho Yee, Jan Ječmen, Jakob
+      Hain, Jan Vitek]
+    in: OOPSLA 2020
+    links:
+      - {name: DOI, url: "https://doi.org/10.1145/3428288"}
+      - {name: Artifact, url: "https://doi.org/10.5281/zenodo.3973073"}
+      - {name: GitHub, url: "https://github.com/reactorlabs/rir"}
+    abstract: |2
+            <p>
+              In order to generate efficient code, dynamic language compilers
+              often need information, such as dynamic types, not readily
+              available in the program source. Leveraging a mixture of static
+              and dynamic information, these compilers speculate on the missing
+              information. Within one compilation unit, they specialize the
+              generated code to the previously observed behaviors, betting that
+              past is prologue. When speculation fails, the execution must jump
+              back to unoptimized code. In this paper, we propose an approach
+              to further the specialization, by disentangling classes of
+              behaviors into separate optimization units. With contextual
+              dispatch, functions are versioned and each version is compiled
+              under different assumptions. When a function is invoked, the
+              implementation dispatches to a version optimized under
+              assumptions matching the dynamic context of the call. As a
+              proof-of-concept, we describe a compiler for the R language which
+              uses this approach. Our implementation is, on average, 1.7×
+              faster than the GNU R reference implementation. We evaluate
+              contextual dispatch on a set of benchmarks and measure additional
+              speedup, on top of traditional speculation with deoptimization
+              techniques. In this setting contextual dispatch improves the
+              performance of 18 out of 46 programs in our benchmark suite.
+            </p>
+  - title: "R Melts Brains: An IR for First-Class Environments and Lazy
+      Effectful Arguments"
+    authors: [Olivier Flückiger, Guido Chari, Jan Ječmen, Ming-Ho Yee, Jakob
+      Hain, Jan Vitek]
+    in: DLS 2019
+    links:
+      - {name: DOI, url: "https://doi.org/10.1145/3359619.3359744"}
+      - {name: arXiv, url: "https://arxiv.org/abs/1907.05118"}
+      - {name: GitHub, url: "https://github.com/reactorlabs/rir"}
+    abstract: |2
+            <p>
+              The R programming language combines a number of features
+              considered hard to analyze and implement efficiently: dynamic
+              typing, reflection, lazy evaluation, vectorized primitive types,
+              first-class closures, and extensive use of native code.
+              Additionally, variable scopes are reified at runtime as
+              first-class environments. The combination of these features
+              renders most static program analysis techniques impractical, and
+              thus, compiler optimizations based on them ineffective. We
+              present our work on PIR, an intermediate representation with
+              explicit support for first-class environments and effectful lazy
+              evaluation. We describe two dataflow analyses on PIR: the first
+              enables reasoning about variables and their environments, and the
+              second infers where arguments are evaluated. Leveraging their
+              results, we show how to elide environment creation and inline
+              functions.
+            </p>
+  - title: "Precise Dataflow Analysis of Event-Driven Applications"
+    authors: [Ming-Ho Yee, Ayaz Badouraly, Ondřej Lhoták, Frank Tip, Jan Vitek]
+    in: Technical report, 2019
+    links:
+      - {name: arXiv, url: "https://arxiv.org/abs/1910.12935"}
+      #- {name: Slides, url: "TODO"}
+    abstract: |2
+            <p>
+              Event-driven programming is widely used for implementing user
+              interfaces, web applications, and non-blocking I/O. An
+              event-driven program is organized as a collection of event
+              handlers whose execution is triggered by events. Traditional
+              static analysis techniques are unable to reason precisely about
+              event-driven code because they conservatively assume that event
+              handlers may execute in any order. This paper proposes an
+              automatic transformation from Interprocedural Finite Distributive
+              Subset (IFDS) problems to Interprocedural Distributed Environment
+              (IDE) problems as a general solution to obtain precise static
+              analysis of event-driven applications; problems in both forms can
+              be solved by existing implementations. Our contribution is to
+              show how to improve analysis precision by automatically enriching
+              the former with information about the state of event handlers to
+              filter out infeasible paths. We prove the correctness of our
+              transformation and report on experiments with a proof-of-concept
+              implementation for a subset of JavaScript.
+            </p>
+  - title: "Correctness of Speculative Optimizations with Dynamic
+      Deoptimization"
+    authors: [Olivier Flückiger, Gabriel Scherer, Ming-Ho Yee, Aviral Goel,
+      Amal Ahmed, Jan Vitek]
+    in: POPL 2018
+    links:
+      - {name: DOI, url: "https://doi.org/10.1145/3158137"}
+      - {name: arXiv, url: "https://arxiv.org/abs/1711.03050"}
+      - {name: GitHub, url: "https://github.com/reactorlabs/sourir"}
+    abstract: |2
+            <p>
+              High-performance dynamic language implementations make heavy use
+              of speculative optimizations to achieve speeds close to
+              statically compiled languages. These optimizations are typically
+              performed by a just-in-time compiler that generates code under a
+              set of assumptions about the state of the program and its
+              environment. In certain cases, a program may execute code
+              compiled under assumptions that are no longer valid. The
+              implementation must then deoptimize the program on-the-fly; this
+              entails finding semantically equivalent code that does not rely
+              on invalid assumptions, translating program state to that
+              expected by the target code, and transferring control. This paper
+              looks at the interaction between optimization and deoptimization,
+              and shows that reasoning about speculation is surprisingly easy
+              when assumptions are made explicit in the program representation.
+              This insight is demonstrated on a compiler intermediate
+              representation, named sourir, modeled after the high-level
+              representation for a dynamic language. Traditional compiler
+              optimizations such as constant folding, unreachable code
+              elimination, and function inlining are shown to be correct in the
+              presence of assumptions. Furthermore, the paper establishes the
+              correctness of compiler transformations specific to
+              deoptimization: namely unrestricted deoptimization, predicate
+              hoisting, and assume composition.
+            </p>
+  - title: "From Datalog to Flix: A Declarative Language for Fixed Points on
+      Lattices"
+    authors: [Magnus Madsen, Ming-Ho Yee, Ondřej Lhoták]
+    in: PLDI 2016
+    links:
+      - {name: DOI, url: "https://doi.org/10.1145/2908080.2908096"}
+      #- {name: PDF, url: "TODO"}
+      #- {name: Poster, url: "TODO"}
+      - {name: GitHub, url: "https://github.com/flix/flix"}
+      - {name: Website, url: "https://flix.dev/"}
+    abstract: |2
+            <p>
+              We present Flix, a declarative programming language for
+              specifying and solving least fixed point problems, particularly
+              static program analyses. Flix is inspired by Datalog and extends
+              it with lattices and monotone functions. Using Flix, implementors
+              of static analyses can express a broader range of analyses than
+              is currently possible in pure Datalog, while retaining its
+              familiar rule-based syntax. We define a model-theoretic semantics
+              of Flix as a natural extension of the Datalog semantics. This
+              semantics captures the declarative meaning of Flix programs
+              without imposing any specific evaluation strategy. An efficient
+              strategy is semi-naive evaluation which we adapt for Flix. We
+              have implemented a compiler and runtime for Flix, and used it to
+              express several well-known static analyses, including the IFDS
+              and IDE algorithms. The declarative nature of Flix clearly
+              exposes the similarity between these two algorithms.
+            </p>
+  - title: "Optimizing Contractor Selection for Construction Packages in
+      Capital Projects"
+    authors: [Mahdi Safa, Ming-Ho Yee, Derek Rayside, Carl T. Haas]
+    in: Journal of Computing in Civil Engineering, 2016
+    links:
+      - {name: DOI, url: "https://doi.org/10.1061/(ASCE)CP.1943-5487.0000555"}
+    abstract: |2
+            <p>
+              In capital construction projects, the contractor selection
+              process is executed in the front-end planning phase based on the
+              experience and judgment of the project leadership team, whose
+              members are considered experts. A comprehensive construction
+              value packaging system (CVPS) is presented for assisting these
+              project leaders in improving the efficacy, efficiency, and
+              transparency of this process. The CVPS comprises an
+              interface-oriented approach to work decomposition and a
+              multicriteria approach to contractor selection. Selection is
+              supported by software for iteratively computing and interactively
+              visualizing the Pareto front of optimal work packages. The CVPS
+              is validated by functional demonstration and a case study of a
+              piping installation project in an energy infrastructure facility.
+              The initial Pareto front had more than 100,000 optimal work
+              packages representing different trade-offs between cost, time,
+              contractor experience, maintenance rates, and financial
+              stability. An iterative and interactive process of query
+              formulation and exact (not heuristic) evaluation helped the
+              expert to focus in on solutions of interest and created a
+              transparent and quantitative record of the decision-making
+              process. Thus, this research contributes a new paradigm and
+              computational tool for project decision support.
+            </p>
+  - title: "Optimizing Alloy for Multi-objective Software Product Line
+      Configuration"
+    authors: [Ed Zulkoski, Chris Kleynhans, Ming-Ho Yee, Derek Rayside,
+      Krzysztof Czarnecki]
+    in: ABZ 2014
+    links:
+      - {name: DOI, url: "https://doi.org/10.1007/978-3-662-43652-3_34"}
+      #- {name: PDF, url: "TODO"}
+    abstract: |2
+            <p>
+              Software product line (SPL) engineering involves the modeling,
+              analysis, and configuration of variability-rich systems. We
+              improve the performance of the multi-objective optimization of
+              SPLs in Alloy by several orders of magnitude with two techniques.
+            </p>
+            <p>
+              First, we rewrite the model to remove binary relations that map
+              to integers, which enables removing most of the integer atoms
+              from the universe. SPL models often require using large
+              bitwidths, hence the number of integer atoms in the universe can
+              be orders of magnitude more than the other atoms. In our
+              approach, the tuples for these integer-valued relations are
+              computed outside the sat solver before returning the solution to
+              the user. Second, we add a checkpointing facility to Kodkod,
+              which allows the multi-objective optimization algorithm to reuse
+              previously computed internal sat solver state, after
+              backtracking.
+            </p>
+            <p>
+              Together these result in orders of magnitude improvement in using
+              Alloy as a multi-objective optimization tool for software product
+              lines.
+            </p>
+  - title: "Altered macromolecule signal in the hippocampus in alzheimer
+      patients measured by 1H magnetic resonance spectroscopy"
+    authors: [Robert Bartha, Ming-Ho Yee, Raul Rupsingh, Matthew Smith, Michael
+      Borrie]
+    in: Alzheimer's & Dementia, 2009
+    links:
+      - {name: DOI, url: "https://doi.org/10.1016/j.jalz.2009.04.138"}
+---
+<h1>Publications</h1>
+
+<% item[:publications].each do |pub| -%>
+<article class="publication">
+  <h2><%= pub[:title] %></h2>
+  <span class="authors">
+    <%= print_authors pub[:authors] %>
+  </span><br>
+  <span class="in"><%= pub[:in] %></span><br>
+<% if pub[:links] -%>
+  <ul class="links">
+<% pub[:links].each do |link| -%>
+    <li><%= link_to(link[:name], link[:url]) %></li>
+<% end #each -%>
+  </ul>
+<% end #if -%>
+<% if pub[:abstract] -%>
+  <details class="abstract">
+    <summary>Abstract</summary>
+<%= pub[:abstract] -%>
+  </details>
+<% end #if -%>
+</article>
+
+<% end #each -%>
