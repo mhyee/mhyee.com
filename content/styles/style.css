@@ -55,6 +55,12 @@ code {
 .clear {
   clear: both;
 }
+.nobr {
+  white-space: nowrap;
+}
+:focus-visible {
+  outline: thin dotted #0085f2;
+}
 
   #topnav {
     width: 800px;
