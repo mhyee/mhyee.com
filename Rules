@@ -45,11 +45,6 @@ compile '*' do
 end
 
 
-# Put all styles in the /styles directory
-route '/styles/*' do
-  item.identifier.chop + '.' + item[:extension]
-end
-
 route '/' do
   '/index.html'
 end
@@ -62,12 +57,20 @@ route '/fydp/' do
   '/fydp/index.html'
 end
 
+route '/fydp/images/' do
+  '/fydp/images/index.html'
+end
+
 route '/publications/' do
   '/publications/index.html'
 end
 
-route '/fydp/images/' do
-  '/fydp/images/index.html'
+route '/styles/*' do
+  if item[:extension] == "html"
+    item.identifier.chop + '/index.html'
+  else
+    item.identifier.chop + '.' + item[:extension]
+  end
 end
 
 route '*' do
