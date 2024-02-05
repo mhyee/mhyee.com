@@ -6,7 +6,7 @@ include Nanoc3::Helpers::Rendering
 
 def title
   if @item[:title]
-    "Ming-Ho Yee | #{@item[:title]}"
+    "#{@item[:title]} · Ming-Ho Yee"
   else
     "Ming-Ho Yee"
   end
@@ -36,5 +36,5 @@ end
 
 def print_authors(authors)
   list = authors.map{|a| format_author a }.join(", ")
-  wrap list, 2
+  wrap list, 4
 end

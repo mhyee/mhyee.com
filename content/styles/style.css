@@ -206,7 +206,11 @@ code {
         margin-top: -5px;
         margin-bottom: 5px;
       }
-      #content .publication h2 {
+      #content .pub-spacer {
+        clear: both;
+        height: 20px;
+      }
+      #content .publication h3 {
         font-size: 16px;
         padding: 0;
       }

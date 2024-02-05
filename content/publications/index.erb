@@ -5,8 +5,9 @@
 #      -sOutputFile=out.pdf in.pdf
 # Use /prepress (300dpi) for slides, /ebook (150dpi) for speaker notes
 
-title: Publications
-publications:
+title: Publications and Other Works
+
+papers:
   - title: "Do Machine Learning Models Produce TypeScript Types That Type
       Check?"
     authors: [Ming-Ho Yee, Arjun Guha]
@@ -19,40 +20,43 @@ publications:
       - {name: Artifact, url: "https://doi.org/10.4230/DARTS.9.2.5"}
       - {name: GitHub, url: "https://github.com/nuprl/TypeWeaver"}
     abstract: |2
-          <p>
-            Type migration is the process of adding types to untyped code to
-            gain assurance at compile time. TypeScript and other gradual type
-            systems facilitate type migration by allowing programmers to start
-            with imprecise types and gradually strengthen them. However, adding
-            types is a manual effort and several migrations on large, industry
-            codebases have been reported to have taken several years. In the
-            research community, there has been significant interest in using
-            machine learning to automate TypeScript type migration. Existing
-            machine learning models report a high degree of accuracy in
-            predicting individual TypeScript type annotations. However, in this
-            paper we argue that accuracy can be misleading, and we should
-            address a different question: can an automatic type migration tool
-            produce code that passes the TypeScript type checker?
-          </p>
-          <p>
-            We present TypeWeaver, a TypeScript type migration tool that can be
-            used with an arbitrary type prediction model. We evaluate
-            TypeWeaver with three models from the literature: DeepTyper, a
-            recurrent neural network; LambdaNet, a graph neural network; and
-            InCoder, a general-purpose, multi-language transformer that
-            supports fill-in-the-middle tasks. Our tool automates several steps
-            that are necessary for using a type prediction model, including (1)
-            importing types for a project’s dependencies; (2) migrating
-            JavaScript modules to TypeScript notation; (3) inserting predicted
-            type annotations into the program to produce TypeScript when
-            needed; and (4) rejecting non-type predictions when needed.
-          </p>
-          <p>
-            We evaluate TypeWeaver on a dataset of 513 JavaScript packages,
-            including packages that have never been typed before. With the best
-            type prediction model, we find that only 21% of packages type check,
-            but more encouragingly, 69% of files type check successfully.
-          </p>
+            <p>
+              Type migration is the process of adding types to untyped code to
+              gain assurance at compile time. TypeScript and other gradual type
+              systems facilitate type migration by allowing programmers to
+              start with imprecise types and gradually strengthen them.
+              However, adding types is a manual effort and several migrations
+              on large, industry codebases have been reported to have taken
+              several years. In the research community, there has been
+              significant interest in using machine learning to automate
+              TypeScript type migration. Existing machine learning models
+              report a high degree of accuracy in predicting individual
+              TypeScript type annotations. However, in this paper we argue that
+              accuracy can be misleading, and we should address a different
+              question: can an automatic type migration tool produce code that
+              passes the TypeScript type checker?
+            </p>
+            <p>
+              We present TypeWeaver, a TypeScript type migration tool that can
+              be used with an arbitrary type prediction model. We evaluate
+              TypeWeaver with three models from the literature: DeepTyper, a
+              recurrent neural network; LambdaNet, a graph neural network; and
+              InCoder, a general-purpose, multi-language transformer that
+              supports fill-in-the-middle tasks. Our tool automates several
+              steps that are necessary for using a type prediction model,
+              including (1) importing types for a project’s dependencies; (2)
+              migrating JavaScript modules to TypeScript notation; (3)
+              inserting predicted type annotations into the program to produce
+              TypeScript when needed; and (4) rejecting non-type predictions
+              when needed.
+            </p>
+            <p>
+              We evaluate TypeWeaver on a dataset of 513 JavaScript packages,
+              including packages that have never been typed before. With the
+              best type prediction model, we find that only 21% of packages
+              type check, but more encouragingly, 69% of files type check
+              successfully.
+            </p>
   - title: "StarCoder: may the source be with you!"
     authors: [Raymond Li, Loubna Ben Allal, Yangtian Zi, Niklas Muennighoff,
       Denis Kocetkov, Chenghao Mou, Marc Marone, Christopher Akiki, Jia Li, Jenny
@@ -75,58 +79,29 @@ publications:
       - {name: arXiv, url: "https://arxiv.org/abs/2305.06161"}
       - {name: Hugging Face, url: "https://huggingface.co/bigcode/starcoder"}
     abstract: |2
-          <p>
-            The BigCode community, an open-scientific collaboration working on
-            the responsible development of Large Language Models for Code (Code
-            LLMs), introduces StarCoder and StarCoderBase: 15.5B parameter
-            models with 8K context length, infilling capabilities and fast
-            large-batch inference enabled by multi-query attention.
-            StarCoderBase is trained on 1 trillion tokens sourced from The
-            Stack, a large collection of permissively licensed GitHub
-            repositories with inspection tools and an opt-out process. We
-            fine-tuned StarCoderBase on 35B Python tokens, resulting in the
-            creation of StarCoder. We perform the most comprehensive evaluation
-            of Code LLMs to date and show that StarCoderBase outperforms every
-            open Code LLM that supports multiple programming languages and
-            matches or outperforms the OpenAI code-cushman-001 model.
-            Furthermore, StarCoder outperforms every model that is fine-tuned
-            on Python, can be prompted to achieve 40% pass@1 on HumanEval, and
-            still retains its performance on other programming languages. We
-            take several important steps towards a safe open-access model
-            release, including an improved PII redaction pipeline and a novel
-            attribution tracing tool, and make the StarCoder models publicly
-            available under a more commercially viable version of the Open
-            Responsible AI Model license.
-          </p>
-  - title: "Type Prediction With Program Decomposition and Fill-in-the-Type
-      Training"
-    authors: [Federico Cassano, Ming-Ho Yee, Noah Shinn, Arjun Guha, Steven
-      Holtzen]
-    in: In submission, 2023
-    links:
-      - {name: arXiv, url: "https://arxiv.org/abs/2305.17145"}
-      - {name: GitHub, url: "https://github.com/GammaTauAI/opentau"}
-    abstract: |2
             <p>
-              TypeScript and Python are two programming languages that support
-              optional type annotations, which are useful but tedious to
-              introduce and maintain. This has motivated automated type
-              prediction: given an untyped program, produce a well-typed output
-              program. Large language models (LLMs) are promising for type
-              prediction, but there are challenges: fill-in-the-middle performs
-              poorly, programs may not fit into the context window, generated
-              types may not type check, and it is difficult to measure how
-              well-typed the output program is. We address these challenges by
-              building OpenTau, a search-based approach for type prediction
-              that leverages large language models. We propose a new metric for
-              type prediction quality, give a tree-based program decomposition
-              that searches a space of generated types, and present
-              fill-in-the-type fine-tuning for LLMs. We evaluate our work with
-              a new dataset for TypeScript type prediction, and show that 47.4%
-              of files type check (14.5% absolute improvement) with an overall
-              rate of 3.3 type errors per file. All code, data, and models are
-              available on
-              <a href="https://github.com/GammaTauAI/opentau">GitHub</a>.
+              The BigCode community, an open-scientific collaboration working
+              on the responsible development of Large Language Models for Code
+              (Code LLMs), introduces StarCoder and StarCoderBase: 15.5B
+              parameter models with 8K context length, infilling capabilities
+              and fast large-batch inference enabled by multi-query attention.
+              StarCoderBase is trained on 1 trillion tokens sourced from The
+              Stack, a large collection of permissively licensed GitHub
+              repositories with inspection tools and an opt-out process. We
+              fine-tuned StarCoderBase on 35B Python tokens, resulting in the
+              creation of StarCoder. We perform the most comprehensive
+              evaluation of Code LLMs to date and show that StarCoderBase
+              outperforms every open Code LLM that supports multiple
+              programming languages and matches or outperforms the OpenAI
+              code-cushman-001 model. Furthermore, StarCoder outperforms every
+              model that is fine-tuned on Python, can be prompted to achieve
+              40% pass@1 on HumanEval, and still retains its performance on
+              other programming languages. We take several important steps
+              towards a safe open-access model release, including an improved
+              PII redaction pipeline and a novel attribution tracing tool, and
+              make the StarCoder models publicly available under a more
+              commercially viable version of the Open Responsible AI Model
+              license.
             </p>
   - title: "MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural
       Code Generation"
@@ -226,33 +201,6 @@ publications:
               second infers where arguments are evaluated. Leveraging their
               results, we show how to elide environment creation and inline
               functions.
-            </p>
-  - title: "Precise Dataflow Analysis of Event-Driven Applications"
-    authors: [Ming-Ho Yee, Ayaz Badouraly, Ondřej Lhoták, Frank Tip, Jan Vitek]
-    in: Technical report, 2019
-    links:
-      - {name: arXiv, url: "https://arxiv.org/abs/1910.12935"}
-      - {name: Slides, url: "./2020-eventfeasible-slides.pdf"}
-      - {name: Speaker notes, url: "./2020-eventfeasible-slides-notes.pdf"}
-    abstract: |2
-            <p>
-              Event-driven programming is widely used for implementing user
-              interfaces, web applications, and non-blocking I/O. An
-              event-driven program is organized as a collection of event
-              handlers whose execution is triggered by events. Traditional
-              static analysis techniques are unable to reason precisely about
-              event-driven code because they conservatively assume that event
-              handlers may execute in any order. This paper proposes an
-              automatic transformation from Interprocedural Finite Distributive
-              Subset (IFDS) problems to Interprocedural Distributed Environment
-              (IDE) problems as a general solution to obtain precise static
-              analysis of event-driven applications; problems in both forms can
-              be solved by existing implementations. Our contribution is to
-              show how to improve analysis precision by automatically enriching
-              the former with information about the state of event handlers to
-              filter out infeasible paths. We prove the correctness of our
-              transformation and report on experiments with a proof-of-concept
-              implementation for a subset of JavaScript.
             </p>
   - title: "Correctness of Speculative Optimizations with Dynamic
       Deoptimization"
@@ -390,29 +338,122 @@ publications:
     in: Alzheimer's & Dementia, 2009
     links:
       - {name: DOI, url: "https://doi.org/10.1016/j.jalz.2009.04.138"}
----
-<h1>Publications</h1>
 
-<% item[:publications].each do |pub| -%>
-<article class="publication">
-  <h2><%= pub[:title] %></h2>
-  <span class="authors">
-    <%= print_authors pub[:authors] %>
-  </span><br>
-  <span class="in"><%= pub[:in] %></span><br>
+techreports:
+  - title: "Type Prediction With Program Decomposition and Fill-in-the-Type
+      Training"
+    authors: [Federico Cassano, Ming-Ho Yee, Noah Shinn, Arjun Guha, Steven
+      Holtzen]
+    in: In submission, 2023
+    links:
+      - {name: arXiv, url: "https://arxiv.org/abs/2305.17145"}
+      - {name: GitHub, url: "https://github.com/GammaTauAI/opentau"}
+    abstract: |2
+            <p>
+              TypeScript and Python are two programming languages that support
+              optional type annotations, which are useful but tedious to
+              introduce and maintain. This has motivated automated type
+              prediction: given an untyped program, produce a well-typed output
+              program. Large language models (LLMs) are promising for type
+              prediction, but there are challenges: fill-in-the-middle performs
+              poorly, programs may not fit into the context window, generated
+              types may not type check, and it is difficult to measure how
+              well-typed the output program is. We address these challenges by
+              building OpenTau, a search-based approach for type prediction
+              that leverages large language models. We propose a new metric for
+              type prediction quality, give a tree-based program decomposition
+              that searches a space of generated types, and present
+              fill-in-the-type fine-tuning for LLMs. We evaluate our work with
+              a new dataset for TypeScript type prediction, and show that 47.4%
+              of files type check (14.5% absolute improvement) with an overall
+              rate of 3.3 type errors per file. All code, data, and models are
+              available on
+              <a href="https://github.com/GammaTauAI/opentau">GitHub</a>.
+            </p>
+  - title: "Precise Dataflow Analysis of Event-Driven Applications"
+    authors: [Ming-Ho Yee, Ayaz Badouraly, Ondřej Lhoták, Frank Tip, Jan Vitek]
+    in: Technical report, 2019
+    links:
+      - {name: arXiv, url: "https://arxiv.org/abs/1910.12935"}
+      - {name: Slides, url: "./2020-eventfeasible-slides.pdf"}
+      - {name: Speaker notes, url: "./2020-eventfeasible-slides-notes.pdf"}
+    abstract: |2
+            <p>
+              Event-driven programming is widely used for implementing user
+              interfaces, web applications, and non-blocking I/O. An
+              event-driven program is organized as a collection of event
+              handlers whose execution is triggered by events. Traditional
+              static analysis techniques are unable to reason precisely about
+              event-driven code because they conservatively assume that event
+              handlers may execute in any order. This paper proposes an
+              automatic transformation from Interprocedural Finite Distributive
+              Subset (IFDS) problems to Interprocedural Distributed Environment
+              (IDE) problems as a general solution to obtain precise static
+              analysis of event-driven applications; problems in both forms can
+              be solved by existing implementations. Our contribution is to
+              show how to improve analysis precision by automatically enriching
+              the former with information about the state of event handlers to
+              filter out infeasible paths. We prove the correctness of our
+              transformation and report on experiments with a proof-of-concept
+              implementation for a subset of JavaScript.
+            </p>
+---
+<h1>Publications and Other Works</h1>
+
+<ul>
+  <li><a href="#papers">Papers</a></li>
+  <li><a href="#techreports">Technical Reports</a></li>
+</ul>
+
+<section id="papers">
+  <h2>Papers</h2>
+<% item[:papers].each do |pub| -%>
+  <article class="publication">
+    <h3><%= pub[:title] %></h3>
+    <span class="authors">
+      <%= print_authors pub[:authors] %>
+    </span><br>
+    <span class="in"><%= pub[:in] %></span><br>
 <% if pub[:links] -%>
-  <ul class="links">
+    <ul class="links">
 <% pub[:links].each do |link| -%>
-    <li><%= link_to(link[:name], link[:url]) %></li>
+      <li><%= link_to(link[:name], link[:url]) %></li>
 <% end #each -%>
-  </ul>
+    </ul>
 <% end #if -%>
 <% if pub[:abstract] -%>
-  <details class="abstract">
-    <summary>Abstract</summary>
+    <details class="abstract">
+      <summary>Abstract</summary>
 <%= pub[:abstract] -%>
-  </details>
+    </details>
 <% end #if -%>
-</article>
-
+  </article>
 <% end #each -%>
+</section>
+<div class="pub-spacer"></div>
+
+<section id="techreports">
+  <h2>Technical Reports</h2>
+<% item[:techreports].each do |pub| -%>
+  <article class="publication">
+    <h3><%= pub[:title] %></h3>
+    <span class="authors">
+      <%= print_authors pub[:authors] %>
+    </span><br>
+    <span class="in"><%= pub[:in] %></span><br>
+<% if pub[:links] -%>
+    <ul class="links">
+<% pub[:links].each do |link| -%>
+      <li><%= link_to(link[:name], link[:url]) %></li>
+<% end #each -%>
+    </ul>
+<% end #if -%>
+<% if pub[:abstract] -%>
+    <details class="abstract">
+      <summary>Abstract</summary>
+<%= pub[:abstract] -%>
+    </details>
+<% end #if -%>
+  </article>
+<% end #each -%>
+</section>
