@@ -58,21 +58,22 @@ papers:
               successfully.
             </p>
   - title: "StarCoder: may the source be with you!"
+
     authors: [Raymond Li, Loubna Ben Allal, Yangtian Zi, Niklas Muennighoff,
-      Denis Kocetkov, Chenghao Mou, Marc Marone, Christopher Akiki, Jia Li, Jenny
-      Chim, Qian Liu, Evgenii Zheltonozhskii, Terry Yue Zhuo, Thomas Wang,
-      Olivier Dehaene, Mishig Davaadorj, Joel Lamy-Poirier, João Monteiro, Oleh
-      Shliazhko, Nicolas Gontier, Nicholas Meade, Armel Zebaze, Ming-Ho Yee,
-      Logesh Kumar Umapathi, Jian Zhu, Benjamin Lipkin, Muhtasham Oblokulov,
-      Zhiruo Wang, Rudra Murthy, Jason Stillerman, Siva Sankalp Patel, Dmitry
-      Abulkhanov, Marco Zocca, Manan Dey, Zhihan Zhang, Nour Fahmy, Urvashi
-      Bhattacharyya, Wenhao Yu, Swayam Singh, Sasha Luccioni, Paulo Villegas,
-      Maxim Kunakov, Fedor Zhdanov, Manuel Romero, Tony Lee, Nadav Timor,
-      Jennifer Ding, Claire Schlesinger, Hailey Schoelkopf, Jan Ebert, Tri Dao,
-      Mayank Mishra, Alex Gu, Jennifer Robinson, Carolyn Jane Anderson, Brendan
-      Dolan-Gavitt, Danish Contractor, Siva Reddy, Daniel Fried, Dzmitry
-      Bahdanau, Yacine Jernite, Carlos Muñoz Ferrandis, Sean Hughes, Thomas Wolf,
-      Arjun Guha, Leandro von Werra, Harm de Vries]
+      Denis Kocetkov, Chenghao Mou, Marc Marone, Christopher Akiki, Jia Li,
+      Jenny Chim, Qian Liu, Evgenii Zheltonozhskii, Terry Yue Zhuo, Thomas
+      Wang, Olivier Dehaene, Mishig Davaadorj, Joel Lamy-Poirier, João
+      Monteiro, Oleh Shliazhko, Nicolas Gontier, Nicholas Meade, Armel Zebaze,
+      Ming-Ho Yee, Logesh Kumar Umapathi, Jian Zhu, Benjamin Lipkin, Muhtasham
+      Oblokulov, Zhiruo Wang, Rudra Murthy, Jason Stillerman, Siva Sankalp
+      Patel, Dmitry Abulkhanov, Marco Zocca, Manan Dey, Zhihan Zhang, Nour
+      Fahmy, Urvashi Bhattacharyya, Wenhao Yu, Swayam Singh, Sasha Luccioni,
+      Paulo Villegas, Maxim Kunakov, Fedor Zhdanov, Manuel Romero, Tony Lee,
+      Nadav Timor, Jennifer Ding, Claire Schlesinger, Hailey Schoelkopf, Jan
+      Ebert, Tri Dao, Mayank Mishra, Alex Gu, Jennifer Robinson, Carolyn Jane
+      Anderson, Brendan Dolan-Gavitt, Danish Contractor, Siva Reddy, Daniel
+      Fried, Dzmitry Bahdanau, Yacine Jernite, Carlos Muñoz Ferrandis, Sean
+      Hughes, Thomas Wolf, Arjun Guha, Leandro von Werra, Harm de Vries]
     in: TMLR 2023
     links:
       - {name: OpenReview, url: "https://openreview.net/pdf?id=KoFOg41haE"}
@@ -339,6 +340,128 @@ papers:
     links:
       - {name: DOI, url: "https://doi.org/10.1016/j.jalz.2009.04.138"}
 
+theses:
+  - title: "Predicting TypeScript Type Annotations and Definitions with Machine
+      Learning"
+    in: PhD thesis proposal, Northeastern University
+    date: September 2023
+    links:
+      #- {name: PDF, url: "TODO"}
+      #- {name: Slides, url: "TODO"}
+      #- {name: Speaker notes, url: "TODO"}
+    abstract: |2
+            <p>
+              Type information is useful for developing large-scale software
+              systems. Types help prevent bugs, but may be inflexible and
+              hamper quick iteration on early prototypes. TypeScript, a
+              syntactic superset of JavaScript, brings the best of both worlds,
+              allowing programmers to freely mix statically and dynamically
+              typed code, and choose the level of type safety they wish to opt
+              into. However, <em>type migration</em>, the process of migrating
+              an untyped program to a typed version, has remained a
+              labour-intensive manual effort in practice. As a first step
+              towards automated effective type migration, there has been
+              interest in applying machine learning to the narrower problem of
+              <em>type prediction</em>.
+            </p>
+            <p>
+              In my thesis, I propose to use machine learning to partially
+              migrate JavaScript programs to TypeScript, by
+              <em>predicting type annotations</em> and
+              <em>generating type definitions</em>. To support my thesis, I
+              make three contributions. First, I propose evaluating type
+              prediction by type checking the generated annotations instead of
+              computing accuracy. Second, I fine-tune a large language model
+              with fill-in-the-middle capability to <em>fill-in-the-type</em>
+              and predict type annotations. Finally, I use a similar approach
+              to fine-tune a large language model to generate missing type
+              definitions.
+            </p>
+  - title: "Implementing a Functional Language for Flix"
+    in: MMath thesis, University of Waterloo
+    date: September 2016
+    links:
+      #- {name: PDF, url: "TODO"}
+      - {name: UW Library, url: "http://hdl.handle.net/10012/10856"}
+      #- {name: Slides, url: "TODO"}
+      #- {name: Speaker notes, url: "TODO"}
+    abstract: |2
+            <p>
+              Static program analysis is a powerful technique for maintaining
+              software, with applications such as compiler optimizations, code
+              refactoring, and bug finding. Static analyzers are typically
+              implemented in general-purpose programming languages, such as C++
+              and Java; however, these analyzers are complex and often
+              difficult to understand and maintain. An alternate approach is to
+              use Datalog, a declarative language. Implementors can express
+              analysis constraints declaratively, which makes it easier to
+              understand and ensure correctness of the analysis. Furthermore,
+              the declarative nature of the analysis allows multiple,
+              independent analyses to be easily combined.
+            </p>
+            <p>
+              Flix is a programming language for static analysis, consisting of
+              a logic language and a functional language. The logic language is
+              inspired by Datalog, but supports user-defined lattices. The
+              functional language allows implementors to write functions,
+              something which is not supported in Datalog. These two
+              extensions, user-defined lattices and functions, allow Flix to
+              support analyses that cannot be expressed by Datalog, such as a
+              constant propagation analysis. Datalog is limited to constraints
+              on relations, and although it can simulate finite lattices, it
+              cannot express lattices over an infinite domain. Finally, another
+              advantage of Flix is that it supports interoperability with
+              existing tools written in general-purpose programming languages.
+            </p>
+            <p>
+              This thesis discusses the implementation of the Flix functional
+              language, which involves abstract syntax tree transformations, an
+              interpreter back-end, and a code generator back-end. The
+              implementation must support a number of interesting language
+              features, such as pattern matching, first-class functions, and
+              interoperability.
+            </p>
+            <p>
+              The thesis also evaluates the implementation, comparing the
+              interpreter and code generator back-ends in terms of correctness
+              and performance. The performance benchmarks include purely
+              functional programs (such as an <i>N</i>-body simulation),
+              programs that involve both the logic and functional languages
+              (such as matrix multiplication), and a real-world static analysis
+              (the Strong Update analysis). Additionally, for the purely
+              functional benchmarks, the performance of Flix is compared to
+              C++, Java, Scala, and Ruby.
+            </p>
+            <p>
+              In general, the performance of compiled Flix code is
+              significantly faster than interpreted Flix code. This applies to
+              all the purely functional benchmarks, as well as benchmarks that
+              spend most of the time in the functional language, rather than
+              the logic language. Furthermore, for purely functional code, the
+              performance of compiled Flix is often comparable to Java and
+              Scala.
+            </p>
+
+posters:
+  - title: "Flix and its Implementation: A Language for Static Analysis"
+    authors: [Ming-Ho Yee, Magnus Madsen, Ondřej Lhoták]
+    in: ECOOP 2016
+    links:
+      #- {name: PDF, url: "TODO"}
+    abstract: |2
+            <p>
+              Flix is a language for implementing static analyses. Flix is
+              inspired by Datalog, but supports user-defined lattices and
+              functions, allowing a larger class of analyses to be expressed.
+              For example, a constant propagation analysis can be expressed in
+              Flix, but not in Datalog.
+            </p>
+            <p>
+              A static analysis in Flix is specified as a set of constraints in
+              a logic language, while functions are expressed in a pure
+              functional language.
+            </p>
+
 techreports:
   - title: "Type Prediction With Program Decomposition and Fill-in-the-Type
       Training"
@@ -397,18 +520,21 @@ techreports:
               transformation and report on experiments with a proof-of-concept
               implementation for a subset of JavaScript.
             </p>
+
 ---
 <h1>Publications and Other Works</h1>
 
 <ul>
   <li><a href="#papers">Papers</a></li>
+  <li><a href="#theses">Theses</a></li>
+  <li><a href="#posters">Posters</a></li>
   <li><a href="#techreports">Technical Reports</a></li>
 </ul>
 
-<section id="papers">
+<section id="papers" class="publication">
   <h2>Papers</h2>
 <% item[:papers].each do |pub| -%>
-  <article class="publication">
+  <article>
     <h3><%= pub[:title] %></h3>
     <span class="authors">
       <%= print_authors pub[:authors] %>
@@ -432,10 +558,62 @@ techreports:
 </section>
 <div class="pub-spacer"></div>
 
-<section id="techreports">
+<section id="theses" class="publication">
+  <h2>Theses</h2>
+<% item[:theses].each do |pub| -%>
+  <article>
+    <h3><%= pub[:title] %></h3>
+    <span class="in"><%= pub[:in] %></span><br>
+    <span><%= pub[:date] %></span><br>
+<% if pub[:links] -%>
+    <ul class="links">
+<% pub[:links].each do |link| -%>
+      <li><%= link_to(link[:name], link[:url]) %></li>
+<% end #each -%>
+    </ul>
+<% end #if -%>
+<% if pub[:abstract] -%>
+    <details class="abstract">
+      <summary>Abstract</summary>
+<%= pub[:abstract] -%>
+    </details>
+<% end #if -%>
+  </article>
+<% end #each -%>
+</section>
+<div class="pub-spacer"></div>
+
+<section id="posters" class="publication">
+  <h2>Posters</h2>
+<% item[:posters].each do |pub| -%>
+  <article>
+    <h3><%= pub[:title] %></h3>
+    <span class="authors">
+      <%= print_authors pub[:authors] %>
+    </span><br>
+    <span class="in"><%= pub[:in] %></span><br>
+<% if pub[:links] -%>
+    <ul class="links">
+<% pub[:links].each do |link| -%>
+      <li><%= link_to(link[:name], link[:url]) %></li>
+<% end #each -%>
+    </ul>
+<% end #if -%>
+<% if pub[:abstract] -%>
+    <details class="abstract">
+      <summary>Abstract</summary>
+<%= pub[:abstract] -%>
+    </details>
+<% end #if -%>
+  </article>
+<% end #each -%>
+</section>
+<div class="pub-spacer"></div>
+
+<section id="techreports" class="publication">
   <h2>Technical Reports</h2>
 <% item[:techreports].each do |pub| -%>
-  <article class="publication">
+  <article>
     <h3><%= pub[:title] %></h3>
     <span class="authors">
       <%= print_authors pub[:authors] %>

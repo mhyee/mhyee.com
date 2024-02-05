@@ -210,9 +210,13 @@ code {
         clear: both;
         height: 20px;
       }
-      #content .publication h3 {
-        font-size: 16px;
+      #content .publication h2 {
         padding: 0;
+        margin-bottom: -5px;
+      }
+      #content .publication h3 {
+        padding: 15px 0 0;
+        font-size: 16px;
       }
       #content .publication .authors {
         font-size: 14px;
@@ -239,7 +243,6 @@ code {
       #content .publication .abstract {
         clear: both;
         margin-top: 5px;
-        margin-bottom: 15px;
       }
 
   footer {
