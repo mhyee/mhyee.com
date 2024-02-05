@@ -51,7 +51,7 @@ a common YAML file:
 [txt resume]: /resume/resume.txt
 [tex resume]: /resume/resume.tex
 
-## Online profiles
+## Profiles
 
   - [GitHub][]
   - [LinkedIn][]
