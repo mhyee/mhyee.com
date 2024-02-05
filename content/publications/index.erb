@@ -1,4 +1,10 @@
 ---
+# To compress PDFs:
+#   gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress \
+#      -dNOPAUSE -dQUIET -dBATCH \
+#      -sOutputFile=out.pdf in.pdf
+# Use /prepress (300dpi) for slides, /ebook (150dpi) for speaker notes
+
 title: Publications
 publications:
   - title: "Do Machine Learning Models Produce TypeScript Types That Type
@@ -8,7 +14,8 @@ publications:
     links:
       - {name: DOI, url: "https://doi.org/10.4230/LIPIcs.ECOOP.2023.37"}
       - {name: arXiv, url: "https://arxiv.org/abs/2302.12163"}
-      #- {name: Slides, url: "TODO"}
+      - {name: Slides, url: "./2023-typeweaver-slides.pdf"}
+      - {name: Speaker notes, url: "./2023-typeweaver-slides-notes.pdf"}
       - {name: Artifact, url: "https://doi.org/10.4230/DARTS.9.2.5"}
       - {name: GitHub, url: "https://github.com/nuprl/TypeWeaver"}
     abstract: |2
@@ -225,7 +232,8 @@ publications:
     in: Technical report, 2019
     links:
       - {name: arXiv, url: "https://arxiv.org/abs/1910.12935"}
-      #- {name: Slides, url: "TODO"}
+      - {name: Slides, url: "./2020-eventfeasible-slides.pdf"}
+      - {name: Speaker notes, url: "./2020-eventfeasible-slides-notes.pdf"}
     abstract: |2
             <p>
               Event-driven programming is widely used for implementing user
@@ -287,8 +295,7 @@ publications:
     in: PLDI 2016
     links:
       - {name: DOI, url: "https://doi.org/10.1145/2908080.2908096"}
-      #- {name: PDF, url: "TODO"}
-      #- {name: Poster, url: "TODO"}
+      - {name: PDF, url: "./2016-flix.pdf"}
       - {name: GitHub, url: "https://github.com/flix/flix"}
       - {name: Website, url: "https://flix.dev/"}
     abstract: |2
@@ -347,7 +354,7 @@ publications:
     in: ABZ 2014
     links:
       - {name: DOI, url: "https://doi.org/10.1007/978-3-662-43652-3_34"}
-      #- {name: PDF, url: "TODO"}
+      - {name: PDF, url: "./2014-int_elision.pdf"}
     abstract: |2
             <p>
               Software product line (SPL) engineering involves the modeling,
@@ -362,11 +369,14 @@ publications:
               bitwidths, hence the number of integer atoms in the universe can
               be orders of magnitude more than the other atoms. In our
               approach, the tuples for these integer-valued relations are
-              computed outside the sat solver before returning the solution to
-              the user. Second, we add a checkpointing facility to Kodkod,
-              which allows the multi-objective optimization algorithm to reuse
-              previously computed internal sat solver state, after
-              backtracking.
+              computed outside the
+              <span style="font-variant: small-caps">sat</span> solver before
+              returning the solution to the user. Second, we add a
+              checkpointing facility to Kodkod, which allows the
+              multi-objective optimization algorithm to reuse previously
+              computed internal
+              <span style="font-variant: small-caps">sat</span> solver state,
+              after backtracking.
             </p>
             <p>
               Together these result in orders of magnitude improvement in using
