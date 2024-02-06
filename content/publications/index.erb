@@ -462,7 +462,8 @@ posters:
   - title: "Optimizing Moolloy: A Solver for Multi-Objective Optimization
       Problems"
     authors: [Joseph Hong, Chris Kleynhans, Ming-Ho Yee, Atulan Zaman]
-    in: Capstone Design Project, University of Waterloo, 2014
+    in: Capstone Design Project, University of Waterloo
+    date: March 2014
     links:
       - {name: PDF, url: "./2014-fydp-poster.pdf"}
     abstract: |2
@@ -536,17 +537,20 @@ techreports:
 otherwriting:
   - title: "Blog posts"
     url: "https://prl.khoury.northeastern.edu/blog/tags/Author-Ming-Ho-Yee.html"
-    in: Programming Research Laboratory Blog, Northeastern University,
-      2017–2019
-    note: |2
-            During my Ph.D., I wrote some posts for the
-            <a href="https://prl.khoury.northeastern.edu/blog/">PRL blog</a>.
-            My favourite post I wrote is an
-            <a href="https://prl.khoury.northeastern.edu/blog/2019/09/05/lexical-and-dynamic-scope/">
-            explanation and history of lexical and dynamic scope</a>.
+    in: Programming Research Laboratory Blog, Northeastern University
+    date: 2017–2019
+    abstract: |2
+            <p>
+              During my Ph.D., I wrote some posts for the
+              <a href="https://prl.khoury.northeastern.edu/blog/">PRL blog</a>.
+              My favourite post I wrote is an
+              <a href="https://prl.khoury.northeastern.edu/blog/2019/09/05/lexical-and-dynamic-scope/">
+              explanation and history of lexical and dynamic scope</a>.
+            </p>
   - title: "Survey Paper: On-Stack Replacement"
     url: "./2018-cs7600-osr.pdf"
-    in: CS 7600 (Intensive Computer Systems), Northeastern University, 2018
+    in: CS 7600 (Intensive Computer Systems), Northeastern University
+    date: December 2018
     abstract: |2
             <p>
               On-stack replacement (OSR) is a programming language
@@ -574,7 +578,8 @@ otherwriting:
             </p>
   - title: "Undergraduate Capstone Design Project"
     url: "/fydp/"
-    in: University of Waterloo, 2014
+    in: University of Waterloo
+    date: 2012–2014
     abstract: |2
             <p>
               The Capstone Design Project, also known as the fourth-year design
@@ -656,6 +661,9 @@ otherwriting:
       <%= print_authors pub[:authors] %>
     </span><br>
     <span class="in"><%= pub[:in] %></span><br>
+<% if pub[:date] -%>
+    <span><%= pub[:date] %></span><br>
+<% end #if -%>
 <% if pub[:links] -%>
     <ul class="links">
 <% pub[:links].each do |link| -%>
@@ -706,11 +714,9 @@ otherwriting:
 <% item[:otherwriting].each do |pub| -%>
   <article>
     <h3><%= link_to(pub[:title], pub[:url]) %></h3>
-    <span class="in"><%= pub[:in] %></span>
-<% if pub[:note] -%>
-    <p class="description">
-<%= pub[:note] -%>
-    </p>
+    <span class="in"><%= pub[:in] %></span><br>
+<% if pub[:date] -%>
+    <span><%= pub[:date] %></span><br>
 <% end #if -%>
 <% if pub[:abstract] -%>
     <details class="abstract">
