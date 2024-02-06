@@ -162,6 +162,9 @@ code {
         margin-left: 20px;
         margin-bottom: 2px;
       }
+        #content li ul {
+          margin-bottom: 0;
+        }
       #content .date {
         font-size: 9pt;
         margin-top: -10px;
@@ -243,6 +246,13 @@ code {
       #content .publication .abstract {
         clear: both;
         margin-top: 5px;
+      }
+        #content .publication details.abstract[open] {
+          margin-bottom: -1em;
+        }
+
+      #content .publication p.description {
+        margin: 5px 0 0;
       }
 
   footer {

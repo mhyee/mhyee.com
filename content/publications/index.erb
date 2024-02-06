@@ -519,6 +519,57 @@ techreports:
               implementation for a subset of JavaScript.
             </p>
 
+otherwriting:
+  - title: "Blog posts"
+    url: "https://prl.khoury.northeastern.edu/blog/tags/Author-Ming-Ho-Yee.html"
+    in: Programming Research Laboratory Blog, Northeastern University,
+      2017–2019
+    note: |2
+            During my Ph.D., I wrote some posts for the
+            <a href="https://prl.khoury.northeastern.edu/blog/">PRL blog</a>.
+            My favourite post I wrote is an
+            <a href="https://prl.khoury.northeastern.edu/blog/2019/09/05/lexical-and-dynamic-scope/">
+            explanation and history of lexical and dynamic scope</a>.
+  - title: "Survey Paper: On-Stack Replacement"
+    url: "./2018-cs7600-osr.pdf"
+    in: CS 7600 (Intensive Computer Systems), Northeastern University, 2018
+    abstract: |2
+            <p>
+              On-stack replacement (OSR) is a programming language
+              implementation technique that allows a running program to switch
+              to a different version of code. For example, a program could
+              start executing optimized code, and then transfer to and start
+              executing unoptimized code. This was the original use case for
+              OSR, to facilitate debugging of optimized code.
+            </p>
+            <p>
+              After its original use was established, OSR shifted to a
+              different use case: optimizing programs. OSR allows the run-time
+              system to detect if a program is executing an inefficient loop,
+              recompile and optimize the method that contains the loop, and
+              then transfer control to the newly compiled method. Another
+              strategy is to optimize code based on some assumptions, then, if
+              the assumptions are invalidated at run-time, transfer control
+              back to the original, unoptimized code.
+            </p>
+            <p>
+              In this survey paper, we study how OSR was first introduced as a
+              means for debugging, how it came to be used for program
+              optimizations, its implementation as a reusable library, and
+              other directions of research.
+            </p>
+  - title: "Undergraduate Capstone Design Project"
+    url: "/fydp/"
+    in: University of Waterloo, 2014
+    abstract: |2
+            <p>
+              The Capstone Design Project, also known as the fourth-year design
+              project (FYDP), is a mandatory three-course sequence in the
+              <a href="https://uwaterloo.ca/software-engineering/">software engineering</a>
+              program at the <a href="https://uwaterloo.ca/">University of Waterloo</a>,
+              meant to be completed in groups of four undergraduate students. I
+              wrote a series of articles documenting my group's project.
+            </p>
 ---
 <h1>Publications and Other Works</h1>
 
@@ -527,6 +578,7 @@ techreports:
   <li><a href="#theses">Theses</a></li>
   <li><a href="#posters">Posters</a></li>
   <li><a href="#techreports">Technical Reports</a></li>
+  <li><a href="#otherwriting">Other Writing</a></li>
 </ul>
 
 <section id="papers" class="publication">
@@ -623,6 +675,28 @@ techreports:
       <li><%= link_to(link[:name], link[:url]) %></li>
 <% end #each -%>
     </ul>
+<% end #if -%>
+<% if pub[:abstract] -%>
+    <details class="abstract">
+      <summary>Abstract</summary>
+<%= pub[:abstract] -%>
+    </details>
+<% end #if -%>
+  </article>
+<% end #each -%>
+</section>
+<div class="pub-spacer"></div>
+
+<section id="otherwriting" class="publication">
+  <h2>Other Writing</h2>
+<% item[:otherwriting].each do |pub| -%>
+  <article>
+    <h3><%= link_to(pub[:title], pub[:url]) %></h3>
+    <span class="in"><%= pub[:in] %></span>
+<% if pub[:note] -%>
+    <p class="description">
+<%= pub[:note] -%>
+    </p>
 <% end #if -%>
 <% if pub[:abstract] -%>
     <details class="abstract">
