@@ -58,7 +58,6 @@ papers:
               successfully.
             </p>
   - title: "StarCoder: may the source be with you!"
-
     authors: [Raymond Li, Loubna Ben Allal, Yangtian Zi, Niklas Muennighoff,
       Denis Kocetkov, Chenghao Mou, Marc Marone, Christopher Akiki, Jia Li,
       Jenny Chim, Qian Liu, Evgenii Zheltonozhskii, Terry Yue Zhuo, Thomas
@@ -103,6 +102,36 @@ papers:
               make the StarCoder models publicly available under a more
               commercially viable version of the Open Responsible AI Model
               license.
+            </p>
+  - title: "Type Prediction With Program Decomposition and Fill-in-the-Type
+      Training"
+    authors: [Federico Cassano, Ming-Ho Yee, Noah Shinn, Arjun Guha, Steven
+      Holtzen]
+    in: In submission, 2023
+    links:
+      - {name: arXiv,  url: "https://arxiv.org/abs/2305.17145"}
+      - {name: GitHub, url: "https://github.com/GammaTauAI/opentau"}
+    abstract: |2
+            <p>
+              TypeScript and Python are two programming languages that support
+              optional type annotations, which are useful but tedious to
+              introduce and maintain. This has motivated automated type
+              prediction: given an untyped program, produce a well-typed output
+              program. Large language models (LLMs) are promising for type
+              prediction, but there are challenges: fill-in-the-middle performs
+              poorly, programs may not fit into the context window, generated
+              types may not type check, and it is difficult to measure how
+              well-typed the output program is. We address these challenges by
+              building OpenTau, a search-based approach for type prediction
+              that leverages large language models. We propose a new metric for
+              type prediction quality, give a tree-based program decomposition
+              that searches a space of generated types, and present
+              fill-in-the-type fine-tuning for LLMs. We evaluate our work with
+              a new dataset for TypeScript type prediction, and show that 47.4%
+              of files type check (14.5% absolute improvement) with an overall
+              rate of 3.3 type errors per file. All code, data, and models are
+              available on
+              <a href="https://github.com/GammaTauAI/opentau">GitHub</a>.
             </p>
   - title: "MultiPL-E: A Scalable and Polyglot Approach to Benchmarking Neural
       Code Generation"
@@ -202,6 +231,33 @@ papers:
               second infers where arguments are evaluated. Leveraging their
               results, we show how to elide environment creation and inline
               functions.
+            </p>
+  - title: "Precise Dataflow Analysis of Event-Driven Applications"
+    authors: [Ming-Ho Yee, Ayaz Badouraly, Ondřej Lhoták, Frank Tip, Jan Vitek]
+    in: Technical report, 2019
+    links:
+      - {name: arXiv,         url: "https://arxiv.org/abs/1910.12935"}
+      - {name: Slides,        url: "./2020-eventfeasible-slides.pdf"}
+      - {name: Speaker notes, url: "./2020-eventfeasible-slides-notes.pdf"}
+    abstract: |2
+            <p>
+              Event-driven programming is widely used for implementing user
+              interfaces, web applications, and non-blocking I/O. An
+              event-driven program is organized as a collection of event
+              handlers whose execution is triggered by events. Traditional
+              static analysis techniques are unable to reason precisely about
+              event-driven code because they conservatively assume that event
+              handlers may execute in any order. This paper proposes an
+              automatic transformation from Interprocedural Finite Distributive
+              Subset (IFDS) problems to Interprocedural Distributed Environment
+              (IDE) problems as a general solution to obtain precise static
+              analysis of event-driven applications; problems in both forms can
+              be solved by existing implementations. Our contribution is to
+              show how to improve analysis precision by automatically enriching
+              the former with information about the state of event handlers to
+              filter out infeasible paths. We prove the correctness of our
+              transformation and report on experiments with a proof-of-concept
+              implementation for a subset of JavaScript.
             </p>
   - title: "Correctness of Speculative Optimizations with Dynamic
       Deoptimization"
@@ -475,65 +531,6 @@ posters:
               one metric without making some other metric worse.
             </p>
 
-techreports:
-  - title: "Type Prediction With Program Decomposition and Fill-in-the-Type
-      Training"
-    authors: [Federico Cassano, Ming-Ho Yee, Noah Shinn, Arjun Guha, Steven
-      Holtzen]
-    in: In submission, 2023
-    links:
-      - {name: arXiv,  url: "https://arxiv.org/abs/2305.17145"}
-      - {name: GitHub, url: "https://github.com/GammaTauAI/opentau"}
-    abstract: |2
-            <p>
-              TypeScript and Python are two programming languages that support
-              optional type annotations, which are useful but tedious to
-              introduce and maintain. This has motivated automated type
-              prediction: given an untyped program, produce a well-typed output
-              program. Large language models (LLMs) are promising for type
-              prediction, but there are challenges: fill-in-the-middle performs
-              poorly, programs may not fit into the context window, generated
-              types may not type check, and it is difficult to measure how
-              well-typed the output program is. We address these challenges by
-              building OpenTau, a search-based approach for type prediction
-              that leverages large language models. We propose a new metric for
-              type prediction quality, give a tree-based program decomposition
-              that searches a space of generated types, and present
-              fill-in-the-type fine-tuning for LLMs. We evaluate our work with
-              a new dataset for TypeScript type prediction, and show that 47.4%
-              of files type check (14.5% absolute improvement) with an overall
-              rate of 3.3 type errors per file. All code, data, and models are
-              available on
-              <a href="https://github.com/GammaTauAI/opentau">GitHub</a>.
-            </p>
-  - title: "Precise Dataflow Analysis of Event-Driven Applications"
-    authors: [Ming-Ho Yee, Ayaz Badouraly, Ondřej Lhoták, Frank Tip, Jan Vitek]
-    in: Technical report, 2019
-    links:
-      - {name: arXiv,         url: "https://arxiv.org/abs/1910.12935"}
-      - {name: Slides,        url: "./2020-eventfeasible-slides.pdf"}
-      - {name: Speaker notes, url: "./2020-eventfeasible-slides-notes.pdf"}
-    abstract: |2
-            <p>
-              Event-driven programming is widely used for implementing user
-              interfaces, web applications, and non-blocking I/O. An
-              event-driven program is organized as a collection of event
-              handlers whose execution is triggered by events. Traditional
-              static analysis techniques are unable to reason precisely about
-              event-driven code because they conservatively assume that event
-              handlers may execute in any order. This paper proposes an
-              automatic transformation from Interprocedural Finite Distributive
-              Subset (IFDS) problems to Interprocedural Distributed Environment
-              (IDE) problems as a general solution to obtain precise static
-              analysis of event-driven applications; problems in both forms can
-              be solved by existing implementations. Our contribution is to
-              show how to improve analysis precision by automatically enriching
-              the former with information about the state of event handlers to
-              filter out infeasible paths. We prove the correctness of our
-              transformation and report on experiments with a proof-of-concept
-              implementation for a subset of JavaScript.
-            </p>
-
 otherwriting:
   - title: "Blog posts"
     url: "https://prl.khoury.northeastern.edu/blog/tags/Author-Ming-Ho-Yee.html"
@@ -596,7 +593,6 @@ otherwriting:
   <li><a href="#papers">Papers</a></li>
   <li><a href="#theses">Theses</a></li>
   <li><a href="#posters">Posters</a></li>
-  <li><a href="#techreports">Technical Reports</a></li>
   <li><a href="#otherwriting">Other Writing</a></li>
 </ul>
 
@@ -664,33 +660,6 @@ otherwriting:
 <% if pub[:date] -%>
     <span><%= pub[:date] %></span><br>
 <% end #if -%>
-<% if pub[:links] -%>
-    <ul class="links">
-<% pub[:links].each do |link| -%>
-      <li><%= link_to(link[:name], link[:url]) %></li>
-<% end #each -%>
-    </ul>
-<% end #if -%>
-<% if pub[:abstract] -%>
-    <details class="abstract">
-      <summary>Abstract</summary>
-<%= pub[:abstract] -%>
-    </details>
-<% end #if -%>
-  </article>
-<% end #each -%>
-</section>
-<div class="pub-spacer"></div>
-
-<section id="techreports" class="publication">
-  <h2>Technical Reports</h2>
-<% item[:techreports].each do |pub| -%>
-  <article>
-    <h3><%= pub[:title] %></h3>
-    <span class="authors">
-      <%= print_authors pub[:authors] %>
-    </span><br>
-    <span class="in"><%= pub[:in] %></span><br>
 <% if pub[:links] -%>
     <ul class="links">
 <% pub[:links].each do |link| -%>
