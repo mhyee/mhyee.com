@@ -229,14 +229,14 @@ papers:
               and shows that reasoning about speculation is surprisingly easy
               when assumptions are made explicit in the program representation.
               This insight is demonstrated on a compiler intermediate
-              representation, named sourir, modeled after the high-level
-              representation for a dynamic language. Traditional compiler
-              optimizations such as constant folding, unreachable code
-              elimination, and function inlining are shown to be correct in the
-              presence of assumptions. Furthermore, the paper establishes the
-              correctness of compiler transformations specific to
-              deoptimization: namely unrestricted deoptimization, predicate
-              hoisting, and assume composition.
+              representation, named <span style="font-variant:small-caps">sourir</span>,
+              modeled after the high-level representation for a dynamic
+              language. Traditional compiler optimizations such as constant
+              folding, unreachable code elimination, and function inlining are
+              shown to be correct in the presence of assumptions. Furthermore,
+              the paper establishes the correctness of compiler transformations
+              specific to deoptimization: namely unrestricted deoptimization,
+              predicate hoisting, and assume composition.
             </p>
   - title: "From Datalog to Flix: A Declarative Language for Fixed Points on
       Lattices"
@@ -319,12 +319,12 @@ papers:
               be orders of magnitude more than the other atoms. In our
               approach, the tuples for these integer-valued relations are
               computed outside the
-              <span style="font-variant: small-caps">sat</span> solver before
+              <span style="font-variant:small-caps">sat</span> solver before
               returning the solution to the user. Second, we add a
               checkpointing facility to Kodkod, which allows the
               multi-objective optimization algorithm to reuse previously
               computed internal
-              <span style="font-variant: small-caps">sat</span> solver state,
+              <span style="font-variant:small-caps">sat</span> solver state,
               after backtracking.
             </p>
             <p>
@@ -458,6 +458,20 @@ posters:
               Flix, but not in Datalog. A static analysis in Flix is specified
               as a set of constraints in a logic language, while functions are
               expressed in a pure functional language.
+            </p>
+  - title: "Optimizing Moolloy: A Solver for Multi-Objective Optimization
+      Problems"
+    authors: [Joseph Hong, Chris Kleynhans, Ming-Ho Yee, Atulan Zaman]
+    in: Capstone Design Project, University of Waterloo, 2014
+    links:
+      - {name: PDF, url: "./2014-fydp-poster.pdf"}
+    abstract: |2
+            <p>
+              Our project is to optimize Moolloy, a solver for multi-objective
+              optimization problems, so that it can solve problems faster and
+              scale with additional hardware. Moolloy finds all optimal
+              solutions, which are configurations that cannot be improved in
+              one metric without making some other metric worse.
             </p>
 
 techreports:
