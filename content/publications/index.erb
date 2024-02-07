@@ -531,6 +531,143 @@ posters:
               one metric without making some other metric worse.
             </p>
 
+talks:
+  - title: "Dominators in Graphs"
+    in: Seminar, Northeastern University
+    date: May 2020
+    links:
+      - {name: Slides,         url: "./2020-seminar-dominators-slides.pdf"}
+      - {name: Speaker notes,  url: "./2020-seminar-dominators-slides-notes.pdf"}
+      - {name: Pull request,   url: "https://github.com/reactorlabs/rir/pull/854"}
+      - {name: Implementation, url: "https://github.com/reactorlabs/rir/blob/b265f9e/rir/src/compiler/util/cfg.cpp#L52"}
+    abstract: |2
+            <p>
+              While investigating benchmark performance for
+              <a href="https://github.com/reactorlabs/rir">Ř</a>, a just-in-time
+              compiler for R, I observed that our graph dominators
+              implementation very slow. Eventually, I
+              <a href="https://github.com/reactorlabs/rir/pull/854">rewrote</a>
+              our implementation to use the <a href="https://doi.org/10.1145/357062.357071">Lengauer-Tarjan algorithm</a>,
+              and presented my findings.
+            </p>
+  - title: "A History of Classical Music"
+    in: Undistinguished Lecture Series, Northeastern University
+    date: February 2018
+    links:
+      - {name: Slides,        url: "./2018-udls-classical_music-slides.pdf"}
+      - {name: Speaker notes, url: "./2018-udls-classical_music-slides-notes.pdf"}
+      - {name: Audio,         url: "https://github.com/mhyee/gmyk/tree/master/classical-music/audio"}
+    abstract: |2
+            <p>
+              What is classical music? How has it evolved over time? In this
+              talk, I'll give a tour of the last 400 years of classical music.
+              We'll explore a selection of composers, wander through different
+              periods and styles, and of course, listen to some music. No
+              musical background is required for this talk. Whether you are
+              completely new to classical music, or have season tickets to the
+              symphony, I hope you will find something interesting in this
+              talk.
+            </p>
+  - title: "Flix: A Language for Static Analysis"
+    authors: [Magnus Madsen, Ming-Ho Yee, Ondřej Lhoták]
+    in: Seminar, Northeastern University
+    date: October 2016
+    links:
+      - {name: Slides,        url: "./2016-10-seminar-flix-slides.pdf"}
+      - {name: Speaker notes, url: "./2016-10-seminar-flix-slides-notes.pdf"}
+    abstract: |2
+            <p>
+              Static program analysis is a powerful technique for maintaining
+              software, with applications such as compiler optimizations, code
+              refactoring, and bug finding. Static analyzers are typically
+              implemented in general-purpose programming languages, such as C++
+              and Java; however, these analyzers are complex and often
+              difficult to understand and maintain. An alternate approach is to
+              use Datalog, a declarative language. Implementors can express
+              analysis constraints declaratively, which makes it easier to
+              understand and ensure correctness of the analysis. Furthermore,
+              the declarative nature of the analysis allows multiple,
+              independent analyses to be easily combined.
+            </p>
+            <p>
+              Flix is a programming language for static analysis, consisting of
+              a logic language and a functional language. The logic language is
+              inspired by Datalog, but supports user-defined lattices. The
+              functional language allows implementors to write functions,
+              something which is not supported in Datalog. These two
+              extensions, user-defined lattices and functions, allow Flix to
+              support analyses that cannot be expressed by Datalog, such as a
+              constant propagation analysis. Datalog is limited to constraints
+              on relations, and although it can simulate finite lattices, it
+              cannot express lattices over an infinite domain. Finally, another
+              advantage of Flix is that it supports interoperability with
+              existing tools written in general-purpose programming languages.
+            </p>
+            <p>
+              This talk provides an overview of the implementation and
+              evaluation of the Flix functional language. The implementation
+              involves abstract syntax tree transformations, an interpreter
+              back-end, and a code generator back-end, and must support a
+              number of interesting language features, such as pattern
+              matching, first-class functions, and interoperability. The
+              evaluation compares the interpreter and code generator back-ends
+              in terms of correctness and performance.
+            </p>
+  - title: "The Flix Language"
+    authors: [Magnus Madsen, Ming-Ho Yee, Ondřej Lhoták]
+    in: Seminar, University of Waterloo
+    date: March 2016
+    links:
+      - {name: Slides,        url: "./2016-03-seminar-flix-slides.pdf"}
+      - {name: Speaker notes, url: "./2016-03-seminar-flix-slides-notes.pdf"}
+    abstract: |2
+            <p>
+              We present Flix, a declarative programming language for
+              specifying and solving least fixed point problems, particularly
+              static program analyses. Flix is inspired by Datalog and extends
+              it with lattices and monotone functions. Using Flix, implementors
+              of static analyses can express a broader range of analyses than
+              is currently possible in pure Datalog, while retaining its
+              familiar rule-based syntax. We define a model-theoretic semantics
+              of Flix as a natural extension of the Datalog semantics. This
+              semantics captures the declarative meaning of Flix programs
+              without imposing any specific evaluation strategy. An efficient
+              strategy is semi-naive evaluation which we adapt for Flix. We
+              have implemented a compiler and runtime for Flix, and used it to
+              express several well-known static analyses.
+            </p>
+  - title: "Graduate School: What I Wish I Knew in Third Year"
+    in: University of Waterloo
+    date: October 2015
+    links:
+      - {name: Slides,        url: "./2015-grad_school-slides.pdf"}
+      - {name: Speaker notes, url: "./2015-grad_school-slides-notes.pdf"}
+      - {name: GitHub,        url: "https://github.com/mhyee/gmyk/tree/master/grad-school"}
+    abstract: |2
+            <p>
+              This was a talk for undergraduate students in the
+              <a href="https://uwaterloo.ca/software-engineering/">software engineering</a>
+              program at the
+              <a href="https://uwaterloo.ca/">University of Waterloo</a>, the
+              same program I studied in. The goal was to share I had learned
+              about applying to graduate school.
+            </p>
+  - title: "Optimizing Moolloy: A Solver for Multi-Objective Optimization
+      Problems"
+    authors: [Joseph Hong, Chris Kleynhans, Ming-Ho Yee, Atulan Zaman]
+    in: Capstone Design Project, University of Waterloo
+    date: March 2014
+    links:
+      - {name: Slides, url: "./2014-fydp-slides.pdf"}
+    abstract: |2
+            <p>
+              Our project is to optimize Moolloy, a solver for multi-objective
+              optimization problems, so that it can solve problems faster and
+              scale with additional hardware. Moolloy finds all optimal
+              solutions, which are configurations that cannot be improved in
+              one metric without making some other metric worse.
+            </p>
+
 otherwriting:
   - title: "Blog posts"
     url: "https://prl.khoury.northeastern.edu/blog/tags/Author-Ming-Ho-Yee.html"
@@ -582,9 +719,10 @@ otherwriting:
               The Capstone Design Project, also known as the fourth-year design
               project (FYDP), is a mandatory three-course sequence in the
               <a href="https://uwaterloo.ca/software-engineering/">software engineering</a>
-              program at the <a href="https://uwaterloo.ca/">University of Waterloo</a>,
-              meant to be completed in groups of four undergraduate students. I
-              wrote a series of articles documenting my group's project.
+              program at the
+              <a href="https://uwaterloo.ca/">University of Waterloo</a>, meant
+              to be completed in groups of four undergraduate students. I wrote
+              a series of articles documenting my group's project.
             </p>
 ---
 <h1>Publications and Other Works</h1>
@@ -593,6 +731,7 @@ otherwriting:
   <li><a href="#papers">Papers</a></li>
   <li><a href="#theses">Theses</a></li>
   <li><a href="#posters">Posters</a></li>
+  <li><a href="#talks">Talks</a></li>
   <li><a href="#otherwriting">Other Writing</a></li>
 </ul>
 
@@ -656,6 +795,38 @@ otherwriting:
     <span class="authors">
       <%= print_authors pub[:authors] %>
     </span><br>
+    <span class="in"><%= pub[:in] %></span><br>
+<% if pub[:date] -%>
+    <span><%= pub[:date] %></span><br>
+<% end #if -%>
+<% if pub[:links] -%>
+    <ul class="links">
+<% pub[:links].each do |link| -%>
+      <li><%= link_to(link[:name], link[:url]) %></li>
+<% end #each -%>
+    </ul>
+<% end #if -%>
+<% if pub[:abstract] -%>
+    <details class="abstract">
+      <summary>Abstract</summary>
+<%= pub[:abstract] -%>
+    </details>
+<% end #if -%>
+  </article>
+<% end #each -%>
+</section>
+<div class="pub-spacer"></div>
+
+<section id="talks" class="publication">
+  <h2>Talks</h2>
+<% item[:talks].each do |pub| -%>
+  <article>
+    <h3><%= pub[:title] %></h3>
+<% if pub[:authors] -%>
+    <span class="authors">
+      <%= print_authors pub[:authors] %>
+    </span><br>
+<% end #if -%>
     <span class="in"><%= pub[:in] %></span><br>
 <% if pub[:date] -%>
     <span><%= pub[:date] %></span><br>
