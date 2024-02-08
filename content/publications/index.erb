@@ -568,6 +568,54 @@ talks:
               symphony, I hope you will find something interesting in this
               talk.
             </p>
+  - title: "Push-Down Automata for Higher Order Flow Analysis"
+    in: CS 7480 (Program Analysis Seminar),
+      Northeastern University
+    date: November 2017
+    links:
+      - {name: Lecture notes, url: "./2017-11-cs7480-pda_hofa.pdf"}
+  - title: "Control Flow Analysis in Scheme"
+    authors: [Aviral Goel, Ming-Ho Yee]
+    in: CS 7400 (Intensive Principles of Programming Languages),
+      Northeastern University
+    date: April 2017
+    links:
+      - {name: Lecture notes, url: "./2017-cs7400-cfa-lecture.pdf"}
+    abstract: |2
+            <p>
+              To better understand
+              <a href="https://doi.org/10.1145/960116.54007">Control Flow Analysis in Scheme</a>,
+              we implemented CFA as a
+              <a href="https://redex.racket-lang.org/">Redex</a> model. We
+              presented our project in class, as a blackboard presentation.
+            </p>
+  - title: "Tracing JITs for Dynamic Languages"
+    in: CS 7480 (History of Programming Languages), Northeastern University
+    date: February 2017
+    links:
+      - {name: Lecture notes, url: "./2017-02-cs7480-tracing_jits.pdf"}
+      - {name: Bibliography,  url: "./2017-02-cs7480-annotated_bib.txt"}
+    abstract: |2
+            <p>
+              Traditional JIT (just-in-time) compilers are method-based: they
+              compile “hot” (i.e. frequently executed) methods to native code.
+              An alternative is trace-based or tracing JITs, where the
+              compilation unit is a (hot) sequence of instructions. Typically,
+              such sequences of instructions correspond to loops, where
+              programs spend most of their execution time.
+            </p>
+            <p>
+              Where did the idea of tracing come from? What was appealing about
+              it? How was tracing adapted for JITs and dynamic languages? What
+              happened to Mozilla’s TraceMonkey, which used to be part of
+              Firefox? Do any JITs today use tracing?
+            </p>
+  - title: "Yesterday, My Program Worked. Today, It Does Not. Why?"
+    in: CS 7480 (Advanced Program Analysis), Northeastern University
+    date: November 2016
+    links:
+      - {name: Slides,        url: "./2016-11-cs7480-delta_debugging-slides.pdf"}
+      - {name: Speaker notes, url: "./2016-11-cs7480-delta_debugging-slides-notes.pdf"}
   - title: "Flix: A Language for Static Analysis"
     authors: [Magnus Madsen, Ming-Ho Yee, Ondřej Lhoták]
     in: Seminar, Northeastern University
@@ -613,6 +661,13 @@ talks:
               evaluation compares the interpreter and code generator back-ends
               in terms of correctness and performance.
             </p>
+  - title: "Dimensions of Precision in Reference Analysis of
+      Object-Oriented Programming Languages"
+    in: CS 7480 (Advanced Program Analysis), Northeastern University
+    date: September 2016
+    links:
+      - {name: Slides,        url: "./2016-09-cs7480-dimensions-slides.pdf"}
+      - {name: Speaker notes, url: "./2016-09-cs7480-dimensions-slides-notes.pdf"}
   - title: "The Flix Language"
     authors: [Magnus Madsen, Ming-Ho Yee, Ondřej Lhoták]
     in: Seminar, University of Waterloo
@@ -652,6 +707,11 @@ talks:
               same program I studied in. The goal was to share I had learned
               about applying to graduate school.
             </p>
+  - title: "Surgical Precision JIT Compilers"
+    in: CS 842 (Virtual Machines for Dynamic Languages), University of Waterloo
+    date: February 2015
+    links:
+      - {name: Slides, url: "./2015-cs842-lancet-slides.pdf"}
   - title: "Optimizing Moolloy: A Solver for Multi-Objective Optimization
       Problems"
     authors: [Joseph Hong, Chris Kleynhans, Ming-Ho Yee, Atulan Zaman]
@@ -681,7 +741,7 @@ otherwriting:
               <a href="https://prl.khoury.northeastern.edu/blog/2019/09/05/lexical-and-dynamic-scope/">
               explanation and history of lexical and dynamic scope</a>.
             </p>
-  - title: "Survey Paper: On-Stack Replacement"
+  - title: "On-Stack Replacement"
     url: "./2018-cs7600-osr.pdf"
     in: CS 7600 (Intensive Computer Systems), Northeastern University
     date: December 2018

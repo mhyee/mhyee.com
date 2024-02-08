@@ -20,7 +20,7 @@ end
 compile '*' do
   ext = item[:extension].nil? ? nil : item[:extension].split('.').last
 
-  if item.binary? or ext == "html"
+  if item.binary? or ext == "html" or ext == "txt"
     # don’t filter binary items
   elsif ext == "css"
     # Apply CSS compression and nothing else
@@ -74,7 +74,7 @@ route '/styles/*' do
 end
 
 route '*' do
-  if item.binary?
+  if item.binary? or item[:extension] == "txt"
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   else
