@@ -36,5 +36,5 @@ end
 
 def print_authors(authors)
   list = authors.map{|a| format_author a }.join(", ")
-  wrap list, 4
+  wrap list
 end

@@ -1,0 +1,27 @@
+%section{:id => @key, :class => "publication"}
+  %h2= @name
+  - @item[@key.to_sym].each do |pub|
+    %article
+      %h3= pub[:title]
+      - if pub[:authors]
+        %span{:class => "authors"}<
+          = print_authors pub[:authors]
+        %br
+      - if pub[:in]
+        %span{:class => "in"}<
+          = pub[:in]
+        %br
+      - if pub[:date]
+        %span<
+          = pub[:date]
+        %br
+      - if pub[:links]
+        %ul{:class => "links"}
+          - pub[:links].each do |link|
+            %li= link_to link[:name], link[:url]
+      - if pub[:abstract]
+        %details{:class => "abstract"}
+          %summary Abstract
+          - pub[:abstract].each do |para|
+            %p= para
+.pub-spacer
