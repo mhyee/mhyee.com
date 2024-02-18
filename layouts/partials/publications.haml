@@ -2,7 +2,7 @@
   %h2= @name
   - @item[@key.to_sym].each do |pub|
     %article
-      %h3= pub[:title]
+      %h3{:id => pub[:id]}= pub[:title]
       - if pub[:authors]
         %span{:class => "authors"}<
           = print_authors pub[:authors]
