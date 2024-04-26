@@ -382,6 +382,41 @@ papers:
 theses:
   - title: "Predicting TypeScript Type Annotations and Definitions with Machine
       Learning"
+    id: phd-thesis
+    in: PhD thesis, Northeastern University
+    date: April 2024
+    links:
+      - {name: PDF,           url: "./2024-phd-thesis.pdf"}
+      - {name: NU Library,    url: "http://hdl.handle.net/2047/D20653005"}
+      - {name: Slides,        url: "./2024-phd-thesis-defense-slides.pdf"}
+      - {name: Speaker notes, url: "./2024-phd-thesis-defense-slides-notes.pdf"}
+      - {name: Code,          url: "https://github.com/nuprl/StenoType"}
+    abstract:
+      - |
+        Type information is useful for developing large-scale software systems.
+        Types help prevent bugs, but may be inflexible and hamper quick
+        iteration on early prototypes. TypeScript, a syntactic superset of
+        JavaScript, brings the best of both worlds, allowing programmers to
+        freely mix statically and dynamically typed code, and choose the level
+        of type safety they wish to opt into. However, <em>type migration</em>,
+        the process of migrating an untyped program to a typed version, has
+        remained a labour-intensive manual effort in practice. As a first step
+        towards automated effective type migration, there has been interest in
+        applying machine learning to the narrower problem of
+        <em>type prediction</em>.
+      - |
+        In this dissertation, I propose to use machine learning to partially
+        migrate JavaScript programs to TypeScript, by
+        <em>predicting type annotations</em> and 
+        <em>generating type definitions</em>. To support this thesis, I make
+        three contributions. First, I propose evaluating type prediction by
+        type checking the generated annotations instead of computing accuracy.
+        Second, I fine-tune a large language model with fill-in-the-middle
+        capability to <em>fill in the type</em> and predict type annotations.
+        Finally, I use a similar approach to fine-tune a large language model
+        to generate missing type definitions
+  - title: "Predicting TypeScript Type Annotations and Definitions with Machine
+      Learning"
     id: phd-proposal
     in: PhD thesis proposal, Northeastern University
     date: September 2023
@@ -389,7 +424,6 @@ theses:
       - {name: PDF,           url: "./2023-phd-thesis-proposal.pdf"}
       - {name: Slides,        url: "./2023-phd-thesis-proposal-slides.pdf"}
       - {name: Speaker notes, url: "./2023-phd-thesis-proposal-slides-notes.pdf"}
-      - {name: GitHub,        url: "https://github.com/nuprl/StenoType"}
     abstract:
       - |
         Type information is useful for developing large-scale software systems.
@@ -420,7 +454,7 @@ theses:
     date: September 2016
     links:
       - {name: PDF,           url: "./2016-mmath-thesis.pdf"}
-      - {name: UW Library,    url: "http://hdl.handle.net/10012/10856"}
+      - {name: UW Library,    url: "https://hdl.handle.net/10012/10856"}
       - {name: Slides,        url: "./2016-mmath-thesis-slides.pdf"}
       - {name: Speaker notes, url: "./2016-mmath-thesis-slides-notes.pdf"}
     abstract:

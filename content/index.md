@@ -4,10 +4,9 @@ title:
 
 # Hello World!
 
-I'm a final-year Ph.D. student in [computer science][khoury] at [Northeastern
+I recently defended my Ph.D. in [computer science][khoury] at [Northeastern
 University][], advised by [Arjun Guha][aguha] in the [Programming Research
-Laboratory][]. I expect to graduate in spring 2024 and **I am on the industrial
-job market**.
+Laboratory][].
 
 My research interests include programming language design and implementation,
 program analysis, and the intersection of machine learning and programming
