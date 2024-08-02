@@ -4,22 +4,24 @@ title:
 
 # Hello World!
 
-I recently defended my Ph.D. in [computer science][khoury] at [Northeastern
-University][], advised by [Arjun Guha][aguha] in the [Programming Research
-Laboratory][].
+I'm a research scientist at [Meta][], in Menlo Park, California.
 
-My research interests include programming language design and implementation,
+I received my Ph.D. in [computer science][khoury] at [Northeastern
+University][], advised by [Arjun Guha][aguha] in the [Programming Research
+Laboratory][]; my master's in [computer science][scs] at the [University of
+Waterloo][], advised by [Ondřej Lhoták][olhotak] in the [Programming Languages
+Group][]; and my bachelor's in [software engineering][se], also at the
+[University of Waterloo][], where I worked with [Derek Rayside][drayside].
+
+My technical interests include programming language design and implementation,
 program analysis, and the intersection of machine learning and programming
 languages.
-
-I received my master's in [computer science][scs] at the [University of
-Waterloo][], advised by [Ondřej Lhoták][olhotak] in the [Programming Languages Group];
-and my bachelor's in [software engineering][se], also at the [University of
-Waterloo][], where I worked with [Derek Rayside][drayside].
 
 My hobbies and interests include listening to classical music and going to the
 symphony; watching and discussing basketball, movies, and TV; tinkering with my
 keyboards, dotfiles, and server; and enjoying tea.
+
+[Meta]: https://about.meta.com/
 
 [khoury]: https://www.khoury.northeastern.edu/
 [Northeastern University]: https://www.northeastern.edu/
