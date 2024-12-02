@@ -4,7 +4,8 @@ title:
 
 # Hello World!
 
-I'm a research scientist at [Meta][], in Menlo Park, California.
+I'm a research scientist at [Meta][], in Menlo Park, California. I work on the
+runtime software for the [Meta Training and Inference Accelerator][mtia].
 
 I received my Ph.D. in [computer science][khoury] at [Northeastern
 University][], advised by [Arjun Guha][aguha] in the [Programming Research
@@ -22,6 +23,7 @@ symphony; watching and discussing basketball, movies, and TV; tinkering with my
 keyboards, dotfiles, and server; and enjoying tea.
 
 [Meta]: https://about.meta.com/
+[mtia]: https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/
 
 [khoury]: https://www.khoury.northeastern.edu/
 [Northeastern University]: https://www.northeastern.edu/
