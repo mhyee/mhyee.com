@@ -18,9 +18,9 @@ My technical interests include programming language design and implementation,
 program analysis, and the intersection of machine learning and programming
 languages.
 
-My hobbies and interests include listening to classical music and going to the
-symphony; watching and discussing basketball, movies, and TV; tinkering with my
-keyboards, dotfiles, and server; and enjoying tea.
+My hobbies include listening to classical music and going to the symphony;
+watching and discussing basketball, movies, and TV; tinkering with my keyboards,
+dotfiles, and server; and enjoying tea and coffee.
 
 [Meta]: https://about.meta.com/
 [mtia]: https://ai.meta.com/blog/next-generation-meta-training-inference-accelerator-AI-MTIA/
